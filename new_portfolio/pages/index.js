@@ -16,17 +16,18 @@ export default function Home() {
       <link rel="manifest" href="../public/site.webmanifest" />
     </Head>
    
-    <div className="mx-auto bg-red-500 w-full px-20">
+    <div className="mx-auto w-full px-20">
       <header>
-        <div className="flex flex-col items-center h-40 justify-center">
-          <p className="soehne-heading">Anna Wikberg Ågren</p>
-          <p className="soehne-heading">Art Director</p>
+        <div className="flex flex-col items-center h-auto justify-center pt-40 pb-20 bg-yellow-100">
+          <p className="soehne-heading text-8xl text-center">Anna <br/>Wikberg <br/>Agren</p>
+          <p className="soehne-heading text-8xl text-center">Art Director</p>
           </div>
       </header>  
       <main className="w-full flex flex-row flex-wrap">
-        <div className="w-1/2 h-60 bg-red-900" />
-        <div className="h-10 w-full"/>
-        <div className="w-1/2 h-60 bg-yellow-50" />
+        <div className="w-1/2  photo-h bg-red-900 pr-10 cont"> <img src="../static/images/claratest.png"/></div>
+        <div className="w-1/2 photo-h bg-yellow-50" />
+          <div className="h-10 w-full bg-yellow-100 pl-10"/>
+        <div className="w-full photo-h-w photo-h bg-yellow-50" />
 
 
       </main>
@@ -37,6 +38,12 @@ export default function Home() {
       {`
       .soehne-heading {
         font-family: "Soehne-drei";
+      }
+      .photo-h {
+        height: 700px;
+      }
+      .photo-h-w {
+        height: 500px;
       }
       `}
     </style>
