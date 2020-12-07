@@ -60,6 +60,24 @@ export default function Layout({ children }) {
             box-shadow: 0 0 0px 1000px #fcf9d5 inset;
             font-size: 16px;
           }
+
+          .soehne-heading {
+            font-family: "Soehne-drei";
+          }
+          .ivar-heading {
+            font-family: "Ivar-display";
+          }
+          .ivar-light {
+            font-family: "Ivar-fine-light";
+          }
+          .ivar-lightIta {
+            font-family: "Ivar-fine-light-italic";
+          }
+          .untitled-text {
+            font-family: "Untitled";
+            font-size: 16px;
+            line-height: 1.5;
+          }
         `}
       </style>
     </div>

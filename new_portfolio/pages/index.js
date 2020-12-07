@@ -93,13 +93,6 @@ export default function Home() {
             font-size: 16px;
             line-height: 1.5;
           }
-
-          .photo-h {
-            height: 800px;
-          }
-          .photo-h-w {
-            height: 500px;
-          }
         `}
       </style>
     </Layout>

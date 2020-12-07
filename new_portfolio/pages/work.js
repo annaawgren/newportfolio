@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Header from "../components/Header";
 import Layout from "../components/Layout";
 import Navlinks from "../components/Navlinks";
 
@@ -10,34 +11,42 @@ export default function Work() {
         <title>Work</title>
       </Head>
 
-      <header className="w-full flex flex-row justify-between items-center h-12 px-20 fixed">
-        <Link href="/">
-          <div className="ivar-heading">Anna Wikberg Ågren</div>
-        </Link>
-        <div className="ivar-heading">Art Director \ Designer</div>
-      </header>
+      <Header />
 
       <div className="h-20 w-full" />
 
-      <div className="px:10 md:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-4 ">
-          <div className="... bg-gray-400 h-auto">
-            <img src="/images/claratest.png" />
-          </div>
-          <div className="... bg-red-300">
-            <div className="... bg-gray-400 h-auto">
-              <img src="/images/telnesstest.png" />
+      <section>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-4 px-5 md:px-10 lg:px-20">
+          <Link href="/work/kupe">
+            <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
+              <img src="/images/claratest.png" />
+              <p>textrubbe</p>
+              <p>
+                alkgralkrefgl aerng laknerfglkn aerlkgna erknghlkaenr lgkhnre
+                hlkbn rlek
+              </p>
             </div>
-          </div>
+          </Link>
+
+          <Link href="/work/telness">
+            <div className="... bg-red-300">
+              <div className="... bg-gray-400 h-auto">
+                <img src="/images/telnesstest.png" />
+              </div>
+            </div>
+          </Link>
 
           <div className="col-span-2 ... bg-green-100 ">
             <div className="... bg-gray-400 h-auto ">
-              <img src="/images/wtest.png" className="object-cover" />
+              <img
+                src="/images/wtest.png"
+                className="h-auto object-cover w-full"
+              />
             </div>
           </div>
           <div className="col-span-2 ...">
-            <div className="... bg-gray-400 h-auto ">
-              <img src="/images/wtest.png" className="object-contain" />
+            <div className="... bg-gray-400 h-auto">
+              <img src="/images/dance.gif" className="object-contain w-full" />
             </div>
           </div>
           <div className="...">
@@ -51,38 +60,11 @@ export default function Work() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <div className="h-20 w-full" />
 
       <Navlinks />
-
-      <style jsx>
-        {`
-          .soehne-heading {
-            font-family: "Soehne-drei";
-          }
-          .ivar-heading {
-            font-family: "Ivar-display";
-          }
-          .ivar-light {
-            font-family: "Ivar-fine-light";
-          }
-          .ivar-lightIta {
-            font-family: "Ivar-fine-light-italic";
-          }
-          .untitled-text {
-            font-family: "Untitled";
-            font-size: 16px;
-            line-height: 1.5;
-          }
-
-          .photo-h {
-            height: 800px;
-          }
-          .photo-h-w {
-            height: 500px;
-          }
-        `}
-      </style>
     </Layout>
   );
 }
