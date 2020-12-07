@@ -1,12 +1,13 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Layout from "../components/Layout";
 
-import Navlinks from "../components/navlinks";
+import Navlinks from "../components/Navlinks";
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <Layout>
       <Head>
         <title>Anna Wikberg Ågren Art Director</title>
         {/* <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
@@ -25,16 +26,20 @@ export default function Home() {
         </header>
 
         <section className="intro bg-gradient-to-r from-primary via-secondary to-danger w-full h-screen sticky top-0 flex flex-col items-center justify-top pt-40 pb-20 ">
-          <p className="soehne-heading text-2xl text-center mb-4">
-            Anna Wikberg Ågren
+          <p className="ivar-heading text-3xl text-center mb-4">
+            Anna Wikberg Agren
           </p>
-          <p className="soehne-heading text-6xl md:text-8xl lg:text-9xl text-center">
+          <p className="ivar-heading text-6xl md:text-9xl lg:text-12xl text-center">
             Art Director <br /> \ Designer
           </p>
         </section>
 
         <section className="case-one bg-red-500 w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-40 pb-20 ">
-          <div className="soehne-heading text-9xl text-center mb-4 bg-gray-100 w-1/3  h-72"></div>
+          <img
+            className="mb-4 bg-gray-100 w-auto h-auto object-fill"
+            src="/images/wtest.png"
+          />
+
           <p className="untitled-text text-center mb-4 w-1/3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
             imperdiet facilisis non, elit ipsum venenatis justo, egestas mattis.
@@ -48,6 +53,24 @@ export default function Home() {
             imperdiet facilisis non, elit ipsum venenatis justo, egestas mattis.
           </p>
         </section>
+
+        <section className="case-three bg-gray-300 w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-40 pb-20 ">
+          <div className="soehne-heading text-9xl text-center mb-4 bg-gray-100 w-1/3  h-72"></div>
+          <p className="untitled-text text-center mb-4 w-1/3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+            imperdiet facilisis non, elit ipsum venenatis justo, egestas mattis.
+          </p>
+        </section>
+
+        <section className="footer-img w-full h-screen sticky z-10 top-0  flex flex-col items-center justify-center ">
+          <img
+            src="/images/anna-test.jpeg"
+            className="text-center bg-gray-100 w-full h-auto object-cover"
+          ></img>
+          <p className="ivar-heading text-white text-6xl absolute text-centered pb-4 text-red">
+            hello@annawagren.work
+          </p>
+        </section>
       </div>
 
       <Navlinks />
@@ -58,7 +81,6 @@ export default function Home() {
           }
           .ivar-heading {
             font-family: "Ivar-display";
-            outline: 1px solid red;
           }
           .ivar-light {
             font-family: "Ivar-fine-light";
@@ -80,67 +102,6 @@ export default function Home() {
           }
         `}
       </style>
-
-      <style jsx global>
-        {`
-          @font-face {
-            font-family: "Ivar-display";
-            src: url("../public/fonts/IvarDisplayCondensed-SemiBold.woff") format("woff"),
-            src: url("../public/fonts/IvarDisplayCondensed-SemiBold.otf") format("otf")
-          }
-          @font-face {
-            font-family: "Ivar-fine-light";
-            src: url("../public/fonts/IvarFine-light.woff") format("woff"),
-            src: url("../public/fonts/IvarFine-light.otf") format("otf")
-          }
-          @font-face {
-            font-family: "Ivar-fine-light-italic";
-            src: url("../public/fonts/IvarFine-lightItalic.woff") format("woff"),
-            src: url("../public/fonts/IvarFine-lightItalic.otf") format("otf")
-          }
-          @font-face {
-            font-family: "Soehne-buch";
-            src: url("../public/fonts/soehne-breit-test-buch.woff") format("woff"),
-            url("../public/fonts/SöhneBreitTest-Buch.otf") format("otf")
-          }
-
-          @font-face {
-            font-family: "Soehne-drei";
-            src: url("../public/fonts/soehne-breit-test-dreiviertelfett.woff") format("woff"),
-            url("../public/fonts/SöhneBreitTest-Dreiviretelfett.otf") format("otf")       
-          }
-
-          @font-face {
-            font-family: "Untitled";
-            src: url("/public/fonts/untitled-sans-test.woff") format("woff"),
-            url("../public/fonts/UntitledSansTest-Regular.otf") format("otf")      
-          }
-
-          body,
-          html {
-            font-family: "untitled", sans-serif;
-            scroll-behavior: smooth;
-            color: black;
-          }
-
-          a:hover {
-            text-decoration: none;
-          }
-          summary:focus,
-          button:focus,
-          input:focus {
-            outline: none;
-            box-shadow: inset 0 0 0 2px #e6b771;
-          }
-          input:-webkit-autofill,
-          input:-webkit-autofill:hover,
-          input:-webkit-autofill:focus {
-            -webkit-text-fill-color: #5a4e3e;
-            box-shadow: 0 0 0px 1000px #fcf9d5 inset;
-            font-size: 16px;
-          }
-        `}
-      </style>
-    </React.Fragment>
+    </Layout>
   );
 }

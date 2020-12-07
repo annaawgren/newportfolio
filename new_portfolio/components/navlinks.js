@@ -5,17 +5,17 @@ export default function Navlinks() {
     <React.Fragment>
       <div className="flex flex-row justify-between w-full px-6 md:px-10 lg:px-20 pb-10 fixed bottom-0 z-50">
         <Link href="/work">
-          <a className="ivar-fine hover:ivar-fineIta hover:bg-red-500 block bg-blue text-4xl md:text-6xl lg:text-7xl ">
+          <a className="ivar-fine hover:text-gray-200 block bg-blue text-4xl md:text-6xl lg:text-7xl ">
             Work
           </a>
         </Link>
         <Link href="/about">
-          <a className="ivar-fine hover:ivar-fineIta block bg-blue text-4xl md:text-6xl lg:text-7xl">
+          <a className="ivar-fine hover:text-gray-200 block bg-blue text-4xl md:text-6xl lg:text-7xl">
             About
           </a>
         </Link>
         <Link href="/contact">
-          <a className="ivar-fine hover:ivar-fineIta block bg-blue text-4xl md:text-6xl lg:text-7xl">
+          <a className="ivar-fine hover:text-gray-200 block bg-blue text-4xl md:text-6xl lg:text-7xl">
             Contact
           </a>
         </Link>
