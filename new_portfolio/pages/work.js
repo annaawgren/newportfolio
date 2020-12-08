@@ -18,10 +18,10 @@ export default function Work() {
       <section>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-4 px-5 md:px-10 lg:px-20">
           <Link href="/work/kupe">
-            <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
+            <div className="...h-auto w-full flex flex-col items-center">
               <img src="/images/claratest.png" />
-              <p>textrubbe</p>
-              <p>
+              <p className="soehne-heading mb-2 mt-6 text-sm">Kupe Magazine</p>
+              <p className="untitled-text text-center mb-4 w-5/6 text-sm">
                 alkgralkrefgl aerng laknerfglkn aerlkgna erknghlkaenr lgkhnre
                 hlkbn rlek
               </p>
@@ -29,19 +29,27 @@ export default function Work() {
           </Link>
 
           <Link href="/work/telness">
-            <div className="... bg-red-300">
-              <div className="... bg-gray-400 h-auto">
-                <img src="/images/telnesstest.png" />
-              </div>
+            <div className="...h-auto w-full flex flex-col items-center">
+              <img src="/images/telnesstest.png" />
+              <p className="soehne-heading mb-2 mt-6 text-sm">Telness</p>
+              <p className="untitled-text text-center mb-4 w-5/6 text-sm">
+                alkgralkrefgl aerng laknerfglkn aerlkgna erknghlkaenr lgkhnre
+                hlkbn rlek
+              </p>
             </div>
           </Link>
 
-          <div className="col-span-2 ... bg-green-100 ">
-            <div className="... bg-gray-400 h-auto ">
+          <div className="col-span-2 ...">
+            <div className="...h-auto w-full flex flex-col items-center">
               <img
                 src="/images/wtest.png"
                 className="h-auto object-cover w-full"
               />
+              <p className="soehne-heading mb-2 mt-6 text-sm">W Hotel</p>
+              <p className="untitled-text text-center mb-4 w-5/6 text-sm">
+                alkgralkrefgl aerng laknerfglkn aerlkgna erknghlkaenr lgkhnre
+                hlkbn rlek
+              </p>
             </div>
           </div>
           <div className="col-span-2 ...">

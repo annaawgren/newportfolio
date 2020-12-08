@@ -7,34 +7,35 @@ export default function Layout({ children }) {
           @font-face {
             font-family: "Ivar-display";
             src: url("/fonts/IvarDisplayCondensed-SemiBold.woff") format("woff"),
-            url("/fonts/IvarDisplayCondensed-SemiBold.otf") format("otf")
+              url("/fonts/IvarDisplayCondensed-SemiBold.otf") format("otf");
           }
           @font-face {
             font-family: "Ivar-fine-light";
             src: url("/fonts/IvarFine-light.woff") format("woff"),
-            url("/fonts/IvarFine-light.otf") format("otf")
+              url("/fonts/IvarFine-light.otf") format("otf");
           }
           @font-face {
             font-family: "Ivar-fine-light-italic";
             src: url("/fonts/IvarFine-lightItalic.woff") format("woff"),
-            url("/fonts/IvarFine-lightItalic.otf") format("otf")
+              url("/fonts/IvarFine-lightItalic.otf") format("otf");
           }
           @font-face {
             font-family: "Soehne-buch";
             src: url("/fonts/soehne-breit-test-buch.woff") format("woff"),
-            url("/fonts/SöhneBreitTest-Buch.otf") format("otf")
+              url("/fonts/SöhneBreitTest-Buch.otf") format("otf");
           }
 
           @font-face {
             font-family: "Soehne-drei";
-            src: url("/fonts/soehne-breit-test-dreiviertelfett.woff") format("woff"),
-            url("/fonts/SöhneBreitTest-Dreiviretelfett.otf") format("otf")       
+            src: url("/fonts/soehne-breit-test-dreiviertelfett.woff")
+                format("woff"),
+              url("/fonts/SöhneBreitTest-Dreiviretelfett.otf") format("otf");
           }
 
           @font-face {
             font-family: "Untitled";
-            src: url/fonts/untitled-sans-test.woff") format("woff"),
-            url("/fonts/UntitledSansTest-Regular.otf") format("otf")      
+            src: url("/fonts/untitled-sans-test-regular.woff") format("woff"),
+              url("/fonts/UntitledSansTest-Regular.otf") format("otf");
           }
 
           body,
@@ -64,6 +65,9 @@ export default function Layout({ children }) {
           .soehne-heading {
             font-family: "Soehne-drei";
           }
+          .soehne-light {
+            font-family: "Soehne-buch";
+          }
           .ivar-heading {
             font-family: "Ivar-display";
           }
@@ -75,8 +79,6 @@ export default function Layout({ children }) {
           }
           .untitled-text {
             font-family: "Untitled";
-            font-size: 16px;
-            line-height: 1.5;
           }
         `}
       </style>

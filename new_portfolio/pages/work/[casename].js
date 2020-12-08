@@ -23,7 +23,7 @@ const Case = () => {
         <div className="hero-img h-1/3">
           {" "}
           <img
-            src="../../images/kupe/claratest2.png"
+            src="../../images/wtest.png"
             className="h-1/3 w-full object-cover"
           />{" "}
         </div>
@@ -41,7 +41,7 @@ const Case = () => {
 
         <div className="h-10 w-full" />
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-4">
+        <div className="grid grid-cols-2  gap-4 md:gap-4">
           <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
             <img src="/images/claratest.png" />
           </div>
@@ -65,12 +65,12 @@ const Case = () => {
               <img src="/images/dance.gif" className="object-contain w-full" />
             </div>
           </div>
-          <div className="col-span-2 ...">
+          <div className=" ...">
             <div className="... bg-gray-400 h-auto">
               <img src="/images/telnesstest.png" />
             </div>
           </div>
-          <div className="col-span-2 ...">
+          <div className=" ...">
             <div className="... bg-gray-400 h-auto">
               <img src="/images/claratest.png" />
             </div>

@@ -17,5 +17,37 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+
+  textSizes: {
+    sm: "14px",
+    md: {
+      min: "16px",
+      max: "20px",
+      minvw: "320px",
+      maxvw: "1280px",
+    },
+    lg: {
+      min: "26px",
+      max: "50px",
+      minvw: "320px",
+      maxvw: "1280px",
+    },
+  },
+
+  // ...
+
+  modules: {
+    // ...
+
+    textSizes: false, // disable the core module
+
+    // ...
+  },
+
+  plugins: [
+    require("tailwindcss-fluid")({
+      suffix: "",
+      textSizes: true, // use the settings defined the core config (above)
+    }),
+  ],
 };

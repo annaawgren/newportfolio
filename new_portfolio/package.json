@@ -17,5 +17,8 @@
     "react-dom": "16.13.1",
     "react-transition-group": "^4.4.1",
     "tailwindcss": "^2.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss-fluid": "^0.2.0"
   }
 }
