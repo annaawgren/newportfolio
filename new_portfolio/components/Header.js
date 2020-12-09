@@ -2,12 +2,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full flex flex-col items-center justify-center px-5 md:px-10 lg:px-20 sticky top-0 bg-white pt-10 pb-8">
+    <header className="w-full flex flex-row items-center justify-center px-5 md:px-10 lg:px-20 sticky top-0 bg-white pt-8 pb-4">
       <Link href="/">
-        <div className="flex flex-col items-center justify-center">
-          <div className="soehne-heading text-sm">Anna Wikberg Agren</div>
-
-          <div className="soehne-heading text-2xl md:text-3xl">
+        <div className="flex flex-row items-center justify-between w-full">
+          <div className="soehne-heading text-sm block">Anna Wikberg Agren</div>
+          <div className="soehne-heading text-sm block">
             Art Director \ Designer
           </div>
         </div>

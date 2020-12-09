@@ -31,16 +31,21 @@ export default function Home() {
         </section>
 
         <section className="case-one bg-red-500 w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-20 pb-20 ">
-          <img
-            className="mb-4 bg-gray-100 w-4/6  object-cover"
-            src="/images/wtest.png"
-          />
+          <div className="w-full mx-auto">
+            <img
+              className="mb-4 bg-gray-100 w-1/3 object-cover"
+              src="/images/wtest.png"
+            />
 
-          <h2 className="soehne-heading mb-2 mt-6 text-sm">Visual identity</h2>
-          <p className="untitled-text text-center mb-4 w-5/6 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-            imperdiet facilisis non, elit ipsum venenatis justo, egestas mattis.
-          </p>
+            <h2 className="soehne-heading mb-2 mt-6 text-sm">
+              Visual identity
+            </h2>
+            <p className="untitled-text text-center mb-4 w-5/6 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+              imperdiet facilisis non, elit ipsum venenatis justo, egestas
+              mattis.
+            </p>
+          </div>
         </section>
 
         <section className="footer-img w-full h-screen sticky z-10 top-0 flex flex-col items-center justify-center ">
