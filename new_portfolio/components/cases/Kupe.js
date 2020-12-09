@@ -1,7 +1,7 @@
 export const KupeCase = {
   title: "Kupe",
   introtext: (
-    <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
+    <p className="untitled-text text-left mb-4 w-full text-md">
       I was the Art Director for Kupé Magazine between 2011-2017. I did
       everything between being responsible for the design-team, to concept
       development (I redesigned it twice), putting together teams and assigning
