@@ -22,13 +22,13 @@ module.exports = {
     sm: "14px",
     md: {
       min: "16px",
-      max: "20px",
+      max: "40px",
       minvw: "320px",
       maxvw: "1280px",
     },
     lg: {
       min: "26px",
-      max: "50px",
+      max: "80px",
       minvw: "320px",
       maxvw: "1280px",
     },

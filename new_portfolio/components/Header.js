@@ -2,16 +2,15 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full flex flex-row items-center justify-center px-5 md:px-10 lg:px-20 sticky top-0 bg-white pt-8 pb-8">
+    <header className="w-full flex flex-row items-center justify-center px-5 md:px-10 lg:px-20 z-10 sticky top-0 pt-8 pb-8">
       <Link href="/">
-        <div className="flex flex-row items-center justify-between w-full">
-          <a>
-            <p className="ivar-light text-lg block">Anna Wikberg Agren</p>
-          </a>
-          <a>
-            <p className="ivar-light text-lg block">Art Director \ Designer</p>
-          </a>
-        </div>
+        <a className="flex flex-row items-center justify-between w-full">
+          <p className="ivar-light text-md block leading-10">
+            Anna Wikberg Agren
+          </p>
+
+          <p className="ivar-light text-md block">Art Director \ Designer</p>
+        </a>
       </Link>
 
       <style jsx>
@@ -32,6 +31,10 @@ export default function Header() {
             font-family: "Untitled";
             font-size: 16px;
             line-height: 1.5;
+          }
+          .logo-big {
+            font-size: 9rem;
+            line-height: 1;
           }
         `}
       </style>
