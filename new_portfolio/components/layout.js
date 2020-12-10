@@ -19,18 +19,6 @@ export default function Layout({ children }) {
             src: url("/fonts/IvarFine-lightItalic.woff") format("woff"),
               url("/fonts/IvarFine-lightItalic.otf") format("otf");
           }
-          @font-face {
-            font-family: "Soehne-buch";
-            src: url("/fonts/soehne-breit-test-buch.woff") format("woff"),
-              url("/fonts/SöhneBreitTest-Buch.otf") format("otf");
-          }
-
-          @font-face {
-            font-family: "Soehne-drei";
-            src: url("/fonts/soehne-breit-test-dreiviertelfett.woff")
-                format("woff"),
-              url("/fonts/SöhneBreitTest-Dreiviretelfett.otf") format("otf");
-          }
 
           @font-face {
             font-family: "Untitled";
@@ -62,12 +50,6 @@ export default function Layout({ children }) {
             font-size: 16px;
           }
 
-          .soehne-heading {
-            font-family: "Soehne-drei";
-          }
-          .soehne-light {
-            font-family: "Soehne-buch";
-          }
           .ivar-heading {
             font-family: "Ivar-display";
           }

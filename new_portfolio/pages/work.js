@@ -38,7 +38,7 @@ export default function Work() {
 
       <Header />
 
-      <div className="h-20 w-full" />
+      <div className=" h-28 w-full" />
 
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 px-5 md:px-10 lg:px-20">
         <li>
@@ -116,7 +116,7 @@ export default function Work() {
         </li>
       </ul>
 
-      <div className="h-20 w-full" />
+      <div className="h-40 w-full" />
 
       <Navlinks />
 
@@ -136,7 +136,7 @@ export default function Work() {
       li.in-view  {
         opacity: 0;
         scale: 0;
-          transition: 900ms;
+          transition: 400ms;
           transform: translateY(25px);
       }
       li {
@@ -145,7 +145,7 @@ export default function Work() {
       li.in-view {
         opacity: 1;
         scale: 1;
-          transform: translateY(0);
+        transform: translateY(0);
       }
 
       
@@ -157,16 +157,16 @@ export default function Work() {
         transition-delay: 0.2s;
       }
       li.in-view:nth-child(3) {
-        transition-delay: 1s;
+        transition-delay: 0.4s;
       }
       li.in-view:nth-child(4) {
-        transition-delay: 1.5s;
+        transition-delay: 0.6s;
       }
       li.in-view:nth-child(5) {
-        transition-delay: 2s;
+        transition-delay: 0.8s;
       }
       li.in-view:nth-child(6) {
-        transition-delay: 2.5s;
+        transition-delay: 1s;
       }
 
     }

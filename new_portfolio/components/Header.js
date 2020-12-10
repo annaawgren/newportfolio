@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full flex flex-row items-center justify-center px-5 md:px-10 lg:px-20 z-10 sticky top-0 pt-8 pb-8">
+    <header className="w-full flex flex-row items-center justify-center px-5 md:px-10 lg:px-20 z-20 fixed top-0 h-20">
       <Link href="/">
         <a className="flex flex-row items-center justify-between w-full">
-          <p className="ivar-light text-md block leading-10">
+          <p className="ivar-heading text-md block leading-10">
             Anna Wikberg Agren
           </p>
 
-          <p className="ivar-light text-md block">Art Director \ Designer</p>
+          <p className="ivar-heading text-md block">Art Director \ Designer</p>
         </a>
       </Link>
 
