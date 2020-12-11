@@ -5,9 +5,7 @@ export default function Header() {
     <header className="w-full flex flex-row items-center justify-center px-5 md:px-10 lg:px-20 z-20 fixed top-0 h-20">
       <Link href="/">
         <a className="flex flex-row items-center justify-between w-full">
-          <p className="ivar-heading text-md block leading-10">
-            Anna Wikberg Agren
-          </p>
+          <p className="ivar-heading text-md block leading-10">A W Å</p>
 
           <p className="ivar-heading text-md block">Art Director \ Designer</p>
         </a>

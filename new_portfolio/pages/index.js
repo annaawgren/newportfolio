@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Navlinks from "../components/Navlinks";
+import Image from "../components/Image";
 
 export default function Home() {
   return (
@@ -21,16 +22,29 @@ export default function Home() {
         </section>
       </hero>
 
-      <main className="sticky top-0 z-10 ">
-        <section className="bg-red-100 w-full flex flex-col  items-center justify-center px-5 py-20 md:px-20 lg:px-20">
-          <div className=" w-full h-auto ">
-            <div className="outer-img-box w-full ">
-              <img
-                className="inner-img-box bg-gray-100 w-full h-full"
-                src="/images/wtest.png"
-                alt=""
-              />
+      <main>
+        <section className="bg-yellow-100 w-full h-screen flex flex-col items-center justify-center px-5 py-20 md:px-20 sticky top-0 z-10 ">
+          <div className=" w-full ">
+            <Image />
+
+            <div>
+              <h2 className="untitled-text mb-6 mt-8 text-md text-center">
+                Case Heading
+              </h2>
+              <p className="untitled-text mb-4 text-md text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+                imperdiet facilisis non, elit ipsum venenatis justo, egestas
+                mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Commodo imperdiet facilisis non, elit ipsum venenatis justo,
+                egestas mattis.
+              </p>
             </div>
+          </div>
+        </section>
+
+        <section className="bg-pink-100 w-full h-screen flex flex-col items-center justify-center px-5 py-20 md:px-20  sticky top-0 z-10 ">
+          <div className=" w-full ">
+            <Image />
 
             <div>
               <h2 className="untitled-text mb-6 mt-8 text-md text-center">
@@ -65,6 +79,7 @@ export default function Home() {
 
         .outer-img-box {
           position: relative;
+          max-width: 800px;
         }
         
         .outer-img-box:before {
