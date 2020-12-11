@@ -40,7 +40,7 @@ export default function Work() {
 
       <div className=" h-28 w-full" />
 
-      <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 px-5 md:px-10 lg:px-20">
+      <ul className="grid grid-cols-2  gap-4 px-5 md:px-10 lg:px-20">
         <li>
           <Link href="/work/kupe">
             <a className="...h-auto w-full flex flex-col items-center">

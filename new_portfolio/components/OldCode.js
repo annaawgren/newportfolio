@@ -1,54 +1,5 @@
 {
-  /* <section className="case-one bg-white w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-20 pb-20 ">
-          <div className="w-full flex flex-col items-center justify-center">
-            <img
-              className="mb-4 bg-gray-100 w-5/6 object-cover banan"
-              src="/images/wtest.png"
-              alt=""
-            />
-
-            <h2 className="untitled-text mb-2 mt-6 text-md">Case Heading</h2>
-            <p className="untitled-text text-center mb-4 w-5/6 text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-              imperdiet facilisis non, elit ipsum venenatis justo, egestas
-              mattis.
-            </p>
-          </div>
-        </section>
-
-        <section className="case-one bg-white w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-20 pb-20 ">
-          <div className="w-full flex flex-col items-center justify-center">
-            <img
-              className="mb-4 bg-gray-100 w-5/6 object-cover banan"
-              src="/images/wtest.png"
-              alt=""
-            />
-
-            <h2 className="untitled-text mb-2 mt-6 text-md">Case Heading</h2>
-            <p className="untitled-text text-center mb-4 w-5/6 text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-              imperdiet facilisis non, elit ipsum venenatis justo, egestas
-              mattis.
-            </p>
-          </div>
-        </section>
-
-        <section className="case-one bg-white w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-20 pb-20 ">
-          <div className="w-full flex flex-col items-center justify-center">
-            <img
-              className="mb-4 bg-gray-100 w-5/6 object-cover banan"
-              src="/images/wtest.png"
-              alt=""
-            />
-
-            <h2 className="untitled-text mb-2 mt-6 text-md">Case Heading</h2>
-            <p className="untitled-text text-center mb-4 w-5/6 text-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
-              imperdiet facilisis non, elit ipsum venenatis justo, egestas
-              mattis.
-            </p>
-          </div>
-        </section>
+  /* 
       </main> */
 
   <style jsx>{`
@@ -130,3 +81,56 @@ useLayoutEffect(() => {
     // })
   });
 });
+
+{
+  /* <section className="case-one bg-white w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-20 pb-20 ">
+          <div className="w-full flex flex-col items-center justify-center">
+            <img
+              className="mb-4 bg-gray-100 w-5/6 object-cover banan"
+              src="/images/wtest.png"
+              alt=""
+            />
+
+            <h2 className="untitled-text mb-2 mt-6 text-md">Case Heading</h2>
+            <p className="untitled-text text-center mb-4 w-5/6 text-md">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+              imperdiet facilisis non, elit ipsum venenatis justo, egestas
+              mattis.
+            </p>
+          </div>
+        </section>
+
+        <section className="case-one bg-white w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-20 pb-20 ">
+          <div className="w-full flex flex-col items-center justify-center">
+            <img
+              className="mb-4 bg-gray-100 w-5/6 object-cover banan"
+              src="/images/wtest.png"
+              alt=""
+            />
+
+            <h2 className="untitled-text mb-2 mt-6 text-md">Case Heading</h2>
+            <p className="untitled-text text-center mb-4 w-5/6 text-md">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+              imperdiet facilisis non, elit ipsum venenatis justo, egestas
+              mattis.
+            </p>
+          </div>
+        </section>
+
+        <section className="case-one bg-white w-full h-screen sticky top-0 z-10 flex flex-col items-center justify-top pt-20 pb-20 ">
+          <div className="w-full flex flex-col items-center justify-center">
+            <img
+              className="mb-4 bg-gray-100 w-5/6 object-cover banan"
+              src="/images/wtest.png"
+              alt=""
+            />
+
+            <h2 className="untitled-text mb-2 mt-6 text-md">Case Heading</h2>
+            <p className="untitled-text text-center mb-4 w-5/6 text-md">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+              imperdiet facilisis non, elit ipsum venenatis justo, egestas
+              mattis.
+            </p>
+          </div>
+        </section> */
+}

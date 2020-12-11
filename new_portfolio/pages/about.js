@@ -7,9 +7,9 @@ export default function About() {
     <Layout>
       <Header />
 
-      <div className="h-48 w-full" />
+      <div className="h-48 w-full " />
 
-      <section className="about-txt w-full h-screen flex flex-col items-center  px-5 md:px-10 lg:px-20">
+      <section className="about-txt w-full h-screen flex flex-col items-center relative bg-white z-10 px-5 md:px-10 lg:px-20">
         <p className="untitled-text text-md text-justify mb-4">
           Hi! I'm an enthusiastic and strategic Art Director \ Designer with
           Frontend Developer skills and experience design at heart. I'm
@@ -32,18 +32,12 @@ export default function About() {
         <p className="untitled-text text-md text-justify mb-4">
           I built this portfolio in next.js and xxx.
         </p>
+
+        <div className="w-full h-screen flex flex-row justify-center absolute bottom-0 ">
+          <img src="/images/anna-test.jpeg" className="w-full object-cover" />
+        </div>
       </section>
 
-      <div className="w-full h-screen bg-transparent"></div>
-
-      <div className="w-full h-64 flex flex-row justify-center px-5 md:px-10 lg:px-20 sticky bottom-0 z-10">
-        <img
-          src="/images/anna-test.jpeg"
-          className="h-full text-center object-cover"
-        />
-      </div>
-
-      <div className=" h-40 w-full" />
       <Navlinks />
     </Layout>
   );
