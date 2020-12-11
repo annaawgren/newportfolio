@@ -62,6 +62,21 @@ export default function Layout({ children }) {
           .untitled-text {
             font-family: "Untitled";
           }
+
+          .bigfont {
+            font-size: clamp(4rem, 18vw, 8rem);
+            line-height: 1;
+          }
+
+          .mediumfont {
+            font-size: clamp(0.2rem, 8vw, 2.2rem);
+            line-height: 1;
+          }
+
+          .plusfont {
+            font-size: clamp(2.5rem, 8vw, 8rem);
+            line-height: 1;
+          }
         `}
       </style>
     </div>

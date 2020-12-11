@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Layout from "../../components/Layout";
 import Navlinks from "../../components/Navlinks";
+import Image from "../../components/Image";
 
 import { KupeCase } from "../../components/cases/Kupe";
 import { TelnessCase } from "../../components/cases/Telness";
@@ -37,16 +38,19 @@ const Case = () => {
         <title>Case</title>
       </Head>
 
+      <div className=" h-28 w-full" />
+
       <Header />
 
       <main className="w-full px-5 md:px-10 lg:px-20 ">
-        <div className="hero-img h-1/3">
+        <Image />
+        {/* <div className="hero-img h-1/3">
           {" "}
           <img
             src={`../../images/${casename}/${currentCase.heroimage}`}
             className="h-1/3 w-full object-cover"
           />{" "}
-        </div>
+        </div> */}
 
         <div className="h-10 w-full" />
 

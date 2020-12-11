@@ -5,6 +5,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Navlinks from "../components/Navlinks";
+import Image from "../components/Image";
 
 export default function Work() {
   useLayoutEffect(() => {
@@ -40,11 +41,11 @@ export default function Work() {
 
       <div className=" h-28 w-full" />
 
-      <ul className="grid grid-cols-2  gap-4 px-5 md:px-10 lg:px-20">
+      <ul className="grid md:grid-cols-2 lg:grid-cols-3  gap-4 px-5 md:px-10 lg:px-20">
         <li>
           <Link href="/work/kupe">
             <a className="...h-auto w-full flex flex-col items-center">
-              <img src="/images/claratest.png" className="case-thumb" />
+              <Image />
               <p className=" untitled-text mb-2 mt-6 text-sm">Kupe Magazine</p>
             </a>
           </Link>
@@ -53,36 +54,17 @@ export default function Work() {
         <li>
           <Link href="/work/telness">
             <a className="... h-auto w-full flex flex-col items-center">
-              <img src="/images/telnesstest.png" className="case-thumb" />
+              <Image />
               <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
             </a>
           </Link>
         </li>
 
         <li>
-          <a className="... h-auto w-full flex flex-col items-center">
-            <img
-              src="/images/wtest.png"
-              className="object-cover w-full case-thumb"
-            />
-            <p className="untitled-text mb-2 mt-6 text-sm">W Hotel</p>
-          </a>
-        </li>
-
-        <li>
-          <a className="col-span-2 ... bg-gray-400 h-auto">
-            <img
-              src="/images/dance.gif"
-              className="object-contain w-full case-thumb"
-            />
-          </a>
-        </li>
-
-        <li>
-          <Link href="/work/kupe">
-            <a className="...h-auto w-full flex flex-col items-center">
-              <img src="/images/claratest.png" className="case-thumb" />
-              <p className=" untitled-text mb-2 mt-6 text-sm">Kupe Magazine</p>
+          <Link href="/work/telness">
+            <a className="col-span-2 ... h-auto w-full flex flex-col items-center">
+              <Image />
+              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
             </a>
           </Link>
         </li>
@@ -90,29 +72,55 @@ export default function Work() {
         <li>
           <Link href="/work/telness">
             <a className="... h-auto w-full flex flex-col items-center">
-              <img src="/images/telnesstest.png" className="case-thumb" />
+              <Image />
               <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
             </a>
           </Link>
         </li>
 
         <li>
-          <a className="... h-auto w-full flex flex-col items-center">
-            <img
-              src="/images/wtest.png"
-              className="object-cover w-full case-thumb"
-            />
-            <p className="untitled-text mb-2 mt-6 text-sm">W Hotel</p>
-          </a>
+          <Link href="/work/telness">
+            <a className="... h-auto w-full flex flex-col items-center">
+              <Image />
+              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
+            </a>
+          </Link>
         </li>
 
         <li>
-          <a className=" col-span-2  ... bg-gray-400 h-auto">
-            <img
-              src="/images/dance.gif"
-              className="object-contain w-full case-thumb"
-            />
-          </a>
+          <Link href="/work/telness">
+            <a className="... h-auto w-full flex flex-col items-center">
+              <Image />
+              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
+            </a>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/work/telness">
+            <a className="... h-auto w-full flex flex-col items-center">
+              <Image />
+              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
+            </a>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/work/telness">
+            <a className="... h-auto w-full flex flex-col items-center">
+              <Image />
+              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
+            </a>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/work/telness">
+            <a className="... h-auto w-full flex flex-col items-center">
+              <Image />
+              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
+            </a>
+          </Link>
         </li>
       </ul>
 

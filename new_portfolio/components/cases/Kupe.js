@@ -1,14 +1,19 @@
 export const KupeCase = {
   title: "Kupe",
   introtext: (
-    <p className="untitled-text text-left mb-4 w-full text-md">
-      I was the Art Director for Kupé Magazine between 2011-2017. I did
-      everything between being responsible for the design-team, to concept
-      development (I redesigned it twice), putting together teams and assigning
-      illustrators and photographers, to writing articles, headings and editing
-      content – to designing it all. Here’s Jens Lapidus, shot by Linda
-      Alfvegren.
-    </p>
+    <div>
+      <h2 className="untitled-text mb-6 mt-8 text-md text-center">
+        Case Heading
+      </h2>
+      <p className="untitled-text mb-4 text-md text-justify">
+        I was the Art Director for Kupé Magazine between 2011-2017. I did
+        everything between being responsible for the design-team, to concept
+        development (I redesigned it twice), putting together teams and
+        assigning illustrators and photographers, to writing articles, headings
+        and editing content – to designing it all. Here’s Jens Lapidus, shot by
+        Linda Alfvegren.
+      </p>
+    </div>
   ),
   heroimage: "wtest.png",
   images: (

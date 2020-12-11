@@ -2,11 +2,11 @@ export default function Image() {
   return (
     <React.Fragment>
       <div className="outer-img-box w-full">
-        <div className="inner-img-box bg-gray-100 w-full h-full ">
+        <div className="inner-img-box bg-green-100 w-full h-full ">
           <div className="h-full flex justify-center items-center ">
             <img
               className="h-full object-cover"
-              src="/images/wtest.png"
+              //   src="/images/wtest.png"
               alt=""
             />
           </div>
@@ -18,6 +18,7 @@ export default function Image() {
         .outer-img-box {
           position: relative;
           max-width: 700px;
+          margin: auto;
         }
         
         .outer-img-box:before {

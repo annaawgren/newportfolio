@@ -1,15 +1,20 @@
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import Navlinks from "../components/Navlinks";
+import Image from "../components/Image";
 
 export default function About() {
   return (
     <Layout>
       <Header />
 
-      <div className="h-48 w-full " />
+      <div className=" h-28 w-full" />
 
-      <section className="about-txt w-full h-screen flex flex-col items-center relative bg-white z-10 px-5 md:px-10 lg:px-20">
+      <div className="px-5 md:px-10 lg:px-20">
+        <Image />
+      </div>
+
+      <section className="about-txt w-full h-screen flex flex-col items-center  bg-white mt-10 px-5 md:px-10 lg:px-20">
         <p className="untitled-text text-md text-justify mb-4">
           Hi! I'm an enthusiastic and strategic Art Director \ Designer with
           Frontend Developer skills and experience design at heart. I'm
@@ -33,9 +38,9 @@ export default function About() {
           I built this portfolio in next.js and xxx.
         </p>
 
-        <div className="w-full h-screen flex flex-row justify-center absolute bottom-0 ">
+        {/* <div className="w-full h-screen flex flex-row justify-center absolute bottom-0 ">
           <img src="/images/anna-test.jpeg" className="w-full object-cover" />
-        </div>
+        </div> */}
       </section>
 
       <Navlinks />

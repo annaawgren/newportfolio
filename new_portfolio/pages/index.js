@@ -3,6 +3,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Navlinks from "../components/Navlinks";
 import Image from "../components/Image";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -11,8 +12,10 @@ export default function Home() {
         <title>Anna Wikberg Ågren Art Director</title>
       </Head>
 
+      <Header />
+
       <hero className="w-full h-screen">
-        <section className="bg-gradient-to-r from-primary via-secondary to-danger w-full h-screen flex flex-col items-center justify-top pt-40 sticky top-0 ">
+        <section className="bg-gradient-to-r from-primary via-secondary to-danger w-full h-screen flex flex-col items-center justify-top pt-40 md:pt-50 sticky top-0 ">
           <p className="ivar-heading mediumfont text-center mb-6">
             Anna Wikberg Ågren
           </p>
@@ -65,15 +68,7 @@ export default function Home() {
       <Navlinks />
 
       <style jsx>{`
-        .bigfont {
-          font-size: clamp(5rem, 10vw, 12rem);
-          line-height: 1;
-        }
-
-        .mediumfont {
-          font-size: clamp(0.2rem, 10vw, 1.7rem);
-          line-height: 1;
-        }
+       
 
        
 

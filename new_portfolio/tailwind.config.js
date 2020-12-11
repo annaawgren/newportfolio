@@ -27,8 +27,8 @@ module.exports = {
       maxvw: "1280px",
     },
     lg: {
-      min: "35px",
-      max: "80px",
+      min: "30px",
+      max: "70px",
       minvw: "320px",
       maxvw: "1280px",
     },
