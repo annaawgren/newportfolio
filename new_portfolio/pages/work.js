@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Navlinks from "../components/Navlinks";
 import Image from "../components/Image";
+import CaseListing from "../components/CaseListing";
 
 export default function Work() {
   useLayoutEffect(() => {
@@ -41,88 +42,7 @@ export default function Work() {
 
       <div className=" h-28 w-full" />
 
-      <ul className="grid md:grid-cols-2 lg:grid-cols-3  gap-4 px-5 md:px-10 lg:px-20">
-        <li>
-          <Link href="/work/kupe">
-            <a className="...h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className=" untitled-text mb-2 mt-6 text-sm">Kupe Magazine</p>
-            </a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/work/telness">
-            <a className="... h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
-            </a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/work/telness">
-            <a className="col-span-2 ... h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
-            </a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/work/telness">
-            <a className="... h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
-            </a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/work/telness">
-            <a className="... h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
-            </a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/work/telness">
-            <a className="... h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
-            </a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/work/telness">
-            <a className="... h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
-            </a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/work/telness">
-            <a className="... h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
-            </a>
-          </Link>
-        </li>
-
-        <li>
-          <Link href="/work/telness">
-            <a className="... h-auto w-full flex flex-col items-center">
-              <Image />
-              <p className="untitled-text mb-2 mt-6 text-sm">Telness</p>
-            </a>
-          </Link>
-        </li>
-      </ul>
+      <CaseListing />
 
       <div className="h-40 w-full" />
 

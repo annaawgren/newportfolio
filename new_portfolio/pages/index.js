@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
+
 import Layout from "../components/Layout";
 import Navlinks from "../components/Navlinks";
 import Image from "../components/Image";
@@ -69,9 +70,7 @@ export default function Home() {
 
       <style jsx>{`
        
-
        
-
         .outer-img-box {
           position: relative;
           max-width: 800px;

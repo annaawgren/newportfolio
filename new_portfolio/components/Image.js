@@ -1,4 +1,5 @@
-export default function Image() {
+export default function Image(props) {
+  const { imageSrc } = props;
   return (
     <React.Fragment>
       <div className="outer-img-box w-full">
@@ -6,7 +7,7 @@ export default function Image() {
           <div className="h-full flex justify-center items-center ">
             <img
               className="h-full object-cover"
-              //   src="/images/wtest.png"
+              src={`/images/${imageSrc}`}
               alt=""
             />
           </div>
@@ -17,7 +18,7 @@ export default function Image() {
         {`
         .outer-img-box {
           position: relative;
-          max-width: 700px;
+          max-width: 600px;
           margin: auto;
         }
         

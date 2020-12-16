@@ -1,5 +1,5 @@
 export const TelnessCase = {
-  title: "Telness",
+  title: "Telnessxxx",
   introtext: (
     <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
       As a Designer at digital product studio Department I was responsible for
