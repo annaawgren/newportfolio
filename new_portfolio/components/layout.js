@@ -50,6 +50,15 @@ export default function Layout({ children }) {
             font-size: 16px;
           }
 
+          ::-webkit-scrollbar {
+            width: 10px;
+            background-color: red;
+          }
+
+          ::-webkit-scrollbar-thumb {
+            background-color: black;
+          }
+
           .ivar-heading {
             font-family: "Ivar-display";
           }
@@ -64,7 +73,7 @@ export default function Layout({ children }) {
           }
 
           .bigfont {
-            font-size: clamp(4rem, 18vw, 8rem);
+            font-size: clamp(4rem, 18vw, 15rem);
             line-height: 1;
           }
 

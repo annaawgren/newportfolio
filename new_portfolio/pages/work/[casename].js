@@ -44,13 +44,6 @@ const Case = () => {
 
       <main className="w-full px-5 md:px-10 lg:px-20 ">
         <Image />
-        {/* <div className="hero-img h-1/3">
-          {" "}
-          <img
-            src={`../../images/${casename}/${currentCase.heroimage}`}
-            className="h-1/3 w-full object-cover"
-          />{" "}
-        </div> */}
 
         <div className="h-10 w-full" />
 
@@ -67,23 +60,21 @@ const Case = () => {
 
       <style jsx>
         {`
-      .soehne-heading {
-        font-family: "Soehne-drei";
-      }
-      .ivar-heading {
-        font-family: "Ivar-display";
-      }
-      .ivar-light {
-        font-family: "Ivar-fine-light";
-      }
-      .ivar-lightIta {
-        font-family: "Ivar-fine-light-italic";
-      }
-      .untitled-text {
-        font-family: "Untitled";
-        font-size: 16px;
-        line-height: 1.5;
-      }
+     
+          .ivar-heading {
+            font-family: "Ivar-display";
+          }
+          .ivar-light {
+            font-family: "Ivar-fine-light";
+          }
+          .ivar-lightIta {
+            font-family: "Ivar-fine-light-italic";
+          }
+          .untitled-text {
+            font-family: "Untitled";
+            font-size: 16px;
+            line-height: 1.5;
+          }
 
       }
     `}

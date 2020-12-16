@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Headroom from "headroom.js";
 
 export default function Header() {
-  useEffect(() => {
-    const headerHide = document.querySelector("header");
-
-    const headroom = new Headroom(headerHide);
-
-    headroom.init();
-  });
   return (
     <header className="w-full flex flex-row items-center justify-center px-5 md:px-10 lg:px-20 z-20 fixed top-0 h-20">
       <Link href="/">
@@ -41,17 +33,6 @@ export default function Header() {
           .logo-big {
             font-size: 9rem;
             line-height: 1;
-          }
-
-          .headroom {
-            will-change: transform;
-            transition: transform 200ms linear;
-          }
-          .headroom--pinned {
-            transform: translateY(0%);
-          }
-          .headroom--unpinned {
-            transform: translateY(-100%);
           }
         `}
       </style>
