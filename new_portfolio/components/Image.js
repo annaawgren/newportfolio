@@ -3,10 +3,10 @@ export default function Image(props) {
   return (
     <React.Fragment>
       <div className="outer-img-box w-full">
-        <div className="inner-img-box bg-green-100 w-full h-full ">
+        <div className="inner-img-box w-full h-full ">
           <div className="h-full flex justify-center items-center ">
             <img
-              className="h-full object-cover"
+              className="h-full w-full object-cover"
               src={`/images/${imageSrc}`}
               alt=""
             />

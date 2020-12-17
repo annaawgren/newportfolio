@@ -1,6 +1,6 @@
 export const NewbieCase = {
   title: "Newbie Tech Exploration Lab",
-  description: <p>Visual Identity for Sweden's best telecom company</p>,
+  description: <p>Hands-on creative tech experiences. For beginners.</p>,
   introtext: (
     <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
       I was the Art Director for Kupé Magazine between 2011-2017. I did
@@ -11,7 +11,7 @@ export const NewbieCase = {
       Alfvegren.
     </p>
   ),
-  heroimage: "wtest.png",
+  heroimage: "newbie-test.png",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
       <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
@@ -46,4 +46,5 @@ export const NewbieCase = {
       </div>
     </div>
   ),
+  backgroundcolor: "bg-purple-100",
 };

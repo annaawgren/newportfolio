@@ -29,7 +29,7 @@ export default function CaseLargeListing() {
     return (
       <section
         key={title}
-        className={`${backgroundcolor} w-full h-screen mb-20 flex flex-col items-center justify-top px-5 py-32 md:px-20 sticky top-0 z-10`}
+        className={`${backgroundcolor} w-full h-screen flex flex-col items-center justify-top px-5 py-32 md:px-20 sticky top-0 z-10`}
       >
         <div className=" w-full ">
           <Link href={`/work/${caseSlug}`}>

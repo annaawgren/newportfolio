@@ -1,5 +1,6 @@
 export const MLLAB = {
   title: "Machine Learning Lab",
+  description: <p>An interactive machine learning projection</p>,
   introtext: (
     <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
       I was the Art Director for Kupé Magazine between 2011-2017. I did
@@ -10,7 +11,7 @@ export const MLLAB = {
       Alfvegren.
     </p>
   ),
-  heroimage: "wtest.png",
+  heroimage: "dance.gif",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
       <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
@@ -45,4 +46,5 @@ export const MLLAB = {
       </div>
     </div>
   ),
+  backgroundcolor: "bg-green-400",
 };

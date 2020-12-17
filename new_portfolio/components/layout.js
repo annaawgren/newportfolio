@@ -52,11 +52,11 @@ export default function Layout({ children }) {
 
           ::-webkit-scrollbar {
             width: 10px;
-            background-color: red;
+            background-color: black;
           }
 
           ::-webkit-scrollbar-thumb {
-            background-color: black;
+            background-color: white;
           }
 
           .ivar-heading {

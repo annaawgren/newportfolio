@@ -1,5 +1,6 @@
 export const KupeCase = {
   title: "Kupe",
+  description: <p>Art Director at SJ's onboard magazine Kupé</p>,
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-8 text-md text-center">
@@ -15,7 +16,7 @@ export const KupeCase = {
       </p>
     </div>
   ),
-  heroimage: "wtest.png",
+  heroimage: "kupe-test.png",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
       <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">

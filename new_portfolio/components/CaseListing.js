@@ -31,9 +31,9 @@ export default function CaseListing() {
         <Link href={`/work/${caseSlug}`}>
           <a className="...h-auto w-full flex flex-col items-center">
             <Image imageSrc={heroimage} />
-            <p className=" untitled-text mt-6 mb-2 text-sm text-center">
+            <h3 className=" untitled-text mt-6 mb-2 text-sm text-center">
               {title}
-            </p>
+            </h3>
             <p className=" untitled-text mb-6 text-sm text-center">
               {description}
             </p>
