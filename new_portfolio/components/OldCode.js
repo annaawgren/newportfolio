@@ -51,6 +51,38 @@
   `}</style>;
 }
 
+// useEffect(() => {
+//   const heroTag = document.querySelectorAll("hero");
+
+//   const fadeHero = function () {
+//     const pixels = window.pageYOffset;
+
+//     heroTag.style.opacity = 1 - pixels / 200;
+//   };
+
+//   window.addEventListener("scroll", function () {
+//     fadeHero;
+//   });
+// });
+
+{
+  /* @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translate(0, 24px);
+          }
+          100% {
+            opacity: 1;
+            transform: translate(0, 0);
+          }
+        }
+
+        h2,
+        p,
+        .image-fadein {
+          animation: fadeIn 0.4 1s both;
+        } */
+}
 useLayoutEffect(() => {
   const sections = document.querySelectorAll("section");
 

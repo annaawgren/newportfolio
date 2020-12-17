@@ -1,5 +1,6 @@
 export const TelnessCase = {
-  title: "Telnessxxx",
+  title: "Telness",
+  description: <p>Visual Identity for Sweden's best telecom company</p>,
   introtext: (
     <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
       As a Designer at digital product studio Department I was responsible for
@@ -48,4 +49,5 @@ export const TelnessCase = {
       </div>
     </div>
   ),
+  backgroundcolor: "bg-yellow-200",
 };

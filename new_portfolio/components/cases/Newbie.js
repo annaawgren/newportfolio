@@ -1,5 +1,6 @@
 export const NewbieCase = {
   title: "Newbie Tech Exploration Lab",
+  description: <p>Visual Identity for Sweden's best telecom company</p>,
   introtext: (
     <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
       I was the Art Director for Kupé Magazine between 2011-2017. I did

@@ -73,7 +73,7 @@ export default function Layout({ children }) {
           }
 
           .bigfont {
-            font-size: clamp(4rem, 18vw, 15rem);
+            font-size: clamp(4rem, 18vw, 8rem);
             line-height: 1;
           }
 

@@ -3,36 +3,21 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full flex flex-row items-center justify-center px-5 md:px-10 lg:px-20 z-20 fixed top-0 h-20">
+    <header className="w-full py-10 z-20 mb-6">
       <Link href="/">
-        <a className="flex flex-row items-center justify-between w-full">
-          <p className="ivar-heading text-md block leading-10">
+        <a className="flex flex-col items-center justify-center text-center w-full">
+          <p className="ivar-heading header-txt">
             Anna Wikberg Ågren
+            <br />
+            Art Director \ Designer
           </p>
-
-          <p className="ivar-heading text-md block">Art Director \ Designer</p>
         </a>
       </Link>
 
       <style jsx>
         {`
-          .ivar-heading {
-            font-family: "Ivar-display";
-          }
-          .ivar-light {
-            font-family: "Ivar-fine-light";
-          }
-          .ivar-lightIta {
-            font-family: "Ivar-fine-light-italic";
-          }
-          .untitled-text {
-            font-family: "Untitled";
-            font-size: 16px;
-            line-height: 1.5;
-          }
-          .logo-big {
-            font-size: 9rem;
-            line-height: 1;
+          .header-txt {
+            font-size: 2rem;
           }
         `}
       </style>

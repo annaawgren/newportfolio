@@ -19,9 +19,9 @@ module.exports = {
   },
 
   textSizes: {
-    sm: "14px",
+    sm: "16px",
     md: {
-      min: "16px",
+      min: "18px",
       max: "22px",
       minvw: "320px",
       maxvw: "1280px",

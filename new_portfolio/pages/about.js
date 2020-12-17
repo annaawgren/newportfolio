@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import Navlinks from "../components/Navlinks";
-import Image from "../components/Image";
 
 export default function About() {
   return (
@@ -11,7 +10,17 @@ export default function About() {
       <div className=" h-28 w-full" />
 
       <div className="px-5 md:px-10 lg:px-20">
-        <Image />
+        <div className="outer-img-box w-full">
+          <div className="inner-img-box bg-green-100 w-full h-full ">
+            <div className="h-full w-full flex justify-center items-center">
+              <img
+                className="h-full w-full object-cover"
+                src="/images/anna-test.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <section className="about-txt w-full h-screen flex flex-col items-center  bg-white mt-10 px-5 md:px-10 lg:px-20">
@@ -44,6 +53,32 @@ export default function About() {
       </section>
 
       <Navlinks />
+
+      <style jsx>
+        {`
+        .outer-img-box {
+          position: relative;
+          max-width: 600px;
+          margin: auto;
+        }
+        
+        .outer-img-box:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: calc((304 / 460) * 100%);
+          }
+        }
+
+        .outer-img-box > .inner-img-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          }
+        `}
+      </style>
     </Layout>
   );
 }
