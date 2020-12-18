@@ -3,21 +3,20 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full py-10 z-20 mb-6">
+    <header className="w-full py-10 z-20 mb-6 flex flex-row justify-between">
       <Link href="/">
-        <a className="flex flex-col items-center justify-center text-center w-full">
-          <p className="ivar-heading header-txt">
-            Anna Wikberg Ågren
-            <br />
-            Art Director \ Designer
+        <a className=" w-full flex flex-col justify-top pt-8 px-5 md:px-10 lg:px-20 fixed top-0 z-10">
+          <p className="ivar-light headerfont">
+            Anna Wikberg Ågren <br /> Art Director \ Designer{" "}
           </p>
         </a>
       </Link>
 
       <style jsx>
         {`
-          .header-txt {
-            font-size: 2rem;
+          .headerfont {
+            font-size: clamp(2rem, 8vw, 5rem);
+            line-height: 1.1;
           }
         `}
       </style>

@@ -56,7 +56,7 @@ export default function Layout({ children }) {
           }
 
           ::-webkit-scrollbar-thumb {
-            background-color: white;
+            background-color: pink;
           }
 
           .ivar-heading {
@@ -72,9 +72,14 @@ export default function Layout({ children }) {
             font-family: "Untitled";
           }
 
-          .bigfont {
-            font-size: clamp(4rem, 18vw, 8rem);
+          .biggestfont {
+            font-size: clamp(4rem, 10vw, 8rem);
             line-height: 1;
+          }
+
+          .bigfont {
+            font-size: clamp(2.7rem, 8vw, 5rem);
+            line-height: 1.1;
           }
 
           .mediumfont {
