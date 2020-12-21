@@ -25,7 +25,6 @@ export default function Home() {
         <title>Anna Wikberg Ågren ⚡️ Portfolio</title>
       </Head>
       <Header />
-      <div className="w-full h-48 md:h-60 " />
 
       <CaseListing />
       <div className="h-40 w-full" />

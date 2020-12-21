@@ -41,7 +41,7 @@ export default function CaseListing() {
     // console.log("itemsRefs", itemsRefs);
 
     let options = {
-      threshold: 0.5,
+      threshold: 0.3,
     };
 
     let observer = new IntersectionObserver(observerItemCallback, options);
@@ -96,47 +96,10 @@ export default function CaseListing() {
   return (
     <React.Fragment>
       {/* Antal cases {Object.entries(cases).length} */}
-      <ul className="grid md:grid-cols-2 lg:grid-cols-3 pt:80 gap-4 px-5 md:px-10 lg:px-20">
+      <ul className="grid md:grid-cols-2 xl:grid-cols-3 pt:80 gap-4 px-5 md:px-10 lg:px-20">
         {caseListingItems}
       </ul>
-      <style jsx>{`
-          @media (prefers-reduced-motion: no-preference) {
-            li.in-view {
-              opacity: 0;
-              scale: 0;
-              transition: 400ms;
-              transform: translateY(10px);
-            }
-            li {
-              opacity: 0;
-            }
-            li.in-view {
-              opacity: 1;
-              scale: 1;
-              transform: translateY(0);
-            }
-
-            li.in-view:nth-child(1) {
-              transition-delay: 0s;
-            }
-            li.in-view:nth-child(2) {
-              transition-delay: 0.2s;
-            }
-            li.in-view:nth-child(3) {
-              transition-delay: 0.4s;
-            }
-            li.in-view:nth-child(4) {
-              transition-delay: 0.6s;
-            }
-            li.in-view:nth-child(5) {
-              transition-delay: 0.8s;
-            }
-            li.in-view:nth-child(6) {
-              transition-delay: 1s;
-            }
-          }
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </React.Fragment>
   );
 }

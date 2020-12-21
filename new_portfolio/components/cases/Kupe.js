@@ -3,10 +3,10 @@ export const KupeCase = {
   description: <p>Art Director at SJ's onboard magazine Kupé</p>,
   introtext: (
     <div>
-      <h2 className="untitled-text mb-6 mt-8 text-md text-center">
+      <h2 className="untitled-text mb-6 mt-2 text-md text-center">
         Case Heading
       </h2>
-      <p className="untitled-text mb-4 text-md text-justify">
+      <p className="untitled-text mb-4 text-md ">
         I was the Art Director for Kupé Magazine between 2011-2017. I did
         everything between being responsible for the design-team, to concept
         development (I redesigned it twice), putting together teams and

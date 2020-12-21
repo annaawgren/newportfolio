@@ -38,8 +38,6 @@ const Case = () => {
         <title>Case</title>
       </Head>
 
-      <div className=" h-28 w-full" />
-
       <Header />
 
       <main className="w-full px-5 md:px-10 lg:px-20 ">

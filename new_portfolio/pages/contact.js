@@ -7,9 +7,13 @@ export default function Contact() {
     <Layout>
       <Header />
 
-      <section className="w-full h-screen flex flex-col items-center pt-48">
-        <p className="untitled-text text-md mb-2">hello@annawagren.work</p>
-        <p className="untitled-text text-md mb-2">+ 46 707 13 54 91</p>
+      <section className="w-full h-screen flex flex-col items-center">
+        <a href="https://www.pinterest.se/annaawgren/" target="_blank">
+          <p className="untitled-text text-md mb-2"> Mail</p>
+        </a>
+        <a href="https://www.pinterest.se/annaawgren/" target="_blank">
+          <p className="untitled-text text-md mb-2"> Call</p>
+        </a>
 
         <div className=" h-12 w-full" />
 
