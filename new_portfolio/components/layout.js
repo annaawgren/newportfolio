@@ -51,12 +51,17 @@ export default function Layout({ children }) {
           }
 
           ::-webkit-scrollbar {
-            width: 10px;
-            background-color: black;
+            width: 13px;
+            background-color: white;
           }
 
           ::-webkit-scrollbar-thumb {
-            background-color: pink;
+            background: linear-gradient(
+              190deg,
+              #ffdada 0%,
+              #f3ffda 35%,
+              #d1ffe9 100%
+            );
           }
 
           .ivar-heading {

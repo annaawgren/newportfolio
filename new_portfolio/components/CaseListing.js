@@ -1,11 +1,12 @@
 import Link from "next/link";
-import Image from "../components/Image";
+import { useEffect, useRef } from "react";
 import { KupeCase } from "../components/cases/Kupe";
-import { TelnessCase } from "../components/cases/Telness";
-import { WCase } from "../components/cases/W";
-import { VegogoCase } from "../components/cases/Vegogo";
 import { MLLAB } from "../components/cases/ML";
 import { NewbieCase } from "../components/cases/Newbie";
+import { TelnessCase } from "../components/cases/Telness";
+import { VegogoCase } from "../components/cases/Vegogo";
+import { WCase } from "../components/cases/W";
+import Image from "../components/Image";
 
 const casesObject = {
   telness: TelnessCase,
@@ -17,9 +18,42 @@ const casesObject = {
 };
 
 export default function CaseListing() {
+  const itemsRefs = useRef([]);
+
+  useEffect(() => {
+    function observerItemCallback(entries) {
+      function showItem(item, delay) {
+        setTimeout(() => {
+          item.target.classList.add("case-item--inView");
+        }, delay);
+      }
+
+      // Only act on intersecting items.
+      const intersectingItems = entries.filter((item) => item.isIntersecting);
+      for (var i = 0; i < intersectingItems.length; i++) {
+        // .case-item--inView
+        const delay = i * 100;
+        const item = intersectingItems[i];
+        showItem(item, delay);
+      }
+    }
+    // console.log("caselisting useeffect mount");
+    // console.log("itemsRefs", itemsRefs);
+
+    let options = {
+      threshold: 0.5,
+    };
+
+    let observer = new IntersectionObserver(observerItemCallback, options);
+
+    itemsRefs.current.forEach((elm) => {
+      observer.observe(elm);
+    });
+  }, []);
+
   const cases = Object.entries(casesObject);
 
-  let caseListingItems = cases.map(([caseSlug, caseInfo]) => {
+  let caseListingItems = cases.map(([caseSlug, caseInfo], mapIndex, arr) => {
     if (!caseSlug || !caseInfo) {
       return null;
     }
@@ -27,16 +61,32 @@ export default function CaseListing() {
     const { title, description, heroimage } = caseInfo;
 
     return (
-      <li key={title}>
+      <li
+        className="case-item"
+        key={title}
+        ref={(el) => (itemsRefs.current[mapIndex] = el)}
+      >
+        <style jsx>{`
+      {
+        .case-item {
+         opacity: 0;
+         transform: translateY(20px);
+         transition: all .35s ease-in-out;
+       }
+       .case-item--inView {
+         opacity: 1;
+         transform: translateY(0);
+       }
+       `}</style>
         <Link href={`/work/${caseSlug}`}>
           <a className="...h-auto w-full flex flex-col items-center">
             <Image imageSrc={heroimage} />
             <h3 className=" untitled-text mt-6 mb-2 text-sm text-center">
               {title}
             </h3>
-            <p className=" untitled-text mb-6 text-sm text-center">
+            <div className=" untitled-text mb-6 text-sm text-center">
               {description}
-            </p>
+            </div>
           </a>
         </Link>
       </li>
@@ -46,43 +96,44 @@ export default function CaseListing() {
   return (
     <React.Fragment>
       {/* Antal cases {Object.entries(cases).length} */}
-      <ul className="grid md:grid-cols-2 lg:grid-cols-4  gap-4 px-5 md:px-10 lg:px-20">
+      <ul className="grid md:grid-cols-2 lg:grid-cols-3 pt:80 gap-4 px-5 md:px-10 lg:px-20">
         {caseListingItems}
       </ul>
       <style jsx>{`
-        @media (prefers-reduced-motion: no-preference) {
-          li.in-view {
-            opacity: 0;
-            scale: 0;
-            transition: 400ms;
-            transform: translateY(25px);
-          }
-          li {
-            opacity: 0;
-          }
-          li.in-view {
-            opacity: 1;
-            scale: 1;
-            transform: translateY(0);
-          }
+          @media (prefers-reduced-motion: no-preference) {
+            li.in-view {
+              opacity: 0;
+              scale: 0;
+              transition: 400ms;
+              transform: translateY(10px);
+            }
+            li {
+              opacity: 0;
+            }
+            li.in-view {
+              opacity: 1;
+              scale: 1;
+              transform: translateY(0);
+            }
 
-          li.in-view:nth-child(1) {
-            transition-delay: 0s;
-          }
-          li.in-view:nth-child(2) {
-            transition-delay: 0.2s;
-          }
-          li.in-view:nth-child(3) {
-            transition-delay: 0.4s;
-          }
-          li.in-view:nth-child(4) {
-            transition-delay: 0.6s;
-          }
-          li.in-view:nth-child(5) {
-            transition-delay: 0.8s;
-          }
-          li.in-view:nth-child(6) {
-            transition-delay: 1s;
+            li.in-view:nth-child(1) {
+              transition-delay: 0s;
+            }
+            li.in-view:nth-child(2) {
+              transition-delay: 0.2s;
+            }
+            li.in-view:nth-child(3) {
+              transition-delay: 0.4s;
+            }
+            li.in-view:nth-child(4) {
+              transition-delay: 0.6s;
+            }
+            li.in-view:nth-child(5) {
+              transition-delay: 0.8s;
+            }
+            li.in-view:nth-child(6) {
+              transition-delay: 1s;
+            }
           }
         }
       `}</style>

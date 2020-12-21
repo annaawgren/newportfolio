@@ -57,28 +57,6 @@ const Case = () => {
       <div className="h-20 w-full" />
 
       <Navlinks />
-
-      <style jsx>
-        {`
-     
-          .ivar-heading {
-            font-family: "Ivar-display";
-          }
-          .ivar-light {
-            font-family: "Ivar-fine-light";
-          }
-          .ivar-lightIta {
-            font-family: "Ivar-fine-light-italic";
-          }
-          .untitled-text {
-            font-family: "Untitled";
-            font-size: 16px;
-            line-height: 1.5;
-          }
-
-      }
-    `}
-      </style>
     </Layout>
   );
 };

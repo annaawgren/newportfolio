@@ -51,5 +51,4 @@ export const KupeCase = {
       </div>
     </div>
   ),
-  backgroundcolor: "bg-red-100",
 };
