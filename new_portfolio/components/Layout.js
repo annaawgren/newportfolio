@@ -11,13 +11,13 @@ export default function Layout({ children }) {
           }
           @font-face {
             font-family: "Ivar-fine-light";
-            src: url("/fonts/IvarFine-light.woff") format("woff"),
-              url("/fonts/IvarFine-light.otf") format("otf");
+            src: url("/fonts/IvarFine-Light.woff") format("woff"),
+              url("/fonts/IvarFine-Light.otf") format("otf");
           }
           @font-face {
             font-family: "Ivar-fine-light-italic";
-            src: url("/fonts/IvarFine-lightItalic.woff") format("woff"),
-              url("/fonts/IvarFine-lightItalic.otf") format("otf");
+            src: url("/fonts/IvarFine-LightItalic.woff") format("woff"),
+              url("/fonts/IvarFine-LightItalic.otf") format("otf");
           }
 
           @font-face {
