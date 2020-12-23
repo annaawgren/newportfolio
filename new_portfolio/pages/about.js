@@ -47,13 +47,16 @@ export default function About() {
     { image: "images/aboutme/me_39.png", delay: 7800 },
     { image: "images/aboutme/me_40.png", delay: 8000 },
     { image: "images/aboutme/me_41.png", delay: 8200 },
+    { image: "images/aboutme/me_42.png", delay: 8400 },
+    { image: "images/aboutme/me_43.png", delay: 8600 },
+    { image: "images/aboutme/6.jpeg", delay: 8800 },
   ];
 
   return (
     <Layout>
       <Header />
 
-      <div className="w-full  h-80 mb-10 mx-auto relative px-5 md:px-10 lg:px-20">
+      <div className="w-full h-80 mb-20 mx-auto relative px-5 md:px-10 lg:px-20">
         {images.map((imagedata) => {
           return <ImageWithDelay {...imagedata} key={imagedata.image} />;
         })}
@@ -146,47 +149,47 @@ export default function About() {
           </div>
 
           <ul>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               Designing Ethical Futures <br />
               @Copenhagen Institute of Interaction Design 2019
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               Frontend Developer <br />
               @Technigo Boot Camp 2018
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               Interactive Art Director / Design Lead <br />
               @Hyper Island 2017-2018
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               HTML & CSS <br />
               @Tjejer Kodar 2017
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               Social Video <br />
               @Bergs 2017
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               UX / UI Design <br />
               @Berghs 2016
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               Copywriting <br />
               @Berghs 2009
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               Illustration <br />
               @Parsons The New School, NY 2008
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               Art <br />
               @Konstskolan Basis 2001-2002
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               Magazine Design <br />
               @Bergs 1999 - 2000
             </li>
-            <li className="mb-4">
+            <li className="mb-4 leading-relaxed">
               History of Literature <br />
               @LTU 1998
             </li>
@@ -194,50 +197,9 @@ export default function About() {
         </div>
       </section>
 
-      {/* <div className="w-full px-5 md:px-10 lg:px-20">
-        <div className="outer-img-box w-full">
-          <div className="inner-img-box w-full h-full ">
-            <div className="h-full w-full flex justify-center items-center">
-              <img
-                className="h-full w-full object-cover"
-                src="/images/anna-test.jpeg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div className="w-full h-40 md:h-60 " />
 
       <Navlinks />
-
-      <style jsx>
-        {`
-        
-        .outer-img-box {
-          position: relative;
-          
-          margin: auto;
-        }
-        
-        .outer-img-box:before {
-            display: block;
-            content: "";
-            width: 100%;
-            padding-top: calc((304 / 460) * 100%);
-          }
-        }
-
-        .outer-img-box > .inner-img-box {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-          }
-        `}
-      </style>
     </Layout>
   );
 }

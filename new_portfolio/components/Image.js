@@ -8,7 +8,7 @@ export default function Image(props) {
         <div className="inner-img-box w-full h-full ">
           <div className="h-full flex justify-center items-center ">
             <img
-              className="h-full w-full object-cover"
+              className="h-full w-full object-fit"
               src={`/images/${imageSrc}`}
               alt=""
             />

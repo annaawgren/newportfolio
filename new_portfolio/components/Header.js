@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="w-full flex flex-row justify-between pt-8 pb-12 mb-12 sticky top-0 z-10">
       <Link href="/">
-        <a className=" w-full flex flex-col justify-top px-5 md:px-10 lg:px-20   ">
+        <a className=".spinner w-full flex flex-col justify-top px-5 md:px-10 lg:px-20   ">
           <p className="ivar-light headerfont">
             Anna Wikberg Ågren <br /> Art Director \ Designer{" "}
           </p>
@@ -17,6 +17,10 @@ export default function Header() {
           .headerfont {
             font-size: clamp(2rem, 8vw, 4rem);
             line-height: 1.1;
+          }
+
+          .spinner:hover {
+            cursor: src= "/images/spinner.png", auto;
           }
         `}
       </style>

@@ -31,6 +31,7 @@ export default function Layout({ children }) {
             font-family: "untitled", sans-serif;
             scroll-behavior: smooth;
             color: black;
+            cursor: src= "/images/spinner.png";
           }
 
           a:hover {
