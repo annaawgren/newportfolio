@@ -15,8 +15,8 @@ export default function ImageWithDelay(props) {
   }
 
   return (
-    <div className={`${(top, left)} absolute`}>
-      <img src={image} />
+    <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
+      <img className="h-80 object-contain" src={image} />
     </div>
   );
 }

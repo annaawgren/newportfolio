@@ -6,23 +6,54 @@ import Navlinks from "../components/Navlinks";
 
 export default function About() {
   const images = [
-    { image: "images/aboutme/1.png", delay: 300, top: 50, left: 50 },
-    { image: "images/aboutme/2.png", delay: 600, top: 50, left: 50 },
-    { image: "images/aboutme/3.png", delay: 900, top: 50, left: 50 },
-    { image: "images/aboutme/4.png", delay: 1200, top: 50, left: 50 },
-    { image: "images/aboutme/5.png", delay: 1500, top: 50, left: 50 },
-    { image: "images/aboutme/1.png", delay: 300, top: 0, left: 0 },
-    { image: "images/aboutme/2.png", delay: 600, top: 10, left: 0 },
-    { image: "images/aboutme/3.png", delay: 900, top: 15, left: 20 },
-    { image: "images/aboutme/4.png", delay: 1200, top: 0, left: 0 },
-    { image: "images/aboutme/5.png", delay: 1500, top: 8, left: 0 },
+    { image: "images/aboutme/me_1.png", delay: 200 },
+    { image: "images/aboutme/me_2.png", delay: 400 },
+    { image: "images/aboutme/me_3.png", delay: 600 },
+    { image: "images/aboutme/me_4.png", delay: 800 },
+    { image: "images/aboutme/me_5.png", delay: 1000 },
+    { image: "images/aboutme/me_6.png", delay: 1200 },
+    { image: "images/aboutme/me_7.png", delay: 1400 },
+    { image: "images/aboutme/me_8.png", delay: 1600 },
+    { image: "images/aboutme/me_9.png", delay: 1800 },
+    { image: "images/aboutme/me_10.png", delay: 2000 },
+    { image: "images/aboutme/me_11.png", delay: 2200 },
+    { image: "images/aboutme/me_12.png", delay: 2400 },
+    { image: "images/aboutme/me_13.png", delay: 2600 },
+    { image: "images/aboutme/me_14.png", delay: 2800 },
+    { image: "images/aboutme/me_15.png", delay: 3000 },
+    { image: "images/aboutme/me_16.png", delay: 3200 },
+    { image: "images/aboutme/me_17.png", delay: 3400 },
+    { image: "images/aboutme/me_18.png", delay: 3600 },
+    { image: "images/aboutme/me_19.png", delay: 3800 },
+    { image: "images/aboutme/me_20.png", delay: 4000 },
+    { image: "images/aboutme/me_21.png", delay: 4200 },
+    { image: "images/aboutme/me_22.png", delay: 4400 },
+    { image: "images/aboutme/me_23.png", delay: 4600 },
+    { image: "images/aboutme/me_24.png", delay: 4800 },
+    { image: "images/aboutme/me_25.png", delay: 5000 },
+    { image: "images/aboutme/me_26.png", delay: 5200 },
+    { image: "images/aboutme/me_27.png", delay: 5400 },
+    { image: "images/aboutme/me_28.png", delay: 5600 },
+    { image: "images/aboutme/me_29.png", delay: 5800 },
+    { image: "images/aboutme/me_30.png", delay: 6000 },
+    { image: "images/aboutme/me_31.png", delay: 6200 },
+    { image: "images/aboutme/me_32.png", delay: 6400 },
+    { image: "images/aboutme/me_33.png", delay: 6600 },
+    { image: "images/aboutme/me_34.png", delay: 6800 },
+    { image: "images/aboutme/me_35.png", delay: 7000 },
+    { image: "images/aboutme/me_36.png", delay: 7200 },
+    { image: "images/aboutme/me_37.png", delay: 7400 },
+    { image: "images/aboutme/me_38.png", delay: 7600 },
+    { image: "images/aboutme/me_39.png", delay: 7800 },
+    { image: "images/aboutme/me_40.png", delay: 8000 },
+    { image: "images/aboutme/me_41.png", delay: 8200 },
   ];
 
   return (
     <Layout>
       <Header />
 
-      <div className="w-96 h-96 mb-10 mx-auto relative">
+      <div className="w-full  h-80 mb-10 mx-auto relative px-5 md:px-10 lg:px-20">
         {images.map((imagedata) => {
           return <ImageWithDelay {...imagedata} key={imagedata.image} />;
         })}
@@ -51,7 +82,7 @@ export default function About() {
           new design, concept development, redesign and production of
           (award-winning!) magazines, among others SJ's on-board magazine Kupé.
           I have also been teaching in Magazine Production and designed 20+
-          illustrated facts books for a number of different publishing houses.
+          illustrated facts books for several different publishing houses.
         </p>
         <p className="untitled-text text-md mb-4">
           In 2018, I leveled up my digital skills at the Design Lead full-time
