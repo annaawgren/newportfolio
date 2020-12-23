@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full flex flex-row justify-between pt-8 pb-10 mb-10 sticky top-0 z-10">
+    <header className="w-full flex flex-row justify-between pt-8 pb-12 mb-12 sticky top-0 z-10">
       <Link href="/">
         <a className=" w-full flex flex-col justify-top px-5 md:px-10 lg:px-20   ">
           <p className="ivar-light headerfont">
@@ -15,7 +15,7 @@ export default function Header() {
       <style jsx>
         {`
           .headerfont {
-            font-size: clamp(2rem, 8vw, 5rem);
+            font-size: clamp(2rem, 8vw, 4rem);
             line-height: 1.1;
           }
         `}

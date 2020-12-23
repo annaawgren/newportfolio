@@ -96,7 +96,7 @@ export default function CaseListing() {
   return (
     <React.Fragment>
       {/* Antal cases {Object.entries(cases).length} */}
-      <ul className="grid md:grid-cols-2  pt:80 gap-4 px-5 md:px-10 lg:px-20">
+      <ul className="grid md:grid-cols-2 lg:grid-cols-3  pt:80 gap-4 px-5 md:px-10 lg:px-20">
         {caseListingItems}
       </ul>
       <style jsx>{``}</style>

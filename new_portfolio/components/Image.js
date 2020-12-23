@@ -20,7 +20,7 @@ export default function Image(props) {
         {`
         .outer-img-box {
           position: relative;
-          max-width: 600px;
+          max-width: 700px;
           margin: auto;
         }
         
