@@ -28,7 +28,7 @@ export default function About() {
         })}
       </div>
 
-      <section className="about-txt about-margin-top w-full flex flex-col items-center mb-10 px-5 md:px-10 lg:px-20">
+      <section className="text-justify w-full flex flex-col items-center mb-20 px-5 md:px-10 lg:px-20">
         <p className="untitled-text text-md mb-4">
           Hello world <span>👋🏻</span> I'm an enthusiastic and strategic Art
           Director and Designer with Frontend Developer skills and experience
@@ -43,13 +43,7 @@ export default function About() {
           a strong interest in ethics and how things we design impact our world
           and ourselves. I believe in the importance of detail and being
           passionate about everything I do. I practice design thinking, lifelong
-          learning – and having fun. I'm and co-founder of{" "}
-          <span>
-            <a href="https://newbietech.io" target="_blank">
-              Newbie Tech Exploration Lab
-            </a>
-          </span>{" "}
-          where we facilitate hands-on creative tech explorations for beginners.
+          learning – and having fun!
         </p>
 
         <p className="untitled-text text-md mb-4">
@@ -63,9 +57,17 @@ export default function About() {
           In 2018, I leveled up my digital skills at the Design Lead full-time
           program at Hyper Island and learned to code at Technigo’s Frontend
           Developer Boot Camp. Since then I have worked as a Designer and
-          Frontend developer at the now closed digital product Studio Department
-          in Stockholm. I'm currently available for hire – freelance or
-          fulltime!
+          Frontend developer at the (now closed) digital product Studio
+          Department in Stockholm. I'm also co-founder of{" "}
+          <span>
+            <a href="https://newbietech.io" target="_blank">
+              Newbie Tech Exploration Lab
+            </a>
+          </span>{" "}
+          where we facilitate hands-on creative tech explorations for beginners.
+        </p>
+        <p className="untitled-text text-md mb-4">
+          I'm currently available for hire, full-time or freelance!
         </p>
       </section>
 
