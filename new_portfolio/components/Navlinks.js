@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navlinks() {
   return (
     <React.Fragment>
-      <div className="flex flex-row justify-between w-full px-5 md:px-10 lg:px-20 pb-5 md:pb-10 fixed bottom-0 z-50">
+      <div className="flex flex-row justify-between w-full px-5 md:px-10 lg:px-20 pb-7 md:pb-14 fixed bottom-0 z-50">
         <Link href="/work">
           <a className="soehne hover:text-gradient-to-r from-primary via-secondary to-danger block bg-blue text-lg">
             Work

@@ -41,7 +41,7 @@ export default function CaseListing() {
     // console.log("itemsRefs", itemsRefs);
 
     let options = {
-      threshold: 0.3,
+      threshold: 0.2,
     };
 
     let observer = new IntersectionObserver(observerItemCallback, options);

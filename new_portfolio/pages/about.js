@@ -8,53 +8,182 @@ export default function About() {
   let images = [
     {
       image: "images/aboutme/me_1.png",
-      top: 50,
-      left: 120,
       transform: "scale(0.5)",
     },
-    { image: "images/aboutme/me_2.png", top: -60, left: 200 },
-    { image: "images/aboutme/me_3.png", top: -20, left: -300 },
-    { image: "images/aboutme/me_4.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_5.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_6.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_7.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_8.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_9.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_10.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_11.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_12.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_13.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_14.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_15.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_16.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_17.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_18.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_19.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_20.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_21.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_22.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_23.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_24.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_25.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_26.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_27.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_28.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_29.png", top: 20, left: 0 },
-    { image: "images/aboutme/me_30.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_31.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_32.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_33.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_34.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_35.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_36.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_37.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_38.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_39.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_40.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_41.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_42.png", top: 0, left: 0 },
-    { image: "images/aboutme/me_43.png", top: 0, left: 0 },
-    { image: "images/aboutme/6.jpeg", top: 20, left: 10 },
+    {
+      image: "images/aboutme/me_2.png",
+      transform: "scale(1)",
+    },
+    {
+      image: "images/aboutme/me_3.png",
+      transform: "scale(0.8)",
+    },
+    {
+      image: "images/aboutme/me_4.png",
+      transform: "scale(0.6)",
+    },
+    {
+      image: "images/aboutme/me_5.png",
+      transform: "scale(0.9)",
+    },
+    {
+      image: "images/aboutme/me_6.png",
+      transform: "scale(0.9)",
+    },
+    {
+      image: "images/aboutme/me_7.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_8.png",
+      transform: "scale(0.7)",
+    },
+    {
+      image: "images/aboutme/me_9.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_10.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_11.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_12.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_13.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_14.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_15.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_16.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_17.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_18.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_19.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_20.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_21.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_22.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_23.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_24.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_25.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_26.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_27.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_28.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_29.png",
+      top: 20,
+      left: 0,
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_30.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_31.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_32.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_33.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_34.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_35.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_36.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_37.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_38.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_39.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_40.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_41.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_42.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/me_43.png",
+      transform: "scale(0.5)",
+    },
+    {
+      image: "images/aboutme/6.jpeg",
+      transform: "scale(0.5)",
+    },
   ];
 
   images = images.map((imageData, index) => {
@@ -66,7 +195,7 @@ export default function About() {
     <Layout>
       <Header />
 
-      <div className="w-full h-96 m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden">
+      <div className="w-full image-box-height m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden">
         {images.map((imagedata) => {
           return <ImageWithDelay {...imagedata} key={imagedata.image} />;
         })}
@@ -169,7 +298,7 @@ export default function About() {
               @Technigo Boot Camp 2018
             </li>
             <li className="mb-4 leading-relaxed">
-              Interactive Art Director / Design Lead <br />
+              Design Lead <br />
               @Hyper Island 2017-2018
             </li>
             <li className="mb-4 leading-relaxed">
@@ -213,24 +342,28 @@ export default function About() {
           </div>
           <ul>
             <li className="mb-2">Art Direction</li>
+            <li className="mb-2">Adobe CS</li>
+            <li className="mb-2">Book Design</li>
+            <li className="mb-2">Brand Strategy</li>
             <li className="mb-2">Concepting & Ideation</li>
             <li className="mb-2">Concept Development</li>
-            <li className="mb-2">UI + UX design</li>
-            <li className="mb-2">Graphic Design</li>
-            <li className="mb-2">Editorial Design</li>
-            <li className="mb-2">Book Design</li>
-            <li className="mb-2">Frontend Development</li>
-            <li className="mb-2">React</li>
-            <li className="mb-2">Next.js</li>
-            <li className="mb-2">HTML & CSS</li>
-            <li className="mb-2">Javascript</li>
-            <li className="mb-2">Workshop Facilitation </li>
             <li className="mb-2">Copywriting</li>
+            <li className="mb-2">Digital Design</li>
+            <li className="mb-2">Design Lead</li>
+            <li className="mb-2">Editorial Design</li>
             <li className="mb-2">Experience Design</li>
-            <li className="mb-2">Brand Strategy</li>
-            <li className="mb-2">Adobe CC</li>
             <li className="mb-2">Figma</li>
+            <li className="mb-2">Frontend Development</li>
+            <li className="mb-2">Graphic Design</li>
+            <li className="mb-2">HTML & CSS</li>
+            <li className="mb-2">Illustration</li>
+            <li className="mb-2">Javascript</li>
+            <li className="mb-2">Magazine Design</li>
+            <li className="mb-2">Next.js</li>
+            <li className="mb-2">React</li>
             <li className="mb-2">Runway ML</li>
+            <li className="mb-2">UI + UX design</li>
+            <li className="mb-2">Workshop Facilitation </li>
           </ul>
         </div>
       </section>
@@ -238,6 +371,13 @@ export default function About() {
       <div className="w-full h-40 md:h-60 " />
 
       <Navlinks />
+      <style jsx>
+        {`
+          .image-box-height {
+            height: clamp(20rem, 75vw, 30rem);
+          }
+        `}
+      </style>
     </Layout>
   );
 }

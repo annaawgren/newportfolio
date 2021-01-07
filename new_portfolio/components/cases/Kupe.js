@@ -49,6 +49,8 @@ export const KupeCase = {
           <img src="/images/claratest.png" />
         </div>
       </div>
+
+      <div className="w-full h-40 md:h-60 " />
     </div>
   ),
 };
