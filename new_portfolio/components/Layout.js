@@ -5,6 +5,11 @@ export default function Layout({ children }) {
       <style jsx global>
         {`
           @font-face {
+            font-family: "Soehne";
+            src: url("/fonts/soehne-breit-test-buch.woff") format("woff"),
+              url("/fonts/SöhneBreitTest-Bucht.otf") format("otf");
+          }
+          @font-face {
             font-family: "Ivar-display";
             src: url("/fonts/IvarDisplayCondensed-SemiBold.woff") format("woff"),
               url("/fonts/IvarDisplayCondensed-SemiBold.otf") format("otf");
@@ -64,7 +69,9 @@ export default function Layout({ children }) {
               #d1ffe9 100%
             );
           }
-
+          .soehne {
+            font-family: "Soehne";
+          }
           .ivar-heading {
             font-family: "Ivar-display";
           }

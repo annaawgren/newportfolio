@@ -5,58 +5,68 @@ import ImageWithDelay from "../components/ImageWithDelay";
 import Navlinks from "../components/Navlinks";
 
 export default function About() {
-  const images = [
-    { image: "images/aboutme/me_1.png", delay: 200 },
-    { image: "images/aboutme/me_2.png", delay: 400 },
-    { image: "images/aboutme/me_3.png", delay: 600 },
-    { image: "images/aboutme/me_4.png", delay: 800 },
-    { image: "images/aboutme/me_5.png", delay: 1000 },
-    { image: "images/aboutme/me_6.png", delay: 1200 },
-    { image: "images/aboutme/me_7.png", delay: 1400 },
-    { image: "images/aboutme/me_8.png", delay: 1600 },
-    { image: "images/aboutme/me_9.png", delay: 1800 },
-    { image: "images/aboutme/me_10.png", delay: 2000 },
-    { image: "images/aboutme/me_11.png", delay: 2200 },
-    { image: "images/aboutme/me_12.png", delay: 2400 },
-    { image: "images/aboutme/me_13.png", delay: 2600 },
-    { image: "images/aboutme/me_14.png", delay: 2800 },
-    { image: "images/aboutme/me_15.png", delay: 3000 },
-    { image: "images/aboutme/me_16.png", delay: 3200 },
-    { image: "images/aboutme/me_17.png", delay: 3400 },
-    { image: "images/aboutme/me_18.png", delay: 3600 },
-    { image: "images/aboutme/me_19.png", delay: 3800 },
-    { image: "images/aboutme/me_20.png", delay: 4000 },
-    { image: "images/aboutme/me_21.png", delay: 4200 },
-    { image: "images/aboutme/me_22.png", delay: 4400 },
-    { image: "images/aboutme/me_23.png", delay: 4600 },
-    { image: "images/aboutme/me_24.png", delay: 4800 },
-    { image: "images/aboutme/me_25.png", delay: 5000 },
-    { image: "images/aboutme/me_26.png", delay: 5200 },
-    { image: "images/aboutme/me_27.png", delay: 5400 },
-    { image: "images/aboutme/me_28.png", delay: 5600 },
-    { image: "images/aboutme/me_29.png", delay: 5800 },
-    { image: "images/aboutme/me_30.png", delay: 6000 },
-    { image: "images/aboutme/me_31.png", delay: 6200 },
-    { image: "images/aboutme/me_32.png", delay: 6400 },
-    { image: "images/aboutme/me_33.png", delay: 6600 },
-    { image: "images/aboutme/me_34.png", delay: 6800 },
-    { image: "images/aboutme/me_35.png", delay: 7000 },
-    { image: "images/aboutme/me_36.png", delay: 7200 },
-    { image: "images/aboutme/me_37.png", delay: 7400 },
-    { image: "images/aboutme/me_38.png", delay: 7600 },
-    { image: "images/aboutme/me_39.png", delay: 7800 },
-    { image: "images/aboutme/me_40.png", delay: 8000 },
-    { image: "images/aboutme/me_41.png", delay: 8200 },
-    { image: "images/aboutme/me_42.png", delay: 8400 },
-    { image: "images/aboutme/me_43.png", delay: 8600 },
-    { image: "images/aboutme/6.jpeg", delay: 8800 },
+  let images = [
+    {
+      image: "images/aboutme/me_1.png",
+      top: 50,
+      left: 120,
+      transform: "scale(0.5)",
+    },
+    { image: "images/aboutme/me_2.png", top: -60, left: 200 },
+    { image: "images/aboutme/me_3.png", top: -20, left: -300 },
+    { image: "images/aboutme/me_4.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_5.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_6.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_7.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_8.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_9.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_10.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_11.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_12.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_13.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_14.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_15.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_16.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_17.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_18.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_19.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_20.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_21.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_22.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_23.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_24.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_25.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_26.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_27.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_28.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_29.png", top: 20, left: 0 },
+    { image: "images/aboutme/me_30.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_31.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_32.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_33.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_34.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_35.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_36.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_37.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_38.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_39.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_40.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_41.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_42.png", top: 0, left: 0 },
+    { image: "images/aboutme/me_43.png", top: 0, left: 0 },
+    { image: "images/aboutme/6.jpeg", top: 20, left: 10 },
   ];
+
+  images = images.map((imageData, index) => {
+    imageData.delay = index * 400;
+    return imageData;
+  });
 
   return (
     <Layout>
       <Header />
 
-      <div className="w-full h-80 mb-20 mx-auto relative px-5 md:px-10 lg:px-20">
+      <div className="w-full h-96 m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden">
         {images.map((imagedata) => {
           return <ImageWithDelay {...imagedata} key={imagedata.image} />;
         })}
@@ -74,9 +84,10 @@ export default function About() {
 
         <p className="untitled-text text-md mb-4">
           I'm also a happy tech enthusiast with a love for machine learning and
-          a strong interest in ethics and how things we design impact our world
-          and ourselves. I believe in the importance of detail and being
-          passionate about everything I do. I practice design thinking, lifelong
+          I have a strong interest in new technologies, innovation and ethics –
+          and how things we design impact our world and ourselves. I believe in
+          the importance of detail and being passionate about everything I do.
+          I'm all in for design thinking and life centered design, lifelong
           learning – and having fun!
         </p>
 
@@ -193,6 +204,33 @@ export default function About() {
               History of Literature <br />
               @LTU 1998
             </li>
+          </ul>
+        </div>
+
+        <div className="flex flex-col text-center mt-20 md:mt-0">
+          <div className="pb-6 mb-8  ">
+            <span className="border-b border-black pb-3 ">Skills I have</span>
+          </div>
+          <ul>
+            <li className="mb-2">Art Direction</li>
+            <li className="mb-2">Concepting & Ideation</li>
+            <li className="mb-2">Concept Development</li>
+            <li className="mb-2">UI + UX design</li>
+            <li className="mb-2">Graphic Design</li>
+            <li className="mb-2">Editorial Design</li>
+            <li className="mb-2">Book Design</li>
+            <li className="mb-2">Frontend Development</li>
+            <li className="mb-2">React</li>
+            <li className="mb-2">Next.js</li>
+            <li className="mb-2">HTML & CSS</li>
+            <li className="mb-2">Javascript</li>
+            <li className="mb-2">Workshop Facilitation </li>
+            <li className="mb-2">Copywriting</li>
+            <li className="mb-2">Experience Design</li>
+            <li className="mb-2">Brand Strategy</li>
+            <li className="mb-2">Adobe CC</li>
+            <li className="mb-2">Figma</li>
+            <li className="mb-2">Runway ML</li>
           </ul>
         </div>
       </section>
