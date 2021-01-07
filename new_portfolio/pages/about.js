@@ -340,7 +340,6 @@ export default function About() {
           </div>
           <ul>
             <li className="mb-2">Art Direction</li>
-            <li className="mb-2">Adobe CS</li>
             <li className="mb-2">Book Design</li>
             <li className="mb-2">Brand Strategy</li>
             <li className="mb-2">Concepting & Ideation</li>
@@ -355,9 +354,13 @@ export default function About() {
             <li className="mb-2">Graphic Design</li>
             <li className="mb-2">HTML & CSS</li>
             <li className="mb-2">Illustration</li>
+            <li className="mb-2">Illustrator</li>
+            <li className="mb-2">InDesign</li>
             <li className="mb-2">Javascript</li>
+            <li className="mb-2">Keynote</li>
             <li className="mb-2">Magazine Design</li>
             <li className="mb-2">Next.js</li>
+            <li className="mb-2">Photoshop</li>
             <li className="mb-2">React</li>
             <li className="mb-2">Runway ML</li>
             <li className="mb-2">UI + UX design</li>

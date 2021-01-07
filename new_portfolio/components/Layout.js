@@ -57,17 +57,20 @@ export default function Layout({ children }) {
           }
 
           ::-webkit-scrollbar {
-            width: 13px;
+            width: 8px;
             background-color: white;
           }
 
           ::-webkit-scrollbar-thumb {
-            background: linear-gradient(
+            background-color: black;
+             {
+              /* background: linear-gradient(
               190deg,
               #ffdada 0%,
               #f3ffda 35%,
               #d1ffe9 100%
-            );
+            ); */
+            }
           }
           .soehne {
             font-family: "Soehne";

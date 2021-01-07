@@ -38,7 +38,7 @@ export default function ImageWithDelay(props) {
   return (
     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 ">
       <img
-        className="h-80 object-contain relative opacity-0 transition duration-300 ease-in-out "
+        className="h-80 w-48 object-contain relative opacity-0 transition duration-300 ease-in-out "
         src={image}
         style={styles}
       />
