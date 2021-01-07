@@ -12,7 +12,7 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_2.png",
-      transform: "scale(1)",
+      transform: "scale(0.5)",
     },
     {
       image: "images/aboutme/me_3.png",
@@ -44,11 +44,11 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_10.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.7)",
     },
     {
       image: "images/aboutme/me_11.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.4)",
     },
     {
       image: "images/aboutme/me_12.png",
@@ -56,7 +56,7 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_13.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.8)",
     },
     {
       image: "images/aboutme/me_14.png",
@@ -64,7 +64,7 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_15.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.7)",
     },
     {
       image: "images/aboutme/me_16.png",
@@ -72,15 +72,15 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_17.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.7)",
     },
     {
       image: "images/aboutme/me_18.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.6)",
     },
     {
       image: "images/aboutme/me_19.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.7)",
     },
     {
       image: "images/aboutme/me_20.png",
@@ -88,7 +88,7 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_21.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.3)",
     },
     {
       image: "images/aboutme/me_22.png",
@@ -100,11 +100,11 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_24.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.7)",
     },
     {
       image: "images/aboutme/me_25.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.9)",
     },
     {
       image: "images/aboutme/me_26.png",
@@ -112,16 +112,14 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_27.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.2)",
     },
     {
       image: "images/aboutme/me_28.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.8)",
     },
     {
       image: "images/aboutme/me_29.png",
-      top: 20,
-      left: 0,
       transform: "scale(0.5)",
     },
     {
@@ -134,15 +132,15 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_32.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.7)",
     },
     {
       image: "images/aboutme/me_33.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.9)",
     },
     {
       image: "images/aboutme/me_34.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.7)",
     },
     {
       image: "images/aboutme/me_35.png",
@@ -150,7 +148,7 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_36.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.6)",
     },
     {
       image: "images/aboutme/me_37.png",
@@ -158,19 +156,19 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_38.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.8)",
     },
     {
       image: "images/aboutme/me_39.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.4)",
     },
     {
       image: "images/aboutme/me_40.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.6)",
     },
     {
       image: "images/aboutme/me_41.png",
-      transform: "scale(0.5)",
+      transform: "scale(1)",
     },
     {
       image: "images/aboutme/me_42.png",
@@ -178,11 +176,11 @@ export default function About() {
     },
     {
       image: "images/aboutme/me_43.png",
-      transform: "scale(0.5)",
+      transform: "scale(0.4)",
     },
     {
       image: "images/aboutme/6.jpeg",
-      transform: "scale(0.5)",
+      transform: "scale(0.8)",
     },
   ];
 
@@ -195,7 +193,7 @@ export default function About() {
     <Layout>
       <Header />
 
-      <div className="w-full image-box-height m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden">
+      <div className="w-full image-box-height m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden md:overflow-visible">
         {images.map((imagedata) => {
           return <ImageWithDelay {...imagedata} key={imagedata.image} />;
         })}

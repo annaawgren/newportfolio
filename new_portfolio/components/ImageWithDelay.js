@@ -12,8 +12,8 @@ export default function ImageWithDelay(props) {
 
     setTimeout(() => {
       // console.log("setVisible False", image, delay * 1000);
-      // setIsVisible(false);
-    }, delay + 5000);
+      setIsVisible(false);
+    }, delay + 8000);
   }, []);
 
   function getRandom(min, max) {
@@ -36,7 +36,7 @@ export default function ImageWithDelay(props) {
   };
 
   return (
-    <div className="absolute top-0 left-1/2  transform -translate-x-1/2 ">
+    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 ">
       <img
         className="h-80 object-contain relative opacity-0 transition duration-300 ease-in-out "
         src={image}
