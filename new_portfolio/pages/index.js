@@ -7,6 +7,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import CaseListing from "../components/CaseListing";
 import Navlinks from "../components/Navlinks";
+import NewSite from "../components/NewSite";
 
 const THRESHOLD = [0.25, 0.5, 0.75];
 
@@ -25,6 +26,10 @@ export default function Home() {
         <title>Anna Wikberg Ågren ⚡️ Portfolio</title>
       </Head>
       <Header />
+      {/* 
+      <section>
+        <NewSite />
+      </section> */}
 
       <CaseListing />
       <div className="h-40 w-full" />

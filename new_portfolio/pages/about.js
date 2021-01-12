@@ -193,11 +193,15 @@ export default function About() {
     <Layout>
       <Header />
 
-      <div className="w-full image-box-height m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden md:overflow-visible">
+      <div className="w-full h-96 ">
+        <img className="mx-auto w-96 px-5" src="./images/anna_wa.png" />
+      </div>
+
+      {/* <div className="w-full image-box-height m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden md:overflow-visible">
         {images.map((imagedata) => {
           return <ImageWithDelay {...imagedata} key={imagedata.image} />;
         })}
-      </div>
+      </div> */}
 
       <section className="text-justify w-full flex flex-col items-center mb-20 px-5 md:px-10 lg:px-20">
         <p className="untitled-text text-md mb-4">
@@ -344,16 +348,13 @@ export default function About() {
             <li className="mb-2">Brand Strategy</li>
             <li className="mb-2">Concepting & Ideation</li>
             <li className="mb-2">Concept Development</li>
-            <li className="mb-2">Copywriting</li>
             <li className="mb-2">Digital Design</li>
-            <li className="mb-2">Design Lead</li>
             <li className="mb-2">Editorial Design</li>
             <li className="mb-2">Experience Design</li>
             <li className="mb-2">Figma</li>
             <li className="mb-2">Frontend Development</li>
             <li className="mb-2">Graphic Design</li>
             <li className="mb-2">HTML & CSS</li>
-            <li className="mb-2">Illustration</li>
             <li className="mb-2">Illustrator</li>
             <li className="mb-2">InDesign</li>
             <li className="mb-2">Javascript</li>
@@ -363,7 +364,8 @@ export default function About() {
             <li className="mb-2">Photoshop</li>
             <li className="mb-2">React</li>
             <li className="mb-2">Runway ML</li>
-            <li className="mb-2">UI + UX design</li>
+            <li className="mb-2">UI design</li>
+            <li className="mb-2">Visual storytelling</li>
             <li className="mb-2">Workshop Facilitation </li>
           </ul>
         </div>
