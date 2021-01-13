@@ -5,16 +5,13 @@ import Navlinks from "../components/Navlinks";
 export default function Contact() {
   return (
     <Layout>
-      <div className="bg-red-300 w-full h-full">
+      <div className="w-full h-full">
         <Header />
 
         <section className="w-full h-screen flex flex-col items-center">
           <div className="flex flex-row justify-around items-center w-full px-5 md:px-10 lg:px-20">
             <a href="https://www.pinterest.se/annaawgren/" target="_blank">
-              <p className="untitled-text text-md mb-2">
-                {" "}
-                hello@annawagren.work
-              </p>
+              <p className="untitled-text text-md mb-2"> hello@annawagren.se</p>
             </a>
             <a href="https://www.pinterest.se/annaawgren/" target="_blank">
               <p className="untitled-text text-md mb-2"> +46 707 13 54 91</p>

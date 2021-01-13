@@ -10,6 +10,12 @@ export default function Layout({ children }) {
               url("/fonts/SöhneBreitTest-Bucht.otf") format("otf");
           }
           @font-face {
+            font-family: "Soehne-drei";
+            src: url("/fonts/soehne-breit-test-dreiviertelfett.woff")
+                format("woff"),
+              url("/fonts/SöhneBreitTest-Dreiviertelfett.otf") format("otf");
+          }
+          @font-face {
             font-family: "Ivar-display";
             src: url("/fonts/IvarDisplayCondensed-SemiBold.woff") format("woff"),
               url("/fonts/IvarDisplayCondensed-SemiBold.otf") format("otf");
@@ -74,6 +80,9 @@ export default function Layout({ children }) {
           }
           .soehne {
             font-family: "Soehne";
+          }
+          .soehne-drei {
+            font-family: "Soehne-drei";
           }
           .ivar-heading {
             font-family: "Ivar-display";
