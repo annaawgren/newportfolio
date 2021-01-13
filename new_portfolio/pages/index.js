@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 
 import Header from "../components/Header";
-import CaseListing from "../components/CaseListing";
+import CaseListingNew from "../components/CaseListing";
 import Navlinks from "../components/Navlinks";
 import NewSite from "../components/NewSite";
 
@@ -31,7 +31,7 @@ export default function Home() {
         <NewSite />
       </section> */}
 
-      <CaseListing />
+      <CaseListingNew />
       <div className="h-40 w-full" />
       <Navlinks />
 
