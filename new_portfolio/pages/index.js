@@ -5,9 +5,8 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 
 import Header from "../components/Header";
-import CaseListingNew from "../components/CaseListing";
+import CaseListingNew from "../components/CaseListingNew";
 import Navlinks from "../components/Navlinks";
-import CaseListingHome from "../components/CaseListingHome";
 
 const THRESHOLD = [0.25, 0.5, 0.75];
 
