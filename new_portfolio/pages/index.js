@@ -25,7 +25,7 @@ export default function Home() {
         <title>Anna Wikberg Ågren ⚡️ Portfolio</title>
       </Head>
 
-      <Header />
+      <Header initialPosition="center" />
 
       {/* 
       <section>
