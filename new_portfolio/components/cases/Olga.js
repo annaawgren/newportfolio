@@ -1,8 +1,6 @@
-export const WCase = {
-  title: "W Hotel",
-  description: (
-    <p>An in-room Music Experience and mood based playlist picker</p>
-  ),
+export const OlgaCase = {
+  title: "Olgas Nystart",
+  description: <p>Olgas nystart alökgaöoei aglb kvaegka ero gaeörf lmagrfn </p>,
   introtext: (
     <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
       As a Designer at digital product studio Department I was responsible for
@@ -16,7 +14,9 @@ export const WCase = {
       telness.se/
     </p>
   ),
-  heroimage: "w-test.png",
+  heroimageWork: "olga-hero.png",
+  heroimageCase: "kupe-test.png",
+  overviewSize: "large",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
       <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">

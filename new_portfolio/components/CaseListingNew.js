@@ -2,19 +2,28 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { KupeCase } from "../components/cases/Kupe";
 import { MLLAB } from "../components/cases/ML";
-import { NewbieCase } from "../components/cases/Newbie";
+import { NolltidCase } from "../components/cases/Nolltid";
 import { TelnessCase } from "../components/cases/Telness";
 import { VegogoCase } from "../components/cases/Vegogo";
 import { WCase } from "../components/cases/W";
 import { CoraCase } from "../components/cases/Cora";
+import { GirlsOnSkisCase } from "../components/cases/Girlsonskis";
+import { InteDUCase } from "../components/cases/Intedu";
+import { NewbieCase } from "../components/cases/NewbieTech";
+import { OlgaCase } from "../components/cases/Olga";
 
 import classNames from "classnames";
 
 const casesObject = {
-  cora: CoraCase,
-  kupe: KupeCase,
-  whotel: WCase,
+  girlsonskis: GirlsOnSkisCase,
+  nolltid: NolltidCase,
   newbietech: NewbieCase,
+  cora: CoraCase,
+  intedu: InteDUCase,
+  kupe: KupeCase,
+  ml: MLLAB,
+  olga: OlgaCase,
+  whotel: WCase,
   machinelearninglab: MLLAB,
 };
 

@@ -19,7 +19,7 @@ export const KupeCase = {
       </p>
     </div>
   ),
-  heroimageWork: "Kupe.gif",
+  heroimageWork: "kupe-hero.png",
   heroimageCase: "kupe-test.png",
   overviewSize: "large",
   images: (
