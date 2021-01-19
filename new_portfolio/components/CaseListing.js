@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { KupeCase } from "../components/cases/Kupe";
-import { MLLAB } from "../components/cases/ML";
-import { NewbieCase } from "../components/cases/Newbie";
-import { TelnessCase } from "../components/cases/Telness";
-import { VegogoCase } from "../components/cases/Vegogo";
-import { WCase } from "../components/cases/W";
-import Image from "../components/Image";
+import { KupeCase } from "./cases/Kupe";
+import { MLLAB } from "./cases/ML";
+import { NewbieCase } from "./cases/NewbieTech";
+import { TelnessCase } from "./cases/Telness";
+import { VegogoCase } from "./cases/Vegogo";
+import { WCase } from "./cases/W";
+import Image from "./Image";
 
 const casesObject = {
   telness: TelnessCase,
@@ -14,7 +14,7 @@ const casesObject = {
   vegogo: VegogoCase,
   whotel: WCase,
   newbietech: NewbieCase,
-  machinelearninglab: MLLAB,
+  ml: MLLAB,
 };
 
 export default function CaseListing() {
@@ -37,8 +37,6 @@ export default function CaseListing() {
         showItem(item, delay);
       }
     }
-    // console.log("caselisting useeffect mount");
-    // console.log("itemsRefs", itemsRefs);
 
     let options = {
       threshold: 0.2,
@@ -58,7 +56,7 @@ export default function CaseListing() {
       return null;
     }
 
-    const { title, description, heroimage } = caseInfo;
+    const { title, description, heroimageWork } = caseInfo;
 
     return (
       <li
@@ -80,7 +78,7 @@ export default function CaseListing() {
        `}</style>
         <Link href={`/work/${caseSlug}`}>
           <a className="...h-auto w-full flex flex-col items-center">
-            <Image imageSrc={heroimage} />
+            <Image imageSrc={`cases/${caseSlug}/${heroimageWork}`} />
             <h3 className=" untitled-text mt-6 mb-2 text-sm text-center">
               {title}
             </h3>

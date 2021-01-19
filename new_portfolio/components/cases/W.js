@@ -17,7 +17,7 @@ export const WCase = {
     </p>
   ),
   heroimageWork: "w-hero.png",
-  heroimageCase: "kupe-test.png",
+  heroimageCase: "w-hero.png",
   overviewSize: "large",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
