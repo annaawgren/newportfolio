@@ -12,7 +12,11 @@ module.exports = {
       secondary: "#F3FFDA",
       danger: "#D1FFE9",
     }),
-    extend: {},
+    extend: {
+      outline: {
+        gradient: "2px solid #0000ff",
+      },
+    },
   },
   variants: {
     extend: {},

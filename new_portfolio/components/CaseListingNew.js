@@ -6,71 +6,16 @@ import { NewbieCase } from "../components/cases/Newbie";
 import { TelnessCase } from "../components/cases/Telness";
 import { VegogoCase } from "../components/cases/Vegogo";
 import { WCase } from "../components/cases/W";
-import Image from "../components/Image";
+import { CoraCase } from "../components/cases/Cora";
+
 import classNames from "classnames";
 
-const GosCaseTest = {
-  title: "Girls on skis",
-  heroimage: "gos-test.png",
-  description: <p>Lorem ipsum dolor sit amet.</p>,
-  overviewSize: "medium",
-};
-
-const NolltidTest = {
-  title: "Mer smak på nolltid",
-  heroimage: "nolltid-test.png",
-  description: <p>Lorem ipsum dolor sit amet.</p>,
-  overviewSize: "small",
-};
-
-const NewbieTechTest = {
-  title: "Newbie Tech",
-  heroimage: "newbie-test.png",
-  description: <p>Lorem ipsum dolor sit amet.</p>,
-  overviewSize: "small",
-};
-
-const KupeTest = {
-  title: "Kupé",
-  heroimage: "kupe-test-resized.jpg",
-  description: <p>Lorem ipsum dolor sit amet.</p>,
-  overviewSize: "large",
-};
-
-const WHotelTest = {
-  title: "W Hotel",
-  heroimage: "w-test.png",
-  description: <p>Lorem ipsum dolor sit amet.</p>,
-  overviewSize: "small",
-};
-
-const TelnessTest = {
-  title: "Telness",
-  heroimage: "telnesstest.png",
-  description: <p>Lorem ipsum dolor sit amet.</p>,
-  overviewSize: "small",
-};
-
-const VegogoTest = {
-  title: "Vegogo",
-  heroimage: "vegogo-test.png",
-  description: <p>Lorem ipsum dolor sit amet.</p>,
-  overviewSize: "small",
-};
-
 const casesObject = {
-  gostest: GosCaseTest,
-  nolltid: NolltidTest,
-  newbietechtest: NewbieTechTest,
-  kupetest: KupeTest,
-  telness: TelnessTest,
-  vegogo: VegogoTest,
-
+  cora: CoraCase,
   kupe: KupeCase,
   whotel: WCase,
   newbietech: NewbieCase,
   machinelearninglab: MLLAB,
-  whoteltest: WHotelTest,
 };
 
 export default function CaseListing() {
@@ -109,7 +54,12 @@ export default function CaseListing() {
       return null;
     }
 
-    const { title, description, heroimage, overviewSize = "medium" } = caseInfo;
+    const {
+      title,
+      description,
+      heroimageWork,
+      overviewSize = "medium",
+    } = caseInfo;
 
     let liClasses = ["case-item", "flex", "justify-center"];
     let liInnerClasses = [
@@ -157,7 +107,7 @@ export default function CaseListing() {
       `}</style>
         <Link href={`/work/${caseSlug}`}>
           <a className={liInnerClassNames}>
-            <img src={`/images/${heroimage}`} alt="" />
+            <img src={`/images/cases/${caseSlug}/${heroimageWork}`} alt="" />
             <h3 className=" untitled-text mt-6 mb-2 text-sm text-center">
               {title}
             </h3>
