@@ -63,7 +63,7 @@ export default function Layout({ children }) {
           }
 
           ::-webkit-scrollbar {
-            width: 8px;
+            width: 12px;
             background-color: white;
           }
 

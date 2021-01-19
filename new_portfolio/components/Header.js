@@ -17,9 +17,9 @@ export default function Header(props) {
     }
 
     const handleScroll = (evt) => {
-      if (window.scrollY > 300 && position === "center") {
+      if (window.scrollY > 100 && position === "center") {
         setPosition("sides");
-      } else if (window.scrollY < 200 && position === "sides") {
+      } else if (window.scrollY < 100 && position === "sides") {
         setPosition("center");
       }
     };

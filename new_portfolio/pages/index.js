@@ -25,14 +25,14 @@ export default function Home() {
         <title>Anna Wikberg Ågren ⚡️ Portfolio</title>
       </Head>
 
+      <div className="h-40 w-full" />
+
       <Header initialPosition="center" />
 
-      {/* 
-      <section>
-        <NewSite />
-      </section> */}
+      <div className="h-40 w-full" />
 
       <CaseListingNew />
+
       <div className="h-40 w-full" />
 
       <Navlinks />

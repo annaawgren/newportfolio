@@ -16,9 +16,9 @@ const GosCaseTest = {
   overviewSize: "medium",
 };
 
-const WHotelTest = {
-  title: "W Hotel",
-  heroimage: "w-test.png",
+const NolltidTest = {
+  title: "Mer smak på nolltid",
+  heroimage: "nolltid-test.png",
   description: <p>Lorem ipsum dolor sit amet.</p>,
   overviewSize: "small",
 };
@@ -37,17 +37,40 @@ const KupeTest = {
   overviewSize: "large",
 };
 
+const WHotelTest = {
+  title: "W Hotel",
+  heroimage: "w-test.png",
+  description: <p>Lorem ipsum dolor sit amet.</p>,
+  overviewSize: "small",
+};
+
+const TelnessTest = {
+  title: "Telness",
+  heroimage: "telnesstest.png",
+  description: <p>Lorem ipsum dolor sit amet.</p>,
+  overviewSize: "small",
+};
+
+const VegogoTest = {
+  title: "Vegogo",
+  heroimage: "vegogo-test.png",
+  description: <p>Lorem ipsum dolor sit amet.</p>,
+  overviewSize: "small",
+};
+
 const casesObject = {
   gostest: GosCaseTest,
-  whoteltest: WHotelTest,
+  nolltid: NolltidTest,
   newbietechtest: NewbieTechTest,
   kupetest: KupeTest,
-  telness: TelnessCase,
+  telness: TelnessTest,
+  vegogo: VegogoTest,
+
   kupe: KupeCase,
-  vegogo: VegogoCase,
   whotel: WCase,
   newbietech: NewbieCase,
   machinelearninglab: MLLAB,
+  whoteltest: WHotelTest,
 };
 
 export default function CaseListing() {
@@ -141,6 +164,7 @@ export default function CaseListing() {
             <div className=" untitled-text mb-6 text-sm text-center">
               {description}
             </div>
+            <div className="w-full h-20" />
           </a>
         </Link>
       </li>
