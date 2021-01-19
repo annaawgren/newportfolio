@@ -11,10 +11,12 @@ import { GirlsOnSkisCase } from "../components/cases/Girlsonskis";
 import { InteDUCase } from "../components/cases/Intedu";
 import { NewbieCase } from "../components/cases/NewbieTech";
 import { OlgaCase } from "../components/cases/Olga";
+import { TheNewGreenSaladCase } from "./cases/TheNewGreenSalad";
 
 import classNames from "classnames";
 
 const casesObject = {
+  w: WCase,
   girlsonskis: GirlsOnSkisCase,
   nolltid: NolltidCase,
   newbietech: NewbieCase,
@@ -22,9 +24,10 @@ const casesObject = {
   intedu: InteDUCase,
   kupe: KupeCase,
   ml: MLLAB,
+  vegogo: VegogoCase,
+  telness: TelnessCase,
   olga: OlgaCase,
-  whotel: WCase,
-  machinelearninglab: MLLAB,
+  thenewgreensalad: TheNewGreenSaladCase,
 };
 
 export default function CaseListing() {

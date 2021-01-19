@@ -14,7 +14,9 @@ export const TelnessCase = {
       telness.se/
     </p>
   ),
-  heroimage: "telnesstest.png",
+  heroimageWork: "telness-hero.png",
+  heroimageCase: "kupe-test.png",
+  overviewSize: "small",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
       <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">

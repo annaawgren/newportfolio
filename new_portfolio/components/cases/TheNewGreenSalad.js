@@ -1,7 +1,7 @@
-export const WCase = {
-  title: "W Hotel",
+export const TheNewGreenSaladCase = {
+  title: "The New Green Salad",
   description: (
-    <p>An in-room Music Experience and mood based playlist picker</p>
+    <p>TNGP and TNGS two books agka koö agi lö knag öalrg naerioger</p>
   ),
   introtext: (
     <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
@@ -16,7 +16,9 @@ export const WCase = {
       telness.se/
     </p>
   ),
-  heroimage: "w-test.png",
+  heroimageWork: "tngs-hero.png",
+  heroimageCase: "kupe-test.png",
+  overviewSize: "large",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
       <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
