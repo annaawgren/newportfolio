@@ -6,7 +6,7 @@ import { TelnessCase } from "./cases/Telness";
 import { WCase } from "./cases/W";
 import { VegogoCase } from "./cases/Vegogo";
 import { MLLAB } from "./cases/ML";
-import { NewbieCase } from "./cases/Newbie";
+import { NewbieCase } from "./cases/NewbieTech";
 
 const casesObject = {
   telness: TelnessCase,

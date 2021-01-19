@@ -11,7 +11,7 @@ import { TelnessCase } from "../../components/cases/Telness";
 import { WCase } from "../../components/cases/W";
 import { VegogoCase } from "../../components/cases/Vegogo";
 import { MLLAB } from "../../components/cases/ML";
-import { NewbieCase } from "../../components/cases/Newbie";
+import { NewbieCase } from "../../components/cases/NewbieTech";
 
 const cases = {
   kupe: KupeCase,
