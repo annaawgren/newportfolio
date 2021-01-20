@@ -23,7 +23,7 @@ export const CoraCase = {
   heroimageCase: "cora-cover.gif",
   overviewSize: "small",
   images: (
-    <div className="grid grid-cols-2  gap-4 md:gap-4">
+    <div className="grid grid-cols-2 gap-10 ">
       <div className="col-span-2 ... ">
         <img
           src="/images/cases/cora/cora1.png"
@@ -82,14 +82,14 @@ export const CoraCase = {
 
       <div className="... ">
         <img
-          src="/images/cases/cora/cora9.png"
+          src="/images/cases/cora/cora10.png"
           className="object-contain w-full"
         />
       </div>
 
       <div className="... ">
         <img
-          src="/images/cases/cora/cora10.png"
+          src="/images/cases/cora/cora9.png"
           className="object-contain w-full"
         />
       </div>

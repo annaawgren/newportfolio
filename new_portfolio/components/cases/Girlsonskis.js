@@ -1,55 +1,38 @@
 export const GirlsOnSkisCase = {
   title: "Girls On Skis",
-  description: <p>Brand new concept for those who love skiing</p>,
+  description: (
+    <p>Brand new initiative for those who love cross country skiing</p>
+  ),
   introtext: (
-    <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
-      As a Designer at digital product studio Department I was responsible for
-      evolving the telecom company Telness’ design system – to make their visual
-      identity more warm and welcoming. Here are some snapshots from the design
-      process where I overlooked all the design components, how to work with
-      typography, adding more colors, pictograms, speech bubbles and animated
-      arrows for example. I also worked with the Telness tonality and
-      falicitated workshops with the client. Read more about the Telness
-      project: department.se/work/telness See the implemented design here:
-      telness.se/
-    </p>
+    <div>
+      <h2 className="untitled-text mb-6 mt-2 text-md text-center">
+        Girls On Skis
+      </h2>
+      <p className="untitled-text mb-4 text-md ">
+        As a Designer and Frontend Developer at Digital Product Studio
+        Department I was part of designing an interface for a mood based
+        playlist picker and an in-room music experience for W Hotels. I did the
+        UI design and came up with the idea that the player should feel organic
+        and fluid – like an emotion – when you move your finger over the iPad.
+        Like a lava lamp or liquid light show, that changes color depending on
+        what mood the guest chooses. Then my colleague Fredrik built an
+        absolutely fantastic solution.
+      </p>
+    </div>
   ),
   heroimageWork: "gos-test.png",
   heroimageCase: "kupe-test.png",
-  overviewSize: "medium",
+  overviewSize: "large",
   images: (
-    <div className="grid grid-cols-2  gap-4 md:gap-4">
-      <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
-        <img src="/images/claratest.png" />
+    <div className="grid grid-cols-2 gap-10 ">
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/girlsonskis/gos-test.png"
+          className=" object-cover w-full"
+        />
       </div>
 
-      <div className="... bg-red-300">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
-        </div>
-      </div>
-
-      <div className="col-span-2 ... bg-green-100 ">
-        <div className="... bg-gray-400 h-auto ">
-          <img src="/images/wtest.png" className="h-auto object-cover w-full" />
-        </div>
-      </div>
-      <div className="col-span-2 ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/dance.gif" className="object-contain w-full" />
-        </div>
-      </div>
-      <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
-        </div>
-      </div>
-      <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/claratest.png" />
-        </div>
-      </div>
+      <div className="w-full h-40 md:h-60 " />
     </div>
   ),
-  backgroundcolor: "bg-blue-100",
 };

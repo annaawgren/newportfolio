@@ -1,10 +1,10 @@
 export const InteDuCase = {
   title: "Det är inte du det är dom",
-  description: <p>Women. Art. Culture. Art Director 2015-2018.</p>,
+  description: <p>First aid kit book for first time parents</p>,
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">
-        Cora Magazine
+        Det är inte du det är dom
       </h2>
       <p className="untitled-text mb-4 text-md ">
         I was the Art Director for SJ’s onboard magazine Kupé (reaching about
@@ -23,7 +23,7 @@ export const InteDuCase = {
   heroimageCase: "cora-cover.gif",
   overviewSize: "small",
   images: (
-    <div className="grid grid-cols-2  gap-10 md:gap-10">
+    <div className="grid grid-cols-2  gap-10 ">
       <div className="... ">
         <img
           src="/images/cases/intedu/intedu1.png"

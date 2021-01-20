@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { KupeCase } from "../components/cases/Kupe";
-import { MLLAB } from "../components/cases/ML";
+import { MlProjectionCase } from "../components/cases/ML";
 import { NolltidCase } from "../components/cases/Nolltid";
 import { TelnessCase } from "../components/cases/Telness";
 import { VegogoCase } from "../components/cases/Vegogo";
@@ -11,12 +11,12 @@ import { GirlsOnSkisCase } from "../components/cases/Girlsonskis";
 import { InteDuCase } from "../components/cases/Intedu";
 import { NewbieCase } from "../components/cases/NewbieTech";
 import { OlgaCase } from "../components/cases/Olga";
-import { TheNewGreenSaladCase } from "./cases/TheNewGreenSalad";
+import { TheNewGreenCase } from "./cases/TheNewGreen";
 
 import classNames from "classnames";
 
 const casesObject = {
-  ml: MLLAB,
+  ml: MlProjectionCase,
   w: WCase,
   girlsonskis: GirlsOnSkisCase,
   nolltid: NolltidCase,
@@ -27,7 +27,7 @@ const casesObject = {
   vegogo: VegogoCase,
   telness: TelnessCase,
   olga: OlgaCase,
-  thenewgreensalad: TheNewGreenSaladCase,
+  thenewgreen: TheNewGreenCase,
 };
 
 export default function CaseListing() {

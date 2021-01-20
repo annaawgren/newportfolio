@@ -1,10 +1,10 @@
-export const MlProjectionCase = {
-  title: "Interactive Machine Learning Projection",
-  description: <p>Dance and the lines will move</p>,
+export const TheNewGreenCase = {
+  title: "The New Green Salad",
+  description: <p>TNGP and TNGS two books </p>,
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">
-        An interactive Machine Learning Projection
+        The New Green Salad + The New Green Protein
       </h2>
       <p className="untitled-text mb-4 text-md ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
@@ -20,14 +20,49 @@ export const MlProjectionCase = {
       </p>
     </div>
   ),
-  heroimageWork: "dance.gif",
+  heroimageWork: "tngs-hero.png",
   heroimageCase: "kupe-test.png",
-  overviewSize: "medium",
+  overviewSize: "large",
   images: (
     <div className="grid grid-cols-2 gap-10 ">
+      <div className=" ... ">
+        <img
+          src="/images/cases/thenewgreen/TNGP-omls.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className=" ... ">
+        <img
+          src="/images/cases/thenewgreen/TNGP-omls.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
       <div className="col-span-2 ... ">
         <img
-          src="/images/cases/ml/dance.gif"
+          src="/images/cases/thenewgreen/TNGs-1.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/thenewgreen/TNGs-2.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/thenewgreen/TNGs-3.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/thenewgreen/TNGs-4.png"
           className=" object-cover w-full"
         />
       </div>
@@ -35,4 +70,5 @@ export const MlProjectionCase = {
       <div className="w-full h-40 md:h-60 " />
     </div>
   ),
+  backgroundcolor: "bg-blue-100",
 };

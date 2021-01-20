@@ -23,7 +23,7 @@ export const KupeCase = {
   heroimageCase: "kupe-test.png",
   overviewSize: "large",
   images: (
-    <div className="grid grid-cols-2 gap-4 md:gap-4">
+    <div className="grid grid-cols-2 gap-10 ">
       <div className="...  w-full">
         <img src="/images/cases/kupe/kupe-uppsl1.png" />
       </div>

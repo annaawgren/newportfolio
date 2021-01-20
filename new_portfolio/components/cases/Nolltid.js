@@ -1,56 +1,108 @@
 export const NolltidCase = {
-  title: "W Hotel",
-  description: (
-    <p>An in-room Music Experience and mood based playlist picker</p>
-  ),
+  title: "Mycket smak på nolltid",
+  description: <p>Mycket smak på nolltid</p>,
   introtext: (
-    <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
-      As a Designer at digital product studio Department I was responsible for
-      evolving the telecom company Telness’ design system – to make their visual
-      identity more warm and welcoming. Here are some snapshots from the design
-      process where I overlooked all the design components, how to work with
-      typography, adding more colors, pictograms, speech bubbles and animated
-      arrows for example. I also worked with the Telness tonality and
-      falicitated workshops with the client. Read more about the Telness
-      project: department.se/work/telness See the implemented design here:
-      telness.se/
-    </p>
+    <div>
+      <h2 className="untitled-text mb-6 mt-2 text-md text-center">
+        Asiatiskt gott på 10 - 20 - 30 minuter
+      </h2>
+      <p className="untitled-text mb-4 text-md ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+        tristique orci vel dui felis. Augue sed placerat laoreet morbi at amet.
+        Euismod pharetra praesent massa potenti. Quam dolor faucibus sociis
+        vitae viverra lacus, amet lorem in. Enim tincidunt ultricies urna sed
+        ipsum, lorem scelerisque volutpat hendrerit. In cras cursus nisi odio at
+        maecenas tellus sit dui. Facilisis diam vestibulum commodo pretium sit
+        adipiscing netus purus. Pellentesque curabitur sed sit varius quis
+        pharetra magna. Egestas ultricies amet neque dui neque. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Dignissim tristique orci
+        vel dui felis. Augue sed placerat laoreet morbi at amet.
+      </p>
+    </div>
   ),
   heroimageWork: "nolltid-hero.png",
   heroimageCase: "nolltid-hero.png",
   overviewSize: "small",
   images: (
-    <div className="grid grid-cols-2  gap-4 md:gap-4">
-      <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
-        <img src="/images/claratest.png" />
+    <div className="grid grid-cols-2 gap-10 ">
+      <div className=" ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero.png"
+          className=" object-cover w-full"
+        />
       </div>
 
-      <div className="... bg-red-300">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
-        </div>
+      <div className=" ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero2.png"
+          className=" object-cover w-full"
+        />
       </div>
 
-      <div className="col-span-2 ... bg-green-100 ">
-        <div className="... bg-gray-400 h-auto ">
-          <img src="/images/wtest.png" className="h-auto object-cover w-full" />
-        </div>
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero3.png"
+          className=" object-cover w-full"
+        />
       </div>
-      <div className="col-span-2 ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/dance.gif" className="object-contain w-full" />
-        </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero4.png"
+          className=" object-cover w-full"
+        />
       </div>
-      <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
-        </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero5.png"
+          className=" object-cover w-full"
+        />
       </div>
-      <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/claratest.png" />
-        </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero6.png"
+          className=" object-cover w-full"
+        />
       </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero7.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero8.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero9.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero10.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/nolltid/nolltid-hero11.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="w-full h-40 md:h-60 " />
     </div>
   ),
   backgroundcolor: "bg-blue-100",

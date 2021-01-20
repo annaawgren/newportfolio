@@ -1,52 +1,40 @@
 export const NewbieCase = {
   title: "Newbie Tech Exploration Lab",
-  description: <p>Hands-on creative tech experiences. For beginners.</p>,
-  introtext: (
-    <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
-      I was the Art Director for Kupé Magazine between 2011-2017. I did
-      everything between being responsible for the design-team, to concept
-      development (I redesigned it twice), putting together teams and assigning
-      illustrators and photographers, to writing articles, headings and editing
-      content – to designing it all. Here’s Jens Lapidus, shot by Linda
-      Alfvegren.
-    </p>
+  description: (
+    <p>Facilitated and handson creative tech exploration for beginners.</p>
   ),
-  heroimageWork: "newbie-hero.png",
-  heroimageCase: "newbie-hero.png",
-  overviewSize: "small",
-  images: (
-    <div className="grid grid-cols-2  gap-4 md:gap-4">
-      <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
-        <img src="/images/claratest.png" />
-      </div>
-
-      <div className="... bg-red-300">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
-        </div>
-      </div>
-
-      <div className="col-span-2 ... bg-green-100 ">
-        <div className="... bg-gray-400 h-auto ">
-          <img src="/images/wtest.png" className="h-auto object-cover w-full" />
-        </div>
-      </div>
-      <div className="col-span-2 ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/dance.gif" className="object-contain w-full" />
-        </div>
-      </div>
-      <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
-        </div>
-      </div>
-      <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/claratest.png" />
-        </div>
-      </div>
+  introtext: (
+    <div>
+      <h2 className="untitled-text mb-6 mt-2 text-md text-center">
+        Newbie Tech Exploration Lab
+      </h2>
+      <p className="untitled-text mb-4 text-md ">
+        I am co-founder of Newbie Tech Exploration Lab where we facilitate
+        hands-on creative tech workshops for beginners. We started Newbie Tech
+        because we wanted to lower the threshold and create opportunities for
+        tech newbies to explore – and have fun! Also because we are forever
+        curious and passionate about exploring emerging technologies. Up until
+        now we have facilitated workshops in Machine Learning as a creative tool
+        and I designed and built our homepage newbietech.io. <br />
+        Every second sunday we also do an online Sunday Session where we explore
+        and learn emerging technologies such as for example AR-filters for
+        mobile with Spark AR and Machine Learning with Runway ML.
+      </p>
     </div>
   ),
-  backgroundcolor: "bg-purple-100",
+  heroimageWork: "newbie-hero.png",
+  heroimageCase: "kupe-test.png",
+  overviewSize: "small",
+  images: (
+    <div className="grid grid-cols-2 gap-10 ">
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/newbietech/newbie-hero.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="w-full h-40 md:h-60 " />
+    </div>
+  ),
 };

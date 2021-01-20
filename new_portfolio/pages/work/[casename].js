@@ -10,18 +10,28 @@ import { KupeCase } from "../../components/cases/Kupe";
 import { TelnessCase } from "../../components/cases/Telness";
 import { WCase } from "../../components/cases/W";
 import { VegogoCase } from "../../components/cases/Vegogo";
-import { MLLAB } from "../../components/cases/ML";
+import { MlProjectionCase } from "../../components/cases/ML";
 import { CoraCase } from "../../components/cases/Cora";
 import { InteDuCase } from "../../components/cases/Intedu";
+import { GirlsOnSkisCase } from "../../components/cases/Girlsonskis";
+import { NolltidCase } from "../../components/cases/Nolltid";
+import { OlgaCase } from "../../components/cases/Olga";
+import { NewbieCase } from "../../components/cases/NewbieTech";
+import { TheNewGreenCase } from "../../components/cases/TheNewGreen";
 
 const cases = {
   cora: CoraCase,
   kupe: KupeCase,
   intedu: InteDuCase,
+  w: WCase,
+  girlsonskis: GirlsOnSkisCase,
   telness: TelnessCase,
   vegogo: VegogoCase,
-  whotel: WCase,
-  machinelearninglab: MLLAB,
+  nolltid: NolltidCase,
+  ml: MlProjectionCase,
+  olga: OlgaCase,
+  newbietech: NewbieCase,
+  thenewgreen: TheNewGreenCase,
 };
 
 const Case = () => {
