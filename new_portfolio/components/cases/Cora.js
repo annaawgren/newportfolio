@@ -2,52 +2,113 @@ export const CoraCase = {
   title: "Cora Magazine",
   description: <p>Women. Art. Culture. Art Director 2015-2018.</p>,
   introtext: (
-    <p className="untitled-text text-left mb-4 w-full text-lg-fluid">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
-      tristique orci vel dui felis. Augue sed placerat laoreet morbi at amet.
-      Euismod pharetra praesent massa potenti. Quam dolor faucibus sociis vitae
-      viverra lacus, amet lorem in. Enim tincidunt ultricies urna sed ipsum,
-      lorem scelerisque volutpat hendrerit. In cras cursus nisi odio at maecenas
-      tellus sit dui. Facilisis diam vestibulum commodo pretium sit adipiscing
-      netus purus. Pellentesque curabitur sed sit varius quis pharetra magna.
-      Egestas ultricies amet neque dui neque.
-    </p>
+    <div>
+      <h2 className="untitled-text mb-6 mt-2 text-md text-center">
+        Cora Magazine
+      </h2>
+      <p className="untitled-text mb-4 text-md ">
+        I was the Art Director for SJ’s onboard magazine Kupé (reaching about
+        300 000 readers a month) between 2011–2017. Our mission was to make a
+        contemporary and popular magazine filled with the best of what current
+        culture, trends, travels, and SJ’s destinations had to offer. I did
+        everything from concept development (I redesigned Kupé twice), putting
+        together teams and assigning Sweden’s top illustrators and
+        photographers, writing headings, some articles, and editing content – to
+        designing it all. All images below shot by Linda Alfvegren, art
+        direction by me.
+      </p>
+    </div>
   ),
   heroimageWork: "cora cover-test.png",
   heroimageCase: "cora-cover.gif",
   overviewSize: "small",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
-      <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
-        <img src="/images/claratest.png" />
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/cora/cora1.png"
+          className=" object-cover w-full"
+        />
       </div>
 
-      <div className="... bg-red-300">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
-        </div>
+      <div className="... ">
+        <img
+          src="/images/cases/cora/cora2.png"
+          className="object-contain w-full"
+        />
       </div>
 
-      <div className="col-span-2 ... bg-green-100 ">
-        <div className="... bg-gray-400 h-auto ">
-          <img src="/images/wtest.png" className="h-auto object-cover w-full" />
-        </div>
+      <div className="... ">
+        <img
+          src="/images/cases/cora/cora3.png"
+          className="object-contain w-full"
+        />
       </div>
-      <div className="col-span-2 ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/dance.gif" className="object-contain w-full" />
-        </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/cora/cora4.png"
+          className=" object-cover w-full"
+        />
       </div>
-      <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
-        </div>
+
+      <div className="... ">
+        <img
+          src="/images/cases/cora/cora5.png"
+          className="object-contain w-full"
+        />
       </div>
-      <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/claratest.png" />
-        </div>
+
+      <div className="... ">
+        <img
+          src="/images/cases/cora/cora6.png"
+          className="object-contain w-full"
+        />
       </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/cora/cora7.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/cora/cora8.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="... ">
+        <img
+          src="/images/cases/cora/cora9.png"
+          className="object-contain w-full"
+        />
+      </div>
+
+      <div className="... ">
+        <img
+          src="/images/cases/cora/cora10.png"
+          className="object-contain w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/cora/cora11.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="col-span-2 ... ">
+        <img
+          src="/images/cases/cora/cora12.png"
+          className=" object-cover w-full"
+        />
+      </div>
+
+      <div className="w-full h-40 md:h-60 " />
     </div>
   ),
   backgroundcolor: "bg-blue-100",

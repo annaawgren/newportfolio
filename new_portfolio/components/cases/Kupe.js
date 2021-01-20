@@ -23,35 +23,77 @@ export const KupeCase = {
   heroimageCase: "kupe-test.png",
   overviewSize: "large",
   images: (
-    <div className="grid grid-cols-2  gap-4 md:gap-4">
-      <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">
-        <img src="/images/cases/claratest.png" />
+    <div className="grid grid-cols-2 gap-4 md:gap-4">
+      <div className="...  w-full">
+        <img src="/images/cases/kupe/kupe-uppsl1.png" />
       </div>
 
-      <div className="... bg-red-300">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
+      <div className="... ">
+        <div className="... ">
+          <img src="/images/cases/kupe/kupe-uppsl2.png" />
+        </div>
+      </div>
+
+      <div className="col-span-2 ... ">
+        <div className="...   ">
+          <img
+            src="/images/cases/kupe/Kupe.gif"
+            className=" object-cover w-full"
+          />
+        </div>
+      </div>
+
+      <div className="col-span-2 ...">
+        <div className="...  h-auto">
+          <img
+            src="/images/cases/kupe/kupe-omsl.png"
+            className="object-contain w-full"
+          />
+        </div>
+      </div>
+
+      <div className=" ...">
+        <div className="...  h-auto">
+          <img
+            src="/images/cases/kupe/kupe-zara1.png"
+            className="object-contain w-full"
+          />
+        </div>
+      </div>
+
+      <div className=" ...">
+        <div className="... h-auto">
+          <img
+            src="/images/cases/kupe/kupe-zara2.png"
+            className="object-contain w-full"
+          />
         </div>
       </div>
 
       <div className="col-span-2 ... bg-green-100 ">
-        <div className="... bg-gray-400 h-auto ">
-          <img src="/images/wtest.png" className="h-auto object-cover w-full" />
+        <div className="... h-auto ">
+          <img
+            src="/images/cases/kupe/kupe-zara3.png"
+            className="h-auto object-cover w-full"
+          />
         </div>
       </div>
-      <div className="col-span-2 ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/dance.gif" className="object-contain w-full" />
-        </div>
-      </div>
+
       <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/telnesstest.png" />
+        <div className="... h-auto">
+          <img
+            src="/images/cases/kupe/kupe-musse1.png"
+            className="object-contain w-full"
+          />
         </div>
       </div>
+
       <div className=" ...">
-        <div className="... bg-gray-400 h-auto">
-          <img src="/images/claratest.png" />
+        <div className="... h-auto">
+          <img
+            src="/images/cases/kupe/kupe-musse2.png"
+            className="object-contain w-full"
+          />
         </div>
       </div>
 

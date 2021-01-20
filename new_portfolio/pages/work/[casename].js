@@ -7,31 +7,21 @@ import Navlinks from "../../components/Navlinks";
 import Image from "../../components/Image";
 
 import { KupeCase } from "../../components/cases/Kupe";
-import { MLLAB } from "../../components/cases/ML";
-import { NolltidCase } from "../../components/cases/Nolltid";
 import { TelnessCase } from "../../components/cases/Telness";
-import { VegogoCase } from "../../components/cases/Vegogo";
 import { WCase } from "../../components/cases/W";
+import { VegogoCase } from "../../components/cases/Vegogo";
+import { MLLAB } from "../../components/cases/ML";
 import { CoraCase } from "../../components/cases/Cora";
-import { GirlsOnSkisCase } from "../../components/cases/Girlsonskis";
-import { InteDUCase } from "../../components/cases/Intedu";
-import { NewbieCase } from "../../components/cases/NewbieTech";
-import { OlgaCase } from "../../components/cases/Olga";
-import { TheNewGreenSaladCase } from "../../components/cases/TheNewGreenSalad";
+import { InteDuCase } from "../../components/cases/Intedu";
 
 const cases = {
-  w: WCase,
-  girlsonskis: GirlsOnSkisCase,
-  nolltid: NolltidCase,
-  newbietech: NewbieCase,
   cora: CoraCase,
-  intedu: InteDUCase,
   kupe: KupeCase,
-  ml: MLLAB,
-  vegogo: VegogoCase,
+  intedu: InteDuCase,
   telness: TelnessCase,
-  olga: OlgaCase,
-  thenewgreensalad: TheNewGreenSaladCase,
+  vegogo: VegogoCase,
+  whotel: WCase,
+  machinelearninglab: MLLAB,
 };
 
 const Case = () => {

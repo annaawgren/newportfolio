@@ -16,7 +16,7 @@ export const GirlsOnSkisCase = {
   ),
   heroimageWork: "gos-test.png",
   heroimageCase: "kupe-test.png",
-  overviewSize: "large",
+  overviewSize: "medium",
   images: (
     <div className="grid grid-cols-2  gap-4 md:gap-4">
       <div className="... bg-gray-400 h-auto w-full flex flex-col items-center">

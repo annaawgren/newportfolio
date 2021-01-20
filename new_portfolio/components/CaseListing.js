@@ -9,7 +9,7 @@ import { VegogoCase } from "../components/cases/Vegogo";
 import { WCase } from "../components/cases/W";
 import { CoraCase } from "../components/cases/Cora";
 import { GirlsOnSkisCase } from "../components/cases/Girlsonskis";
-import { InteDUCase } from "../components/cases/Intedu";
+import { InteDuCase } from "../components/cases/Intedu";
 import { NewbieCase } from "../components/cases/NewbieTech";
 import { OlgaCase } from "../components/cases/Olga";
 import { TheNewGreenSaladCase } from "./cases/TheNewGreenSalad";
@@ -20,7 +20,7 @@ const casesObject = {
   nolltid: NolltidCase,
   newbietech: NewbieCase,
   cora: CoraCase,
-  intedu: InteDUCase,
+  intedu: InteDuCase,
   kupe: KupeCase,
   ml: MLLAB,
   vegogo: VegogoCase,
