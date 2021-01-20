@@ -1,5 +1,5 @@
 export const InteDuCase = {
-  title: "Cora Magazine",
+  title: "Det är inte du det är dom",
   description: <p>Women. Art. Culture. Art Director 2015-2018.</p>,
   introtext: (
     <div>
@@ -19,7 +19,7 @@ export const InteDuCase = {
       </p>
     </div>
   ),
-  heroimageWork: "cora cover-test.png",
+  heroimageWork: "intedu-hero.png",
   heroimageCase: "cora-cover.gif",
   overviewSize: "small",
   images: (
