@@ -340,7 +340,9 @@ export default function About() {
 
         <div className="flex flex-col text-center mt-20 md:mt-0">
           <div className="pb-6 mb-8  ">
-            <span className="border-b border-black pb-3 ">Stuff I can do</span>
+            <span className="border-b border-black pb-3 ">
+              Skills that I have
+            </span>
           </div>
           <ul>
             <li className="mb-2">Art Direction</li>

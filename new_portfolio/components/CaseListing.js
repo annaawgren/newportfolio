@@ -1,20 +1,32 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import Image from "./Image";
 import { KupeCase } from "../components/cases/Kupe";
 import { MLLAB } from "../components/cases/ML";
-import { NewbieCase } from "../components/cases/Newbie";
+import { NolltidCase } from "../components/cases/Nolltid";
 import { TelnessCase } from "../components/cases/Telness";
 import { VegogoCase } from "../components/cases/Vegogo";
 import { WCase } from "../components/cases/W";
-import Image from "../components/Image";
+import { CoraCase } from "../components/cases/Cora";
+import { GirlsOnSkisCase } from "../components/cases/Girlsonskis";
+import { InteDUCase } from "../components/cases/Intedu";
+import { NewbieCase } from "../components/cases/NewbieTech";
+import { OlgaCase } from "../components/cases/Olga";
+import { TheNewGreenSaladCase } from "./cases/TheNewGreenSalad";
 
 const casesObject = {
-  telness: TelnessCase,
-  kupe: KupeCase,
-  vegogo: VegogoCase,
-  whotel: WCase,
+  w: WCase,
+  girlsonskis: GirlsOnSkisCase,
+  nolltid: NolltidCase,
   newbietech: NewbieCase,
-  machinelearninglab: MLLAB,
+  cora: CoraCase,
+  intedu: InteDUCase,
+  kupe: KupeCase,
+  ml: MLLAB,
+  vegogo: VegogoCase,
+  telness: TelnessCase,
+  olga: OlgaCase,
+  thenewgreensalad: TheNewGreenSaladCase,
 };
 
 export default function CaseListing() {
@@ -58,7 +70,7 @@ export default function CaseListing() {
       return null;
     }
 
-    const { title, description, heroimage } = caseInfo;
+    const { title, description, heroimageWork } = caseInfo;
 
     return (
       <li
@@ -80,7 +92,7 @@ export default function CaseListing() {
        `}</style>
         <Link href={`/work/${caseSlug}`}>
           <a className="...h-auto w-full flex flex-col items-center">
-            <Image imageSrc={heroimage} />
+            <Image imageSrc={`cases/${caseSlug}/${heroimageWork}`} />
             <h3 className=" untitled-text mt-6 mb-2 text-sm text-center">
               {title}
             </h3>

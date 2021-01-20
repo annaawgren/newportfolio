@@ -1,5 +1,3 @@
-import { InView, useInView } from "react-intersection-observer";
-
 export default function Image(props) {
   const { imageSrc } = props;
   return (
@@ -8,7 +6,7 @@ export default function Image(props) {
         <div className="inner-img-box w-full h-full ">
           <div className="h-full flex justify-center items-center ">
             <img
-              className="h-full w-full object-fit"
+              className="h-full w-full object-cover"
               src={`/images/${imageSrc}`}
               alt=""
             />

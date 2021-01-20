@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { KupeCase } from "../components/cases/Kupe";
 import { MLLAB } from "../components/cases/ML";
 import { NolltidCase } from "../components/cases/Nolltid";
@@ -80,6 +80,7 @@ export default function CaseListing() {
       "flex",
       "flex-col",
       "items-center",
+      "mb-20",
     ];
 
     switch (overviewSize) {
@@ -89,7 +90,7 @@ export default function CaseListing() {
         break;
       case "medium":
         liClasses.push("md:w-full");
-        liInnerClasses.push("md:w-1/2");
+        liInnerClasses.push("md:w-3/4 ");
         break;
       case "large":
         liClasses.push("md:w-full");
@@ -98,6 +99,13 @@ export default function CaseListing() {
 
     const liClassNames = classNames(liClasses);
     const liInnerClassNames = classNames(liInnerClasses);
+
+    const [visibleText, setVisibleText] = useState(false);
+
+    const handleVisibleText = () => {
+      setVisibleText(!visibleText);
+    };
+    console.log(handleVisibleText);
 
     return (
       <li
@@ -119,14 +127,19 @@ export default function CaseListing() {
       `}</style>
         <Link href={`/work/${caseSlug}`}>
           <a className={liInnerClassNames}>
-            <img src={`/images/cases/${caseSlug}/${heroimageWork}`} alt="" />
-            <h3 className=" untitled-text mt-6 mb-2 text-sm text-center">
-              {title}
-            </h3>
-            <div className=" untitled-text mb-6 text-sm text-center">
-              {description}
+            <img
+              className="w-full object-contain"
+              src={`/images/cases/${caseSlug}/${heroimageWork}`}
+              alt=""
+            />
+            <div>
+              <h3 className=" untitled-text mt-6 mb-2 text-sm text-center ">
+                {title}
+              </h3>
+              <p className=" untitled-text mb-6 text-sm text-center ">
+                {description}
+              </p>
             </div>
-            <div className="w-full h-20" />
           </a>
         </Link>
       </li>
@@ -138,7 +151,6 @@ export default function CaseListing() {
       <ul className="pt:80 px-5 md:px-10 lg:px-20 flex flex-wrap justify-center">
         {caseListingItems}
       </ul>
-      <style jsx>{``}</style>
     </React.Fragment>
   );
 }

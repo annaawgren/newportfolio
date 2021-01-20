@@ -32,7 +32,7 @@ module.exports = {
     },
     lg: {
       min: "26px",
-      max: "60px",
+      max: "55px",
       minvw: "320px",
       maxvw: "1280px",
     },
