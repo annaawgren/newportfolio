@@ -1,6 +1,6 @@
 export const CoraCase = {
   title: "Cora Magazine",
-  description: <p>Women. Art. Culture. Art Director 2015-2018.</p>,
+  description: "Women. Art. Culture. Art Director 2015-2018.",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">

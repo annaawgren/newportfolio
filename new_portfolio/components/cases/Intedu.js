@@ -1,6 +1,6 @@
 export const InteDuCase = {
   title: "Det är inte du det är dom",
-  description: <p>First aid kit book for first time parents</p>,
+  description: "First aid kit book for first time parents",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">
