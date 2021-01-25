@@ -195,7 +195,9 @@ export default function About() {
   );
 
   useEffect(() => {
-    setImageClassNames("mx-auto w-96 px-5 transition-all duration-500 ease-in-out opacity-100");
+    setImageClassNames(
+      "mx-auto w-96 px-5 transition-all duration-500 ease-in-out opacity-100"
+    );
   }, []);
 
   return (
@@ -212,7 +214,7 @@ export default function About() {
         })}
       </div> */}
 
-      <section className="text-justify w-full flex flex-col items-center mb-20 px-5 md:px-10 lg:px-20">
+      <section className="text-justify w-full flex flex-col items-center mt-20 mb-20 px-5 md:px-10 lg:px-20">
         <p className="untitled-text text-md mb-4">
           Hello world <span>👋🏻</span> I'm an enthusiastic and strategic Art
           Director and Designer with Frontend Developer skills and experience
