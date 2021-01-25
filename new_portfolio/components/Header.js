@@ -1,27 +1,48 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../tailwind.config.js";
+
+const fullConfig = resolveConfig(tailwindConfig);
+const intThemeSmallWidth = parseInt(fullConfig.theme.screens.sm, 10);
 
 export default function Header(props) {
   const { initialPosition = "sides" } = props;
 
   // Position: center | sides
   const [position, setPosition] = useState(initialPosition);
+  const [windowWidth, setWindowWidth] = useState();
+  const [scrollY, setScrollY] = useState();
+
+  // Set initial values if running in browser.
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.innerWidth);
+      setScrollY(window.scrollY);
+    }
+  }, []);
 
   useEffect(() => {
     setPosition(initialPosition);
   }, [initialPosition]);
 
+  // Update window width state on resize.
   useEffect(() => {
-    if (initialPosition === "sides") {
-      return;
-    }
+    const handleResize = (evt) => {
+      setWindowWidth(window.innerWidth);
+    };
 
+    window.addEventListener("resize", handleResize, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleResize);
+    };
+  }, []);
+
+  // Update window scroll position state on scroll.
+  useEffect(() => {
     const handleScroll = (evt) => {
-      if (window.scrollY > 100 && position === "center") {
-        setPosition("sides");
-      } else if (window.scrollY < 100 && position === "sides") {
-        setPosition("center");
-      }
+      setScrollY(window.scrollY);
     };
 
     document.addEventListener("scroll", handleScroll, { passive: true });
@@ -29,7 +50,29 @@ export default function Header(props) {
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
-  }, [position]);
+  }, []);
+
+  // Animate header text on scroll or when window size changes.
+  useEffect(() => {
+    const initialPositionIsCenter = initialPosition === "center";
+
+    // Set state based on scrolled position.
+    if (initialPositionIsCenter && scrollY > 100 && position === "center") {
+      setPosition("sides");
+    } else if (
+      initialPositionIsCenter &&
+      scrollY < 100 &&
+      position === "sides"
+    ) {
+      setPosition("center");
+    }
+
+    // Set state based on screen width.
+    // Small screens always get centered.
+    if (windowWidth <= intThemeSmallWidth) {
+      setPosition("center");
+    }
+  }, [position, windowWidth, scrollY]);
 
   let nameOuterClasses;
   let nameInnerClasses;
