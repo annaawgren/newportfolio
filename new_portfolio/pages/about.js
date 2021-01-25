@@ -3,198 +3,207 @@ import Layout from "../components/Layout";
 import ImageWithDelay from "../components/ImageWithDelay";
 
 import Navlinks from "../components/Navlinks";
+import { useEffect, useState } from "react";
 
 export default function About() {
-  let images = [
-    {
-      image: "images/aboutme/me_1.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_2.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_3.png",
-      transform: "scale(0.8)",
-    },
-    {
-      image: "images/aboutme/me_4.png",
-      transform: "scale(0.6)",
-    },
-    {
-      image: "images/aboutme/me_5.png",
-      transform: "scale(0.9)",
-    },
-    {
-      image: "images/aboutme/me_6.png",
-      transform: "scale(0.9)",
-    },
-    {
-      image: "images/aboutme/me_7.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_8.png",
-      transform: "scale(0.7)",
-    },
-    {
-      image: "images/aboutme/me_9.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_10.png",
-      transform: "scale(0.7)",
-    },
-    {
-      image: "images/aboutme/me_11.png",
-      transform: "scale(0.4)",
-    },
-    {
-      image: "images/aboutme/me_12.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_13.png",
-      transform: "scale(0.8)",
-    },
-    {
-      image: "images/aboutme/me_14.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_15.png",
-      transform: "scale(0.7)",
-    },
-    {
-      image: "images/aboutme/me_16.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_17.png",
-      transform: "scale(0.7)",
-    },
-    {
-      image: "images/aboutme/me_18.png",
-      transform: "scale(0.6)",
-    },
-    {
-      image: "images/aboutme/me_19.png",
-      transform: "scale(0.7)",
-    },
-    {
-      image: "images/aboutme/me_20.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_21.png",
-      transform: "scale(0.3)",
-    },
-    {
-      image: "images/aboutme/me_22.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_23.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_24.png",
-      transform: "scale(0.7)",
-    },
-    {
-      image: "images/aboutme/me_25.png",
-      transform: "scale(0.9)",
-    },
-    {
-      image: "images/aboutme/me_26.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_27.png",
-      transform: "scale(0.2)",
-    },
-    {
-      image: "images/aboutme/me_28.png",
-      transform: "scale(0.8)",
-    },
-    {
-      image: "images/aboutme/me_29.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_30.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_31.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_32.png",
-      transform: "scale(0.7)",
-    },
-    {
-      image: "images/aboutme/me_33.png",
-      transform: "scale(0.9)",
-    },
-    {
-      image: "images/aboutme/me_34.png",
-      transform: "scale(0.7)",
-    },
-    {
-      image: "images/aboutme/me_35.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_36.png",
-      transform: "scale(0.6)",
-    },
-    {
-      image: "images/aboutme/me_37.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_38.png",
-      transform: "scale(0.8)",
-    },
-    {
-      image: "images/aboutme/me_39.png",
-      transform: "scale(0.4)",
-    },
-    {
-      image: "images/aboutme/me_40.png",
-      transform: "scale(0.6)",
-    },
-    {
-      image: "images/aboutme/me_41.png",
-      transform: "scale(1)",
-    },
-    {
-      image: "images/aboutme/me_42.png",
-      transform: "scale(0.5)",
-    },
-    {
-      image: "images/aboutme/me_43.png",
-      transform: "scale(0.4)",
-    },
-    {
-      image: "images/aboutme/6.jpeg",
-      transform: "scale(0.8)",
-    },
-  ];
+  // let images = [
+  //   {
+  //     image: "images/aboutme/me_1.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_2.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_3.png",
+  //     transform: "scale(0.8)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_4.png",
+  //     transform: "scale(0.6)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_5.png",
+  //     transform: "scale(0.9)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_6.png",
+  //     transform: "scale(0.9)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_7.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_8.png",
+  //     transform: "scale(0.7)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_9.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_10.png",
+  //     transform: "scale(0.7)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_11.png",
+  //     transform: "scale(0.4)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_12.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_13.png",
+  //     transform: "scale(0.8)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_14.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_15.png",
+  //     transform: "scale(0.7)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_16.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_17.png",
+  //     transform: "scale(0.7)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_18.png",
+  //     transform: "scale(0.6)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_19.png",
+  //     transform: "scale(0.7)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_20.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_21.png",
+  //     transform: "scale(0.3)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_22.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_23.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_24.png",
+  //     transform: "scale(0.7)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_25.png",
+  //     transform: "scale(0.9)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_26.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_27.png",
+  //     transform: "scale(0.2)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_28.png",
+  //     transform: "scale(0.8)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_29.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_30.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_31.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_32.png",
+  //     transform: "scale(0.7)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_33.png",
+  //     transform: "scale(0.9)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_34.png",
+  //     transform: "scale(0.7)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_35.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_36.png",
+  //     transform: "scale(0.6)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_37.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_38.png",
+  //     transform: "scale(0.8)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_39.png",
+  //     transform: "scale(0.4)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_40.png",
+  //     transform: "scale(0.6)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_41.png",
+  //     transform: "scale(1)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_42.png",
+  //     transform: "scale(0.5)",
+  //   },
+  //   {
+  //     image: "images/aboutme/me_43.png",
+  //     transform: "scale(0.4)",
+  //   },
+  //   {
+  //     image: "images/aboutme/6.jpeg",
+  //     transform: "scale(0.8)",
+  //   },
+  // ];
 
-  images = images.map((imageData, index) => {
-    imageData.delay = index * 400;
-    return imageData;
-  });
+  // images = images.map((imageData, index) => {
+  //   imageData.delay = index * 400;
+  //   return imageData;
+  // });
+
+  const [imageClassNames, setImageClassNames] = useState(
+    "mx-auto w-96 px-5 transition-all	duration-500 ease-in-out opacity-0"
+  );
+
+  useEffect(() => {
+    setImageClassNames("mx-auto w-96 px-5 transition-all duration-500 ease-in-out opacity-100");
+  }, []);
 
   return (
     <Layout>
       <Header />
 
       <div className="w-full h-96 ">
-        <img className="mx-auto w-96 px-5" src="./images/anna_wa.png" />
+        <img className={imageClassNames} src="./images/anna_wa.png" />
       </div>
 
       {/* <div className="w-full image-box-height m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden md:overflow-visible">
