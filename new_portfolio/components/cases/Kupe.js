@@ -34,10 +34,19 @@ export const KupeCase = {
         </div>
       </div>
 
-      <div className="col-span-2 ... ">
-        <div className="...   ">
+      <div className=" ... ">
+        <div className="...  ">
           <img
             src="/images/cases/kupe/Kupe.gif"
+            className=" object-cover w-full"
+          />
+        </div>
+      </div>
+
+      <div className=" ... ">
+        <div className="...   ">
+          <img
+            src="/images/cases/kupe/kupe-covers.png"
             className=" object-cover w-full"
           />
         </div>
@@ -93,6 +102,15 @@ export const KupeCase = {
           <img
             src="/images/cases/kupe/kupe-musse2.png"
             className="object-contain w-full"
+          />
+        </div>
+      </div>
+
+      <div className=" col-span-2 ... ">
+        <div className="...  ">
+          <img
+            src="/images/cases/kupe/Kupe.gif"
+            className=" object-cover w-full"
           />
         </div>
       </div>

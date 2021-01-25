@@ -39,6 +39,7 @@ const Case = () => {
   const { casename } = router.query;
 
   const currentCase = cases[casename];
+  console.log(currentCase);
 
   if (!currentCase) {
     return null;
@@ -53,7 +54,7 @@ const Case = () => {
       <Header />
 
       <main className="w-full px-5 md:px-10 lg:px-20 ">
-        <Image />
+        <Image imageSrc={`cases/${casename}/${currentCase.heroimageWork}`} />
 
         <div className="h-10 w-full" />
 
