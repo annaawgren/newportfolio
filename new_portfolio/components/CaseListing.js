@@ -71,11 +71,12 @@ export default function CaseListing() {
     }
 
     const { title, description, heroimageWork } = caseInfo;
+    const key = `${title}-${caseSlug}`;
 
     return (
       <li
         className="case-item"
-        key={title}
+        key={key}
         ref={(el) => (itemsRefs.current[mapIndex] = el)}
       >
         <style jsx>{`

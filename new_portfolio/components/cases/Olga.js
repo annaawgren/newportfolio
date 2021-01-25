@@ -1,6 +1,6 @@
 export const OlgaCase = {
   title: "Interactive Machine Learning Projection",
-  description: <p>Olgas Nystart</p>,
+  description: "Olgas Nystart",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">

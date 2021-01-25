@@ -1,6 +1,6 @@
 export const MlProjectionCase = {
   title: "Interactive Machine Learning Projection",
-  description: <p>Dance and the lines will move</p>,
+  description: "Dance and the lines will move",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">

@@ -1,6 +1,6 @@
 export const TheNewGreenCase = {
   title: "The New Green Salad",
-  description: <p>TNGP and TNGS two books </p>,
+  description: "TNGP and TNGS two books",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">

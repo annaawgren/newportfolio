@@ -1,8 +1,6 @@
 export const VegogoCase = {
   title: "Vegogo",
-  description: (
-    <p>For the love of good food – the new guide to vegan eating.</p>
-  ),
+  description: "For the love of good food – the new guide to vegan eating.",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">Vegogo</h2>

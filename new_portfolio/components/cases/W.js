@@ -1,6 +1,6 @@
 export const WCase = {
   title: "W Hotel",
-  description: <p>Art Director at SJ's onboard magazine Kupé</p>,
+  description: "Art Director at SJ's onboard magazine Kupé",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">W Hotel</h2>

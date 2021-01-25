@@ -1,6 +1,6 @@
 export const TelnessCase = {
   title: "Telness",
-  description: <p>Visual identity for Sweden's top telecom company</p>,
+  description: "Visual identity for Sweden's top telecom company",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">Telness</h2>

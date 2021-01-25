@@ -1,6 +1,6 @@
 export const NolltidCase = {
   title: "Mycket smak på nolltid",
-  description: <p>Mycket smak på nolltid</p>,
+  description: "Mycket smak på nolltid",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">

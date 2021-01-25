@@ -1,8 +1,7 @@
 export const NewbieCase = {
   title: "Newbie Tech Exploration Lab",
-  description: (
-    <p>Facilitated and handson creative tech exploration for beginners.</p>
-  ),
+  description:
+    "Facilitated and handson creative tech exploration for beginners.",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">
