@@ -26,7 +26,7 @@ const casesObject = {
   vegogo: VegogoCase,
   telness: TelnessCase,
   olga: OlgaCase,
-  thenewgreensalad: TheNewGreenCase,
+  thenewgreen: TheNewGreenCase,
 };
 
 export default function CaseListing() {
