@@ -1,22 +1,32 @@
 export const CoraCase = {
-  title: "Cora Magazine",
-  description: "Women. Art. Culture. Art Director 2015-2018.",
+  title: "Cora",
+  description: "Art direction and redesign at Cora Magazine",
   introtext: (
     <div>
-      <h2 className="untitled-text mb-6 mt-2 text-md text-center">
-        Cora Magazine
+      <h2 className="untitled-text mb-12 md:mb-20 mt-2 text-md text-center ">
+        <span className="border-b-2 border-black pb-4">
+          Art Director at Cora Magazine
+        </span>
       </h2>
-      <p className="untitled-text mb-4 text-md ">
-        I was the Art Director for SJ’s onboard magazine Kupé (reaching about
-        300 000 readers a month) between 2011–2017. Our mission was to make a
-        contemporary and popular magazine filled with the best of what current
-        culture, trends, travels, and SJ’s destinations had to offer. I did
-        everything from concept development (I redesigned Kupé twice), putting
-        together teams and assigning Sweden’s top illustrators and
-        photographers, writing headings, some articles, and editing content – to
-        designing it all. All images below shot by Linda Alfvegren, art
-        direction by me.
+      <p className="untitled-text text-md">
+        Cora magazine, founded by editor-in-cheif Yvonne Ihmels, has been all
+        about highlighting women in art and culture since 2004. In 2015 Yvonne
+        contacted me since she needed someone to redesign Cora, and give it a
+        more up-to-date, warm and personal feeling.
       </p>
+      <p className="untitled-text text-md indent">
+        I drew a new logo and did a complete make over, focusing on impactful
+        images, clean typography and soft colors.
+      </p>
+      <p className="untitled-text text-md indent mb-8">
+        I was the Art Director between 2015-2018, and in 2016 Cora was nominated
+        for Bästa Kulturtidskrift at Bokmässan.
+      </p>
+      <style jsx>{`
+        .indent {
+          text-indent: 3rem;
+        }
+      `}</style>
     </div>
   ),
   heroimageWork: "cora cover-test.png",
