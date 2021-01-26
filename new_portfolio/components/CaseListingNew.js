@@ -17,15 +17,16 @@ import classNames from "classnames";
 
 const casesObject = {
   ml: MlProjectionCase,
-  w: WCase,
+  telness: TelnessCase,
+  vegogo: VegogoCase,
   girlsonskis: GirlsOnSkisCase,
   nolltid: NolltidCase,
   newbietech: NewbieCase,
   cora: CoraCase,
   intedu: InteDuCase,
   kupe: KupeCase,
-  vegogo: VegogoCase,
-  telness: TelnessCase,
+
+  w: WCase,
   olga: OlgaCase,
   thenewgreen: TheNewGreenCase,
 };

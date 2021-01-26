@@ -68,15 +68,12 @@ export default function Layout({ children }) {
           }
 
           ::-webkit-scrollbar-thumb {
-            background-color: black;
-             {
-              /* background: linear-gradient(
+            background: linear-gradient(
               190deg,
               #ffdada 0%,
               #f3ffda 35%,
               #d1ffe9 100%
-            ); */
-            }
+            );
           }
           .soehne {
             font-family: "Soehne";
@@ -95,6 +92,12 @@ export default function Layout({ children }) {
           }
           .untitled-text {
             font-family: "Untitled";
+          }
+
+          .caption {
+            font-family: "Untitled";
+            font-size: clamp(0.7rem, 2vw, 1rem);
+            line-height: 1.2;
           }
 
           .biggestfont {

@@ -6,190 +6,6 @@ import Navlinks from "../components/Navlinks";
 import { useEffect, useState } from "react";
 
 export default function About() {
-  // let images = [
-  //   {
-  //     image: "images/aboutme/me_1.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_2.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_3.png",
-  //     transform: "scale(0.8)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_4.png",
-  //     transform: "scale(0.6)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_5.png",
-  //     transform: "scale(0.9)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_6.png",
-  //     transform: "scale(0.9)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_7.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_8.png",
-  //     transform: "scale(0.7)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_9.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_10.png",
-  //     transform: "scale(0.7)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_11.png",
-  //     transform: "scale(0.4)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_12.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_13.png",
-  //     transform: "scale(0.8)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_14.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_15.png",
-  //     transform: "scale(0.7)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_16.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_17.png",
-  //     transform: "scale(0.7)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_18.png",
-  //     transform: "scale(0.6)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_19.png",
-  //     transform: "scale(0.7)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_20.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_21.png",
-  //     transform: "scale(0.3)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_22.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_23.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_24.png",
-  //     transform: "scale(0.7)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_25.png",
-  //     transform: "scale(0.9)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_26.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_27.png",
-  //     transform: "scale(0.2)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_28.png",
-  //     transform: "scale(0.8)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_29.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_30.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_31.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_32.png",
-  //     transform: "scale(0.7)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_33.png",
-  //     transform: "scale(0.9)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_34.png",
-  //     transform: "scale(0.7)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_35.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_36.png",
-  //     transform: "scale(0.6)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_37.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_38.png",
-  //     transform: "scale(0.8)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_39.png",
-  //     transform: "scale(0.4)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_40.png",
-  //     transform: "scale(0.6)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_41.png",
-  //     transform: "scale(1)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_42.png",
-  //     transform: "scale(0.5)",
-  //   },
-  //   {
-  //     image: "images/aboutme/me_43.png",
-  //     transform: "scale(0.4)",
-  //   },
-  //   {
-  //     image: "images/aboutme/6.jpeg",
-  //     transform: "scale(0.8)",
-  //   },
-  // ];
-
-  // images = images.map((imageData, index) => {
-  //   imageData.delay = index * 400;
-  //   return imageData;
-  // });
-
   const [imageClassNames, setImageClassNames] = useState(
     "mx-auto w-96 px-5 transition-all	duration-500 ease-in-out opacity-0"
   );
@@ -208,14 +24,8 @@ export default function About() {
         <img className={imageClassNames} src="./images/anna_wa.png" />
       </div>
 
-      {/* <div className="w-full image-box-height m-auto relative px-5 md:px-10 lg:px-20 overflow-hidden md:overflow-visible">
-        {images.map((imagedata) => {
-          return <ImageWithDelay {...imagedata} key={imagedata.image} />;
-        })}
-      </div> */}
-
-      <section className="text-justify w-full flex flex-col items-center mt-20 mb-20 px-5 md:px-10 lg:px-20">
-        <p className="untitled-text text-md mb-4">
+      <section className="text-justify w-full flex flex-col items-center mt-10 mb-20 px-5 md:px-10 lg:px-20">
+        <p className="untitled-text text-md">
           Hello world <span>👋🏻</span> I'm an enthusiastic and strategic Art
           Director and Designer with Frontend Developer skills and experience
           design at heart. I'm passionate about solving problems that matter and
@@ -224,7 +34,7 @@ export default function About() {
           love.
         </p>
 
-        <p className="untitled-text text-md mb-4">
+        <p className="untitled-text text-md indent">
           I'm also a happy tech enthusiast with a love for machine learning and
           I have a strong interest in new technologies, innovation and ethics –
           and how things we design impact our world and ourselves. I believe in
@@ -233,21 +43,25 @@ export default function About() {
           learning – and having fun!
         </p>
 
-        <p className="untitled-text text-md mb-4">
+        <p className="untitled-text text-md indent">
           I have a 15 years background as an editorial Art Director focusing on
           new design, concept development, redesign and production of
           (award-winning!) magazines, among others SJ's on-board magazine Kupé.
           I have also been teaching in Magazine Production and designed 20+
           illustrated facts books for several different publishing houses.
         </p>
-        <p className="untitled-text text-md mb-4">
+        <p className="untitled-text text-md indent">
           In 2018, I leveled up my digital skills at the Design Lead full-time
           program at Hyper Island and learned to code at Technigo’s Frontend
           Developer Boot Camp. Since then I have worked as a Designer and
           Frontend developer at the (now closed) digital product Studio
           Department in Stockholm. I'm also co-founder of{" "}
           <span>
-            <a href="https://newbietech.io" target="_blank">
+            <a
+              href="https://newbietech.io"
+              target="_blank"
+              className="text-red-300"
+            >
               Newbie Tech Exploration Lab
             </a>
           </span>{" "}
@@ -391,6 +205,10 @@ export default function About() {
         {`
           .image-box-height {
             height: clamp(20rem, 75vw, 30rem);
+          }
+
+          .indent {
+            text-indent: 3rem;
           }
         `}
       </style>
