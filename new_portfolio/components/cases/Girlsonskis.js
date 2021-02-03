@@ -1,6 +1,6 @@
 export const GirlsOnSkisCase = {
   title: "Girls On Skis",
-  description: "Brand new initiative for those who love cross country skiing",
+  description: "For those who love cross country skiing",
   introtext: (
     <div>
       <h2 className="untitled-text mb-6 mt-2 text-md text-center">

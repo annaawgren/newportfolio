@@ -102,7 +102,7 @@ export default function Header(props) {
               <div
                 className={`inline-block transition duration-700 transform ${nameInnerClasses}`}
               >
-                <p className="soehne-drei headerfont">Anna Wikberg Agren</p>
+                <p className="soehne-halbfett headerfont">Anna Wikberg Agren</p>
               </div>
             </a>
           </Link>
@@ -113,7 +113,7 @@ export default function Header(props) {
               <div
                 className={`inline-block transition duration-700 transform ${professionInnerClasses}`}
               >
-                <p className="soehne-drei headerfont">
+                <p className="soehne-halbfett headerfont">
                   Art Director \ Designer
                 </p>
               </div>

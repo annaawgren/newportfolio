@@ -13,7 +13,7 @@ export default function Contact() {
     <Layout>
       <div />
       <motion.figure
-        className="bg-gray-500 w-full h-screen absolute origin-bottom"
+        className="bg-pink-100 w-full h-screen fixed origin-bottom"
         initial={{ scaleY: 0, opacity: 0 }}
         animate={{ scaleY: 1, opacity: 1 }}
         originY={1}
@@ -22,7 +22,7 @@ export default function Contact() {
       <div className="w-full h-full relative z-10">
         <Header />
 
-        <div className="lg:h-40 w-full" />
+        <div className="lg:h-20 w-full" />
 
         <motion.section
           className="w-full h-screen flex flex-col items-center"
@@ -30,7 +30,7 @@ export default function Contact() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          <h1 className="untitled-text text-lg mb-20 text-center leading-normal">
+          <h1 className="untitled-text text-lg mb-10 text-center leading-normal">
             I’d love <br />
             to talk!
           </h1>

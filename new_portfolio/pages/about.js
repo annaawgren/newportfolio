@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import Layout from "../components/Layout";
-import ImageWithDelay from "../components/ImageWithDelay";
-
+import { motion } from "framer-motion";
 import Navlinks from "../components/Navlinks";
 import { useEffect, useState } from "react";
 
@@ -20,11 +19,21 @@ export default function About() {
     <Layout>
       <Header />
 
-      <div className="w-full mt-28 mb-20">
+      <motion.div
+        className="w-full mb-20"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 1 }}
+      >
         <img className={imageClassNames} src="./images/anna_wa.png" />
-      </div>
+      </motion.div>
 
-      <section className="text-justify w-full flex flex-col items-center mt-10 mb-20 px-5 md:px-10 lg:px-20">
+      <motion.section
+        className="text-justify w-full flex flex-col items-center mt-10 mb-20 px-5 md:px-10 lg:px-20"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         <p className="untitled-text text-md">
           Hello world <span>👋🏻</span> I'm an enthusiastic and strategic Art
           Director and Designer with Frontend Developer skills and experience
@@ -70,7 +79,7 @@ export default function About() {
         <p className="untitled-text text-md mb-4">
           I'm currently available for hire, full-time or freelance!
         </p>
-      </section>
+      </motion.section>
 
       <section className="studies text-sm flex flex-col lg:flex-row justify-between w-full px-5 md:px-10 lg:px-20">
         <div className="flex flex-col text-center">

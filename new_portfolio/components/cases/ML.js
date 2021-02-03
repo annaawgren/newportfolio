@@ -67,7 +67,7 @@ export const MlProjectionCase = {
           muted
           preload
         />
-        <div className="absolute top-1/3  biggestfont text-center soehne w-full text-white">
+        <div className="absolute top-1/3 text-center soehne w-full text-white">
           <span>Play</span>
         </div>
       </div>
