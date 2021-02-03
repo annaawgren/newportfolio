@@ -1,12 +1,14 @@
 export const NolltidCase = {
   title: "Mycket smak på nolltid",
-  description: "Mycket smak på nolltid",
+  description: "Asiatiskt gott på 10 - 20 - 30 minuter",
   introtext: (
     <div>
-      <h2 className="untitled-text mb-6 mt-2 text-md text-center">
-        Asiatiskt gott på 10 - 20 - 30 minuter
+      <h2 className="untitled-text mb-12 md:mb-20 mt-2 text-md text-center ">
+        <span className="border-b-2 border-black pb-4">
+          Mycket smak på nolltid
+        </span>
       </h2>
-      <p className="untitled-text mb-4 text-md ">
+      <p className="untitled-text text-md">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
         tristique orci vel dui felis. Augue sed placerat laoreet morbi at amet.
         Euismod pharetra praesent massa potenti. Quam dolor faucibus sociis
@@ -18,6 +20,11 @@ export const NolltidCase = {
         dolor sit amet, consectetur adipiscing elit. Dignissim tristique orci
         vel dui felis. Augue sed placerat laoreet morbi at amet.
       </p>
+      <style jsx>{`
+        .indent {
+          text-indent: 3rem;
+        }
+      `}</style>
     </div>
   ),
   heroimageWork: "nolltid-hero.png",

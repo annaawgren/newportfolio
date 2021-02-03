@@ -1,5 +1,5 @@
 export const MlProjectionCase = {
-  title: "Computer Vision Project",
+  title: "Machine Learning Project",
   description: "An Interactive Machine Learning Projection",
   introtext: (
     <div>

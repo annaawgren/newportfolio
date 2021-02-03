@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import { InView, useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import Layout from "../components/Layout";
-import Link from "next/link";
 
 import Header from "../components/Header";
 import CaseListingNew from "../components/CaseListingNew";
@@ -11,7 +10,7 @@ import Navlinks from "../components/Navlinks";
 const THRESHOLD = [0.25, 0.5, 0.75];
 
 export default function Home() {
-  const [ref, inView, entry] = useInView({ threshold: THRESHOLD });
+  const [entry] = useInView({ threshold: THRESHOLD });
   let extraClasses = "";
 
   if (entry && entry.intersectionRatio <= 0.75) {

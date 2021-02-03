@@ -1,8 +1,13 @@
 export default function Image(props) {
-  const { imageSrc } = props;
+  const { imageSrc, hasHoverEffect = false } = props;
+
   return (
     <React.Fragment>
-      <div className="outer-img-box w-full">
+      <div
+        className={`outer-img-box w-full border-2 border-transparent ${
+          hasHoverEffect ? "has-hover-effect" : ""
+        }`}
+      >
         <div className="inner-img-box w-full h-full ">
           <div className="h-full flex justify-center items-center ">
             <img
@@ -16,6 +21,10 @@ export default function Image(props) {
 
       <style jsx>
         {`
+        .has-hover-effect:hover {
+          filter: drop-shadow(4px 4px 0px #ffdada);
+        }
+
         .outer-img-box {
           position: relative;
           max-width: 700px;

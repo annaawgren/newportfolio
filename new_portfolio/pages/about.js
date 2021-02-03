@@ -7,12 +7,12 @@ import { useEffect, useState } from "react";
 
 export default function About() {
   const [imageClassNames, setImageClassNames] = useState(
-    "mx-auto w-96 px-5 transition-all	duration-500 ease-in-out opacity-0"
+    "mx-auto w-96 px-5 transition-all	duration-500 ease-in-out opacity-0 delay-300"
   );
 
   useEffect(() => {
     setImageClassNames(
-      "mx-auto w-96 px-5 transition-all duration-500 ease-in-out opacity-100"
+      "mx-auto w-96 px-5 transition-all duration-500 ease-in-out opacity-100 delay-300"
     );
   }, []);
 
@@ -20,7 +20,7 @@ export default function About() {
     <Layout>
       <Header />
 
-      <div className="w-full h-96 ">
+      <div className="w-full mt-28 mb-20">
         <img className={imageClassNames} src="./images/anna_wa.png" />
       </div>
 

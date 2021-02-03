@@ -90,10 +90,14 @@ export default function CaseListing() {
          opacity: 1;
          transform: translateY(0);
        }
+       
        `}</style>
         <Link href={`/work/${caseSlug}`}>
           <a className="...h-auto w-full flex flex-col items-center">
-            <Image imageSrc={`cases/${caseSlug}/${heroimageWork}`} />
+            <Image
+              hasHoverEffect={true}
+              imageSrc={`cases/${caseSlug}/${heroimageWork}`}
+            />
             <h3 className=" untitled-text mt-6 mb-2 text-sm text-center">
               {title}
             </h3>

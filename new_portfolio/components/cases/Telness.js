@@ -10,17 +10,28 @@ export const TelnessCase = {
       </h2>
       <p className="untitled-text text-md">
         As a Designer at digital product studio Department I was responsible for
-        evolving the telecom company Telness’ design system – to make their
-        visual identity more warm and welcoming.
+        evolving telecom company Telness’ design system – to make their visual
+        identity more warm, vivid and welcoming.
       </p>
       <p className="untitled-text text-md indent">
-        Here are some snapshots from the design process where I overlooked all
-        the design components, how to work with typography, adding more colors,
-        pictograms, speech bubbles and animated arrows for example.
+        Telness is all about simplifying for customers and exceeding their
+        expectations on business telecom and wanted their visual identity to
+        promote this. I overlooked all the design components, how to work with
+        typography (changing font color from black to warmer petroleum blue),
+        adding more and vivid colors, neat and simple pictograms, welcoming
+        speech bubbles and animated arrows for more life, for example.
       </p>
       <p className="untitled-text text-md indent mb-8">
-        I also worked with the Telness tonality and falicitated workshops with
-        the client. See the implemented design here: telness.se
+        See the implemented design here{" "}
+        <span>
+          <a
+            href="https://www.telness.se/"
+            target="_blank"
+            className="text-red-300"
+          >
+            telness.se
+          </a>
+        </span>{" "}
       </p>
       <style jsx>{`
         .indent {
@@ -29,7 +40,7 @@ export const TelnessCase = {
       `}</style>
     </div>
   ),
-  heroimageWork: "telness-hero.png",
+  heroimageWork: "telness-hero-new.png",
   heroimageCase: "kupe-test.png",
   overviewSize: "small",
   images: (
