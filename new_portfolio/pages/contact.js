@@ -59,6 +59,7 @@ export default function Contact() {
 
         <Navlinks />
       </div>
+      <style jsx>{``}</style>
     </Layout>
   );
 }
