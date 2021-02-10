@@ -20,7 +20,7 @@ export default function About() {
       <Header />
 
       <motion.div
-        className="w-full mb-20"
+        className="w-full mb-12 md:mb-20 px-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 1 }}

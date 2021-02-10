@@ -30,10 +30,6 @@ export default function Contact() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          <h1 className="untitled-text text-lg mb-10 text-center leading-normal">
-            I’d love <br />
-            to talk!
-          </h1>
           <div className="flex flex-col justify-around items-center w-full px-5 md:px-10 lg:px-20">
             <a href="https://www.pinterest.se/annaawgren/" target="_blank">
               <p className="untitled-text text-md mb-2"> info@annaagren.se</p>

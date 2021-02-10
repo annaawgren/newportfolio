@@ -31,6 +31,15 @@ export default function Layout({ children }) {
               url("/fonts/untitled-sans-web-regular-italic.eot") format("eot");
           }
 
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            0% {
+              transform: rotate(0deg);
+            }
+          }
+
           body,
           html {
             font-family: "untitled", sans-serif;
@@ -41,7 +50,11 @@ export default function Layout({ children }) {
 
           a:hover {
             text-decoration: none;
+             {
+              /* cursor: url("images/snurr.png"), auto; */
+            }
           }
+
           summary:focus,
           button:focus,
           input:focus {
