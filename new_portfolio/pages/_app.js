@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { AnimateSharedLayout } from "framer-motion";
+
 import "../index.css";
 
 /**
@@ -25,9 +25,5 @@ function useNormalScrollRoutes() {
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
   useNormalScrollRoutes();
-  return (
-    <AnimateSharedLayout>
-      <Component {...pageProps} />
-    </AnimateSharedLayout>
-  );
+  return <Component {...pageProps} />;
 }

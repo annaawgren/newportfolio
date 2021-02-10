@@ -3,23 +3,13 @@ import Header from "../components/Header";
 import Navlinks from "../components/Navlinks";
 import * as React from "react";
 
-import { motion } from "framer-motion";
 import LoveToTalkSVG from "../components/LoveToTalkSVG";
 
 export default function Contact() {
-  const easing = {
-    ease: (progress) => progress * progress,
-  };
   return (
     <Layout>
       <div />
-      {/* <motion.figure
-        className="bg-pink-100 w-full h-screen fixed origin-bottom"
-        initial={{ scaleY: 0, opacity: 0 }}
-        animate={{ scaleY: 1, opacity: 1 }}
-        originY={1}
-        transition={{ duration: 1 }}
-      /> */}
+
       <div className="w-full h-full relative z-10">
         <Header />
 

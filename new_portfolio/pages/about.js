@@ -19,21 +19,11 @@ export default function About() {
     <Layout>
       <Header />
 
-      <motion.div
-        className="w-full mb-12 md:mb-20 px-20"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 1 }}
-      >
+      <div className="w-full mb-12 md:mb-20 px-20">
         <img className={imageClassNames} src="./images/anna_wa.png" />
-      </motion.div>
+      </div>
 
-      <motion.section
-        className="text-justify w-full flex flex-col items-center mt-10 mb-20 px-5 md:px-10 lg:px-20"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 1 }}
-      >
+      <section className="text-justify w-full flex flex-col items-center mt-10 mb-20 px-5 md:px-10 lg:px-20">
         <p className="untitled-text text-md">
           Hello world <span>👋🏻</span> I'm an enthusiastic and strategic Art
           Director and Designer with Frontend Developer skills and experience
@@ -79,7 +69,7 @@ export default function About() {
         <p className="untitled-text text-md mb-4">
           I'm currently available for hire, full-time or freelance!
         </p>
-      </motion.section>
+      </section>
 
       <section className="studies text-sm flex flex-col lg:flex-row justify-between w-full px-5 md:px-10 lg:px-20">
         <div className="flex flex-col text-center">
