@@ -35,14 +35,6 @@ export default function Home() {
       <div className="h-40 w-full" />
 
       <Navlinks />
-
-      <style jsx>{`
-
-
-
-
-  }
-`}</style>
     </Layout>
   );
 }
