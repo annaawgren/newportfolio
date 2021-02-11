@@ -15,7 +15,7 @@ export default function Contact() {
 
         <div className="h-8 w-full" />
 
-        <div className="mx-auto flex flex-row justify-center items-center w-full">
+        <div className="mx-auto flex flex-row justify-center items-center w-1/2">
           <LoveToTalkSVG />
         </div>
 

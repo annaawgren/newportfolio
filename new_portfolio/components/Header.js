@@ -120,6 +120,12 @@ export default function Header(props) {
             </a>
           </Link>
         </div>
+        <style jsx>{`
+          .headerfont {
+            font-size: clamp(1rem, 5vw, 1.1rem);
+            line-height: 1.1;
+          }
+        `}</style>
       </header>
     </>
   );

@@ -80,11 +80,11 @@ export default function LoveToTalkSVG() {
           }
 
           svg {
-            animation: spin 50s linear infinite;
+            animation: spin 30s linear infinite;
           }
 
-          div:hover {
-            transform: scale(1.1);
+          div {
+            transform: scale(0.6);
             transition: all 300ms ease-in-out;
           }
         `}
