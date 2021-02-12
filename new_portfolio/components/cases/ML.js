@@ -60,16 +60,18 @@ export const MlProjectionCase = {
       </div>
 
       <div className="col-span-2 ... relative ">
+        {/* 
+        Uses Media Fragment to force Mobile Safari to show thumbnail.
+        More info:
+        https://caniuse.com/media-fragments
+        */}
         <video
-          src="/images/cases/ml/ml-movie.mov"
+          src="/images/cases/ml/ml-movie.mov#t=0.0001"
           className="object-cover w-full"
           controls
           muted
-          preload
+          preload="metadata"
         />
-        <div className="absolute top-1/3 text-center soehne w-full text-white">
-          <span>Play</span>
-        </div>
       </div>
 
       <div className="w-full h-40 md:h-60 " />
