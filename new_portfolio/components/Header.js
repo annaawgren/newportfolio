@@ -71,6 +71,8 @@ export default function Header(props) {
     // Small screens always get centered.
     if (windowWidth <= intThemeSmallWidth) {
       setPosition("center");
+    } else if (initialPosition !== "center") {
+      setPosition("sides");
     }
   }, [position, windowWidth, scrollY]);
 
