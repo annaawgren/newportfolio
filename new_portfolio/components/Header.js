@@ -9,27 +9,110 @@ const intThemeSmallWidth = parseInt(fullConfig.theme.screens.sm, 10);
 export default function Header(props) {
   const { initialPosition = "sides" } = props;
 
+  const [
+    windowSizeAndScrollPosition,
+    setWindowSizeAndScrollPosition,
+  ] = useState(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    return {
+      windowInnerWidth: window.innerWidth,
+      windowScrollY: window.scrollY,
+    };
+  });
+
+  const getPositionBasedonWindowSizeAndScrollPosition = () => {
+    console.log({ windowSizeAndScrollPosition, initialPosition });
+
+    // Bail if values not set.
+    if (windowSizeAndScrollPosition === undefined) {
+      return;
+    }
+
+    const windowWidth = windowSizeAndScrollPosition.windowInnerWidth;
+    const scrollY = windowSizeAndScrollPosition.windowScrollY;
+
+    // Default to old position.
+    let newPosition = "";
+
+    // Bail if windowWidth or scrollY is not set yet.
+    if (windowWidth === undefined || scrollY === undefined) {
+      return;
+    }
+
+    const initialPositionIsCenter = initialPosition === "center";
+
+    console.log("animate on scroll or resize", {
+      position,
+      newPosition,
+      windowWidth,
+      intThemeSmallWidth,
+      scrollY,
+      initialPositionIsCenter,
+    });
+
+    // Set state based on screen width.
+    // Small screens always get centered, so this overrides scroll position.
+    if (windowWidth <= intThemeSmallWidth) {
+      // On small screen, so center.
+      console.log("center because small screen");
+      newPosition = "center";
+      return newPosition;
+    }
+    // } else if (initialPosition !== "center") {
+    //   newPosition = "sides";
+    // }
+
+    // Set state based on scrolled position.
+    if (initialPositionIsCenter && scrollY > 100 && position === "center") {
+      newPosition = "sides";
+    } else if (
+      initialPositionIsCenter &&
+      scrollY < 100 &&
+      position === "sides"
+    ) {
+      newPosition = "center";
+    }
+
+    console.log("determined new position is", newPosition);
+
+    return newPosition;
+  };
+
   // Position: center | sides
-  const [position, setPosition] = useState(initialPosition);
-  const [windowWidth, setWindowWidth] = useState();
-  const [scrollY, setScrollY] = useState();
+  const [position, setPosition] = useState(() => {
+    const newPosition = getPositionBasedonWindowSizeAndScrollPosition();
+    console.log("newPosition in first useState", newPosition);
+    return newPosition;
+  });
+
+  console.log({ windowSizeAndScrollPosition });
 
   // Set initial values if running in browser.
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setWindowWidth(window.innerWidth);
-      setScrollY(window.scrollY);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     console.log("set init values");
+  //     setWindowWidth(window.innerWidth);
+  //     setScrollY(window.scrollY);
+  //   }
+  // }, []);
 
   useEffect(() => {
+    console.log("set init position");
     setPosition(initialPosition);
   }, [initialPosition]);
 
   // Update window width state on resize.
   useEffect(() => {
+    console.log("xxx");
     const handleResize = (evt) => {
-      setWindowWidth(window.innerWidth);
+      console.log("set win size", window.innerWidth);
+      setWindowSizeAndScrollPosition({
+        ...windowSizeAndScrollPosition,
+        windowInnerWidth: window.innerWidth,
+      });
     };
 
     window.addEventListener("resize", handleResize, { passive: true });
@@ -42,7 +125,11 @@ export default function Header(props) {
   // Update window scroll position state on scroll.
   useEffect(() => {
     const handleScroll = (evt) => {
-      setScrollY(window.scrollY);
+      console.log("set scroll");
+      setWindowSizeAndScrollPosition({
+        ...windowSizeAndScrollPosition,
+        windowScrollY: window.scrollY,
+      });
     };
 
     document.addEventListener("scroll", handleScroll, { passive: true });
@@ -54,32 +141,14 @@ export default function Header(props) {
 
   // Animate header text on scroll or when window size changes.
   useEffect(() => {
-    const initialPositionIsCenter = initialPosition === "center";
+    const newPosition = getPositionBasedonWindowSizeAndScrollPosition();
+    setPosition(newPosition);
+  }, [position, windowSizeAndScrollPosition]);
 
-    // Set state based on scrolled position.
-    if (initialPositionIsCenter && scrollY > 100 && position === "center") {
-      setPosition("sides");
-    } else if (
-      initialPositionIsCenter &&
-      scrollY < 100 &&
-      position === "sides"
-    ) {
-      setPosition("center");
-    }
-
-    // Set state based on screen width.
-    // Small screens always get centered.
-    if (windowWidth <= intThemeSmallWidth) {
-      setPosition("center");
-    } else if (initialPosition !== "center") {
-      setPosition("sides");
-    }
-  }, [position, windowWidth, scrollY]);
-
-  let nameOuterClasses;
-  let nameInnerClasses;
-  let professionOuterClasses;
-  let professionInnerClasses;
+  let nameOuterClasses = "aaa";
+  let nameInnerClasses = "bbb";
+  let professionOuterClasses = "ccc";
+  let professionInnerClasses = "ddd";
 
   if (position == "center") {
     nameOuterClasses = "translate-x-1/2";
@@ -93,16 +162,24 @@ export default function Header(props) {
     professionInnerClasses = "";
   }
 
+  console.log("render with position and classes", {
+    position,
+    nameOuterClasses,
+    nameInnerClasses,
+    professionOuterClasses,
+    professionInnerClasses,
+  });
+
   return (
     <>
-      <header className="pt-8 pb-12 mb-12 sticky top-0 z-10 px-5 md:px-10 lg:px-20">
+      <header
+        className={`pt-8 pb-12 mb-12 sticky top-0 z-10 px-5 md:px-10 lg:px-20`}
+      >
         <div className="relative overflow-hidden">
           <Link href="/">
-            <a
-              className={`block transition duration-700 transform ${nameOuterClasses}`}
-            >
+            <a className={`block duration-700 transform ${nameOuterClasses}`}>
               <div
-                className={`inline-block transition duration-700 transform ${nameInnerClasses}`}
+                className={`inline-block duration-700 transform ${nameInnerClasses}`}
               >
                 <p className="soehne-halbfett headerfont">Anna Wikberg Ågren</p>
               </div>
@@ -110,10 +187,10 @@ export default function Header(props) {
           </Link>
           <Link href="/">
             <a
-              className={`block transition duration-700 transform text-right ${professionOuterClasses}`}
+              className={`block duration-700 transform text-right ${professionOuterClasses}`}
             >
               <div
-                className={`inline-block transition duration-700 transform ${professionInnerClasses}`}
+                className={`inline-block duration-700 transform ${professionInnerClasses}`}
               >
                 <p className="soehne-halbfett headerfont">
                   Art Director \ Designer
