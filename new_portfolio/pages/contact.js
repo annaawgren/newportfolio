@@ -13,7 +13,7 @@ export default function Contact() {
       <div className="w-full h-full relative z-10">
         <Header />
 
-        <div className="h-8 w-full" />
+        {/* <div className="h-8 w-full" /> */}
 
         <div className="mx-auto flex flex-row justify-center items-center w-1/2">
           <LoveToTalkSVG />
