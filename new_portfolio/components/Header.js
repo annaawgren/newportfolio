@@ -114,7 +114,7 @@ export default function Header(props) {
                 className={`inline-block transition duration-700 transform ${professionInnerClasses}`}
               >
                 <p className="soehne-halbfett headerfont">
-                  Art Director \ Designer
+                  Senior Art Director / Creative Technologist / AI Lead
                 </p>
               </div>
             </a>

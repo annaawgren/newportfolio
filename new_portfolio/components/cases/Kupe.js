@@ -19,47 +19,28 @@ export const KupeCase = {
       </p>
     </div>
   ),
-  heroimageWork: "kupe-hero.png",
-  heroimageCase: "kupe-test.png",
-  overviewSize: "large",
+  heroimageWork: "kupe-covers.png",
+  heroimageCase: "kupe-covers.png",
+  overviewSize: "small",
   images: (
     <div className="grid grid-cols-2 gap-10 ">
-      <div className="...  w-full">
-        <img src="/images/cases/kupe/kupe-uppsl1.png" />
-      </div>
-
-      <div className="... ">
-        <div className="... ">
-          <img src="/images/cases/kupe/kupe-uppsl2.png" />
-        </div>
-      </div>
-
-      <div className=" ... ">
-        <div className="...  ">
-          <img
-            src="/images/cases/kupe/Kupe.gif"
-            className=" object-cover w-full"
-          />
-        </div>
-      </div>
-
-      <div className=" ... ">
-        <div className="...   ">
-          <img
-            src="/images/cases/kupe/kupe-covers.png"
-            className=" object-cover w-full"
-          />
-        </div>
-      </div>
-
       <div className="col-span-2 ...">
+        <img src="/images/cases/kupe/kupe-hero.png" />
+      </div>
+
+      <div className=" ...">
         <div className="...  h-auto">
           <img
-            src="/images/cases/kupe/kupe-omsl.png"
+            src="/images/cases/kupe/kupe-uppsl2.png"
             className="object-contain w-full"
           />
         </div>
       </div>
+
+
+
+
+
 
       <div className=" ...">
         <div className="...  h-auto">
@@ -84,6 +65,16 @@ export const KupeCase = {
           <img
             src="/images/cases/kupe/kupe-zara3.png"
             className="h-auto object-cover w-full"
+          />
+        </div>
+      </div>
+
+
+      <div className="col-span-2 ...">
+        <div className="...  h-auto">
+          <img
+            src="/images/cases/kupe/kupe-omsl.png"
+            className="object-contain w-full"
           />
         </div>
       </div>

@@ -29,14 +29,14 @@ export const CoraCase = {
       `}</style>
     </div>
   ),
-  heroimageWork: "cora cover-test.png",
+  heroimageWork: "cora-cover.gif",
   heroimageCase: "cora-cover.gif",
   overviewSize: "small",
   images: (
     <div className="grid grid-cols-2 gap-10 ">
       <div className="col-span-2 ... ">
         <img
-          src="/images/cases/cora/cora1.png"
+          src="/images/cases/cora/cora-cover.gif"
           className=" object-cover w-full"
         />
       </div>

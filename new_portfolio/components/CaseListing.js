@@ -3,30 +3,25 @@ import { useEffect, useRef } from "react";
 import Image from "./Image";
 import { KupeCase } from "../components/cases/Kupe";
 import { MlProjectionCase } from "../components/cases/ML";
-import { NolltidCase } from "../components/cases/Nolltid";
 import { TelnessCase } from "../components/cases/Telness";
-import { VegogoCase } from "../components/cases/Vegogo";
 import { WCase } from "../components/cases/W";
 import { CoraCase } from "../components/cases/Cora";
-import { GirlsOnSkisCase } from "../components/cases/Girlsonskis";
-import { InteDuCase } from "../components/cases/Intedu";
 import { NewbieCase } from "../components/cases/NewbieTech";
-import { OlgaCase } from "../components/cases/Olga";
-import { TheNewGreenCase } from "./cases/TheNewGreen";
+import { BookDesignCase } from "./cases/BookDesign";
+import { AuraCase } from "./cases/Aura";
+import { Vattenfall } from "./cases/Vattenfall";
 
 const casesObject = {
+  aura: AuraCase,
+  vattenfall: Vattenfall,
   w: WCase,
-  girlsonskis: GirlsOnSkisCase,
-  nolltid: NolltidCase,
   newbietech: NewbieCase,
   cora: CoraCase,
-  intedu: InteDuCase,
   kupe: KupeCase,
   ml: MlProjectionCase,
-  vegogo: VegogoCase,
+
   telness: TelnessCase,
-  olga: OlgaCase,
-  thenewgreen: TheNewGreenCase,
+  bookdesign: BookDesignCase,
 };
 
 export default function CaseListing() {

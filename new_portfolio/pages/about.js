@@ -25,50 +25,67 @@ export default function About() {
 
       <section className="text-justify w-full flex flex-col items-center mt-10 mb-20 px-5 md:px-10 lg:px-20">
         <p className="untitled-text text-md">
-          Hello world <span>👋🏻</span> I'm an enthusiastic and strategic Art
-          Director and Designer with Frontend Developer skills and experience
-          design at heart. I'm passionate about solving problems that matter and
-          creating awesome and meaningful content, design, products and
-          experiences - on all things digital, IRL and paper – for people to
-          love.
+          Hello <span>👋🏻</span> I’m a curious and continuously learning creative with frontend skills and
+          experience design at heart. Passionate about exploring emerging technologies,
+          systems thinking and working towards preferred futures – with a strong interest in ethics and how
+          the things we design impact our world and ourselves. I believe in the importance of detail, and solving problems that matter to create awesome
+          and meaningful content, communication and experiences – for people to love.
         </p>
 
         <p className="untitled-text text-md indent">
-          I'm also a happy tech enthusiast with a love for machine learning and
-          I have a strong interest in new technologies, innovation and ethics –
-          and how things we design impact our world and ourselves. I believe in
-          the importance of detail and being passionate about everything I do.
-          I'm all in for design thinking and life centered design, lifelong
-          learning – and having fun!
+          I have a 15-year background as an editorial Art Director, focusing on new design, concept development, redesigns
+          and production of (award-winning!) magazines, including SJ’s on-board magazine Kupé.
+          I’ve also taught Magazine Production and designed 20+ nonfiction books for various publishing houses.
         </p>
 
         <p className="untitled-text text-md indent">
-          I have a 15 years background as an editorial Art Director focusing on
-          new design, concept development, redesign and production of
-          (award-winning!) magazines, among others SJ's on-board magazine Kupé.
-          I have also been teaching in Magazine Production and designed 20+
-          illustrated facts books for several different publishing houses.
-        </p>
-        <p className="untitled-text text-md indent">
-          In 2018, I leveled up my digital skills at the Design Lead full-time
-          program at Hyper Island and learned to code at Technigo’s Frontend
-          Developer Boot Camp. Since then I have worked as a Designer and
-          Frontend developer at the (now closed) digital product Studio
-          Department in Stockholm. I'm also co-founder of{" "}
-          <span>
+          In 2018 I leveled up my digital skills at Hyper Island’s full-time Design Lead program and
+          learned to code at Technigo’s Frontend Developer Boot Camp.
+          After that I worked as a Designer and Frontend Developer at <span>
             <a
-              href="https://newbietech.io"
+              href="https://department.se/"
               target="_blank"
               className="text-red-300"
             >
-              Newbie Tech Exploration Lab
+              Department
             </a>
-          </span>{" "}
-          where we facilitate hands-on creative tech explorations for beginners.
+          </span>,
+          and founded the learning community <span className="font-extrabold">Newbie Tech Exploration Lab</span>,
+          where we facilitated hands-on creative tech explorations for beginners.
         </p>
-        <p className="untitled-text text-md mb-4">
-          I'm currently available for hire, full-time or freelance!
+
+        <p className="untitled-text text-md indent">
+          Since 2021 I’ve been working as a Senior Art Director at <span>
+            <a
+              href="https://www.makeyourmark.se/"
+              target="_blank"
+              className="text-red-300"
+            >
+              Make Your Mark
+            </a>
+          </span>,
+          focusing on creative solutions that engage and make an impact – across concepts,
+          campaigns, UI/UX design and video for clients like Vattenfall, Systembolaget and Advania.
         </p>
+
+        <p className="untitled-text text-md indent">
+          In 2024 I started leading Make Your Mark’s AI development, exploring what’s next
+          in content creation and communication. Since 2025 I'm sharing my time between Make Your Mark and <span>
+            <a
+              href="https://www.aheadgroup.se/"
+              target="_blank"
+              className="text-red-300"
+            >
+              Ahead Group
+            </a>
+          </span>, where I combine creativity, strategy, and emerging technology as a Creative Technologist in the Insights and AI Team.
+        </p>
+
+        <p className="untitled-text text-md indent">
+          Beyond work, you’ll often find me in the Tänndalen mountains with my family or at the gym crossfitting.
+          I’m happy where I’m at – but always curious to connect, collaborate, or just share a good <span>☕️</span>!
+        </p>
+
       </section>
 
       <section className="studies text-sm flex flex-col lg:flex-row justify-between w-full px-5 md:px-10 lg:px-20">
@@ -79,6 +96,8 @@ export default function About() {
             </span>
           </div>
           <ul>
+            <li className="mb-2">Advania</li>
+            <li className="mb-2">Alandia</li>
             <li className="mb-2">Apollo</li>
             <li className="mb-2">Bokförlaget Arena</li>
             <li className="mb-2">Bonnier Fakta</li>
@@ -99,11 +118,16 @@ export default function About() {
             <li className="mb-2">SKAP</li>
             <li className="mb-2">Sveriges Tidskrifter</li>
             <li className="mb-2">SJ</li>
-            <li className="mb-2">Tidningsstatistik / TS</li>
+            <li className="mb-2">Systembolaget</li>
+            <li className="mb-2">Technigo</li>
             <li className="mb-2">Telness</li>
+            <li className="mb-2">Tidningsstatistik / TS</li>
             <li className="mb-2">Tidningen Vi</li>
+            <li className="mb-2">Tjejer Kodar</li>
             <li className="mb-2">Tukan Förlag</li>
+            <li className="mb-2">Vattenfall</li>
             <li className="mb-2">W Hotel</li>
+            <li className="mb-2">Världskulturmuséerna</li>
           </ul>
         </div>
 
@@ -115,6 +139,11 @@ export default function About() {
           </div>
 
           <ul>
+            <li className="mb-4 leading-relaxed">
+              Video Motion Production <br />
+              @Berghs School of Communication 2021
+            </li>
+
             <li className="mb-4 leading-relaxed">
               Designing Ethical Futures <br />
               @Copenhagen Institute of Interaction Design 2019
@@ -170,6 +199,7 @@ export default function About() {
           </div>
           <ul>
             <li className="mb-2">Art Direction</li>
+            <li className="mb-2">AI Strategy</li>
             <li className="mb-2">Book Design</li>
             <li className="mb-2">Brand Strategy</li>
             <li className="mb-2">Concepting & Ideation</li>
@@ -180,14 +210,17 @@ export default function About() {
             <li className="mb-2">Figma</li>
             <li className="mb-2">Frontend Development</li>
             <li className="mb-2">Graphic Design</li>
+            <li className="mb-2">HeyGen</li>
             <li className="mb-2">HTML & CSS</li>
             <li className="mb-2">Illustrator</li>
             <li className="mb-2">InDesign</li>
             <li className="mb-2">Javascript</li>
             <li className="mb-2">Keynote</li>
             <li className="mb-2">Magazine Design</li>
+            <li className="mb-2">Midjourney</li>
             <li className="mb-2">Next.js</li>
             <li className="mb-2">Photoshop</li>
+            <li className="mb-2">Process Design</li>
             <li className="mb-2">React</li>
             <li className="mb-2">Runway ML</li>
             <li className="mb-2">UI design</li>

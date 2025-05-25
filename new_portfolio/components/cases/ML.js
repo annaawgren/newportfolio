@@ -1,11 +1,11 @@
 export const MlProjectionCase = {
   title: "Machine Learning Project",
-  description: "An Interactive Machine Learning Projection",
+  description: "Interactive Machine Learning Projection",
   introtext: (
     <div>
       <h2 className="untitled-text mb-12 md:mb-20 mt-2 text-md text-center ">
         <span className="border-b-2 border-black pb-4">
-          An interactive Machine Learning Projection
+          Interactive Machine Learning Projection
         </span>
       </h2>
 
@@ -42,7 +42,7 @@ export const MlProjectionCase = {
   overviewSize: "medium",
   images: (
     <div className="grid grid-cols-2 gap-10 ">
-      <div className=" ... ">
+      <div className="">
         <img
           src="/images/cases/ml/ml-processdance.gif"
           className=" object-cover w-full"

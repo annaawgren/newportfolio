@@ -9,15 +9,9 @@ import Image from "../../components/Image";
 import { KupeCase } from "../../components/cases/Kupe";
 import { TelnessCase } from "../../components/cases/Telness";
 import { WCase } from "../../components/cases/W";
-import { VegogoCase } from "../../components/cases/Vegogo";
 import { MlProjectionCase } from "../../components/cases/ML";
 import { CoraCase } from "../../components/cases/Cora";
-import { InteDuCase } from "../../components/cases/Intedu";
-import { GirlsOnSkisCase } from "../../components/cases/Girlsonskis";
-import { NolltidCase } from "../../components/cases/Nolltid";
-import { OlgaCase } from "../../components/cases/Olga";
 import { NewbieCase } from "../../components/cases/NewbieTech";
-import { TheNewGreenCase } from "../../components/cases/TheNewGreen";
 
 const cases = {
   cora: CoraCase,
